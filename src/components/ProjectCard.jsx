@@ -3,10 +3,10 @@ import PropTypes from "prop-types";
 export function ProjectCard({ img, title, text, skills, deploy, git }) {
   return (
     <>
-      <div className="w-[100%] rounded-lg shadow-md overflow-hidden bg-white">
+      <div className="w-[100%] rounded-lg shadow-md overflow-hidden bg-white flex flex-col justify-between">
         <img
           src={img}
-          className="w-[100%] object-cover p-[0.5rem]"
+          className="w-[100%] object-cover p-[1rem]"
         ></img>
         <div className="my-[1rem] gap-2">
           <h3 className="text-[20px]">
