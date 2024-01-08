@@ -286,7 +286,7 @@ function App() {
         <h2 className="text-[40px] text-start my-[2rem]">Projects:</h2>
         <div className="grid grid-cols-2 gap-3">
           <ProjectCard
-            img="./src/assets/portfolio/Creative/ecoPlagas/1.png" //qwer
+            img="https://raw.githubusercontent.com/kevinvillajim/Portfolio/main/src/assets/portfolio/Creative/ecoPlagas/1.png" //qwer
             title="Eco Plagas"
             text="Pest Control Enterprise. Logo, Corporative Image, Social media advertising, Material advertising and Documentation."
             skills={[
@@ -297,7 +297,7 @@ function App() {
             git="https://github.com/kevinvillajim/weatherProyectoFinalN2"
           />
           <ProjectCard
-            img="./src/assets/portfolio/Creative/queHechoBurguer/1.jpg" //qwer
+            img="https://raw.githubusercontent.com/kevinvillajim/Portfolio/main/src/assets/portfolio/Creative/queHechoBurguer/1.jpg" //qwer
             title="Que Hecho Burguer"
             text="Dark Kitchen focused on minimalism, Logo, Stickers, Social media advertising, Menu, Invitations"
             skills={[
@@ -308,7 +308,7 @@ function App() {
             git="https://github.com/kevinvillajim/ProyectoFinalN3"
           />
           <ProjectCard
-            img="./src/assets/portfolio/Creative/ggBet/0.png"
+            img="https://raw.githubusercontent.com/kevinvillajim/Portfolio/main/src/assets/portfolio/Creative/ggBet/0.png"
             title="GGBet"
             text="Games Club, Social media advertising, and poker chips."
             skills={[
@@ -319,7 +319,7 @@ function App() {
             git="https://github.com/kevinvillajim/miniproyectoN3_Login"
           />
           <ProjectCard
-            img="./src/assets/portfolio/Creative/ecoDomoticHome/1.png"
+            img="https://raw.githubusercontent.com/kevinvillajim/Portfolio/main/src/assets/portfolio/Creative/ecoDomoticHome/1.png"
             title="Eco Domotic Home"
             text="Electronic Security and Domotic Enterprise. Corporative Image, Logo, Business cards, Social media advertising and Documentation."
             skills={[
@@ -330,7 +330,7 @@ function App() {
             git="https://github.com/kevinvillajim/miniProyecto4_API"
           />
           <ProjectCard
-            img="./src/assets/portfolio/Creative/multiserviciosTec/1.png"
+            img="https://raw.githubusercontent.com/kevinvillajim/Portfolio/main/src/assets/portfolio/Creative/multiserviciosTec/1.png"
             title="Multiservicios TEC"
             text="Services business focused in electric and electronic issues, Logo, Corporative Image, Business cards, Social media advertising, Material advertising and Documentation."
             skills={[
@@ -341,7 +341,7 @@ function App() {
             git="https://github.com/kevinvillajim/EcoPlagas"
           />
           <ProjectCard
-            img="./src/assets/portfolio/Creative/vinculoLicores/1.jpg"
+            img="https://raw.githubusercontent.com/kevinvillajim/Portfolio/main/src/assets/portfolio/Creative/vinculoLicores/1.jpg"
             title="Vínculo Distribuidora"
             text="Liquor Store, Logo, Corporative Image, Business cards"
             skills={[
@@ -352,7 +352,7 @@ function App() {
             git="https://github.com/kevinvillajim/windbnb2"
           />
           <ProjectCard
-            img="./src/assets/portfolio/Creative/otros/5.png"
+            img="https://raw.githubusercontent.com/kevinvillajim/Portfolio/main/src/assets/portfolio/Creative/otros/5.png"
             title="Other"
             text="Valious projects, like invitations, Labels, and other works"
             skills={[
