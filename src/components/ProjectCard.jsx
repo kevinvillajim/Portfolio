@@ -40,7 +40,7 @@ export function ProjectCard({ img, title, text, skills, deploy, git }) {
           >
             <button className="bg-black px-[0.9rem] py-[0.8rem] rounded-md text-white">
               <img
-                src="./src/assets/icons/GH.svg"
+                src="https://raw.githubusercontent.com/kevinvillajim/Portfolio/main/src/assets/icons/GH.svg"
                 alt="github"
                 className="h-[18px]"
               />

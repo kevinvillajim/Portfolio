@@ -3,7 +3,7 @@ function Header() {
     <div className="w-screen h-[6rem] bg-[black] flex items-center justify-between px-[10rem] mb-[0.5rem]">
       <div className="w-[5rem] text-[white]">
         <img
-          src="../src/assets/logo.png"
+          src="https://raw.githubusercontent.com/kevinvillajim/Portfolio/main/src/assets/logo.png"
           className=" w-[85%]"
           alt="logo"
         />
