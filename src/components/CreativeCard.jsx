@@ -1,6 +1,6 @@
 import PropTypes from "prop-types";
 
-export function CreativeCard({img, title, text, skills, deploy}) {
+export function CreativeCard({img, title, text, skills, setModalVisible}) {
 	return (
 		<>
 			<div className="w-[100%] rounded-lg shadow-md overflow-hidden bg-white flex flex-col justify-between">
@@ -19,11 +19,12 @@ export function CreativeCard({img, title, text, skills, deploy}) {
 					))}
 				</div>
 				<div className="flex justify-evenly align-middle mb-[1rem]">
-					<a href={deploy} target="_blank" rel="noreferrer">
-						<button className="bg-black px-[10rem] py-[0.6rem] rounded-md text-white">
-							Show
-						</button>
-					</a>
+					<button
+						className="bg-black px-[10rem] py-[0.6rem] rounded-md text-white"
+						onClick={() => setModalVisible(true)}
+					>
+						Show
+					</button>
 				</div>
 			</div>
 		</>
@@ -35,5 +36,5 @@ CreativeCard.propTypes = {
 	title: PropTypes.string.isRequired,
 	text: PropTypes.string.isRequired,
 	skills: PropTypes.node,
-	deploy: PropTypes.string.isRequired,
+	setModalVisible: PropTypes.func,
 };
