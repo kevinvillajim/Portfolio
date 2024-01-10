@@ -1,6 +1,14 @@
 import PropTypes from "prop-types";
 
-export function CreativeCard({img, title, text, skills, setModalVisible}) {
+export function CreativeCard({
+	img,
+	title,
+	text,
+	skills,
+	setModalVisible,
+	setCurrentArray,
+	arrayNum,
+}) {
 	return (
 		<>
 			<div className="w-[100%] rounded-lg shadow-md overflow-hidden bg-white flex flex-col justify-between">
@@ -21,7 +29,10 @@ export function CreativeCard({img, title, text, skills, setModalVisible}) {
 				<div className="flex justify-evenly align-middle mb-[1rem]">
 					<button
 						className="bg-black px-[10rem] py-[0.6rem] rounded-md text-white"
-						onClick={() => setModalVisible(true)}
+						onClick={() => {
+							setModalVisible(true);
+							setCurrentArray(arrayNum);
+						}}
 					>
 						Show
 					</button>
@@ -37,4 +48,6 @@ CreativeCard.propTypes = {
 	text: PropTypes.string.isRequired,
 	skills: PropTypes.node,
 	setModalVisible: PropTypes.func,
+	setCurrentArray: PropTypes.func,
+	arrayNum: PropTypes.number,
 };

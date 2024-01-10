@@ -38,7 +38,7 @@ export function ModalImg({photos, currentPhotoIndex, setModalVisible}) {
 						<span className="material-symbols-outlined">close</span>
 					</button>
 					<button
-						className="absolute top-1/2 transform -translate-y-1/2 left-0 text-white rounded bg-black bg-opacity-50"
+						className="absolute top-1/2 transform -translate-y-1/2 left-0 ml-[1rem] text-white rounded bg-black bg-opacity-50"
 						onClick={goToPrevPhoto}
 					>
 						<span className="material-symbols-outlined p-[7px] text-center">
@@ -46,7 +46,7 @@ export function ModalImg({photos, currentPhotoIndex, setModalVisible}) {
 						</span>
 					</button>
 					<button
-						className="absolute top-1/2 transform -translate-y-1/2 right-0 text-white rounded bg-black bg-opacity-50"
+						className="absolute top-1/2 transform -translate-y-1/2 right-0 mr-[1rem] text-white rounded bg-black bg-opacity-50"
 						onClick={goToNextPhoto}
 					>
 						<span className="material-symbols-outlined p-[7px]">

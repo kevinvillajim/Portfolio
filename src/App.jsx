@@ -35,7 +35,345 @@ function App() {
 		"https://raw.githubusercontent.com/kevinvillajim/Portfolio/main/src/assets/icons/FL.png",
 	];
 
+	const otherPhotos = [
+		[
+			"Del Frutas",
+			"https://raw.githubusercontent.com/kevinvillajim/Portfolio/main/src/assets/portfolio/Creative/otros/5.png",
+			"Label for powdered panela and fruit tea.",
+		],
+		[
+			"Soccer Championship Invitation",
+			"https://raw.githubusercontent.com/kevinvillajim/Portfolio/main/src/assets/portfolio/Creative/otros/1.png",
+			"Soccer championship invitation for social media",
+		],
+		[
+			"Final of Soccer Invitation",
+			"https://raw.githubusercontent.com/kevinvillajim/Portfolio/main/src/assets/portfolio/Creative/otros/2.png",
+			"Soccer championship invitation for social media.",
+		],
+		[
+			"Christmas Invitation",
+			"https://raw.githubusercontent.com/kevinvillajim/Portfolio/main/src/assets/portfolio/Creative/otros/3.jpg",
+			"Christmas activity invitation for social media.",
+		],
+		[
+			"Final of Soccer Invitation 2",
+			"https://raw.githubusercontent.com/kevinvillajim/Portfolio/main/src/assets/portfolio/Creative/otros/4.jpg",
+			"Soccer championship invitation for social media.",
+		],
+		[
+			"Flag",
+			"https://raw.githubusercontent.com/kevinvillajim/Portfolio/main/src/assets/portfolio/Creative/otros/8.png",
+			"Flag for a neighborhood soccer team.",
+		],
+		[
+			"Birthday",
+			"https://raw.githubusercontent.com/kevinvillajim/Portfolio/main/src/assets/portfolio/Creative/otros/9.jpg",
+			"Birthday party invitation for social media.",
+		],
+		[
+			"Medical prescription",
+			"https://raw.githubusercontent.com/kevinvillajim/Portfolio/main/src/assets/portfolio/Creative/otros/10.jpg",
+			"Medical recipe book for a clinic.",
+		],
+		[
+			"Label",
+			"https://raw.githubusercontent.com/kevinvillajim/Portfolio/main/src/assets/portfolio/Creative/otros/11.png",
+			"Vintage-style label for a bottle.",
+		],
+		[
+			"Solidary Event",
+			"https://raw.githubusercontent.com/kevinvillajim/Portfolio/main/src/assets/portfolio/Creative/otros/12.jpg",
+			"Solidarity lunch for charitable purposes.",
+		],
+		[
+			"Elixia",
+			"https://raw.githubusercontent.com/kevinvillajim/Portfolio/main/src/assets/portfolio/Creative/otros/13.png",
+			"Logo for a magically styled beverage.",
+		],
+		[
+			"Duo Esthetic",
+			"https://raw.githubusercontent.com/kevinvillajim/Portfolio/main/src/assets/portfolio/Creative/otros/14.png",
+			"Flyer for a beauty salon.",
+		],
+	];
+
+	const ecoPlagasPhotos = [
+		[
+			"Eco Plagas",
+			"https://raw.githubusercontent.com/kevinvillajim/Portfolio/main/src/assets/portfolio/Creative/ecoPlagas/1.png",
+			"Logo",
+		],
+		[
+			"Eco Plagas",
+			"https://raw.githubusercontent.com/kevinvillajim/Portfolio/main/src/assets/portfolio/Creative/ecoPlagas/2.png",
+			"Shield",
+		],
+		[
+			"Eco Plagas",
+			"https://raw.githubusercontent.com/kevinvillajim/Portfolio/main/src/assets/portfolio/Creative/ecoPlagas/3.jpg",
+			"Advertising Social Media 1",
+		],
+		[
+			"Eco Plagas",
+			"https://raw.githubusercontent.com/kevinvillajim/Portfolio/main/src/assets/portfolio/Creative/ecoPlagas/4.jpg",
+			"Advertising Social Media 2",
+		],
+		[
+			"Eco Plagas",
+			"https://raw.githubusercontent.com/kevinvillajim/Portfolio/main/src/assets/portfolio/Creative/ecoPlagas/5.jpg",
+			"Flyer",
+		],
+		[
+			"Eco Plagas",
+			"https://raw.githubusercontent.com/kevinvillajim/Portfolio/main/src/assets/portfolio/Creative/ecoPlagas/6.png",
+			"Fridge magnet",
+		],
+		[
+			"Eco Plagas",
+			"https://raw.githubusercontent.com/kevinvillajim/Portfolio/main/src/assets/portfolio/Creative/ecoPlagas/7.jpg",
+			"Proforma document",
+		],
+		[
+			"Eco Plagas",
+			"https://raw.githubusercontent.com/kevinvillajim/Portfolio/main/src/assets/portfolio/Creative/ecoPlagas/8.jpg",
+			"Presentation document",
+		],
+		[
+			"Eco Plagas",
+			"https://raw.githubusercontent.com/kevinvillajim/Portfolio/main/src/assets/portfolio/Creative/ecoPlagas/9.jpg",
+			"Certificate document",
+		],
+	];
+
+	const queHechoBurguerPhotos = [
+		[
+			"Que Hecho Burguer",
+			"https://raw.githubusercontent.com/kevinvillajim/Portfolio/main/src/assets/portfolio/Creative/queHechoBurguer/1.jpg",
+			"Logo",
+		],
+		[
+			"Que Hecho Burguer",
+			"https://raw.githubusercontent.com/kevinvillajim/Portfolio/main/src/assets/portfolio/Creative/queHechoBurguer/2.png",
+			"Sticker",
+		],
+		[
+			"Que Hecho Burguer",
+			"https://raw.githubusercontent.com/kevinvillajim/Portfolio/main/src/assets/portfolio/Creative/queHechoBurguer/3.jpg",
+			"Advertising Social Media 1",
+		],
+		[
+			"Que Hecho Burguer",
+			"https://raw.githubusercontent.com/kevinvillajim/Portfolio/main/src/assets/portfolio/Creative/queHechoBurguer/4.jpg",
+			"Advertising Social Media 2",
+		],
+		[
+			"Que Hecho Burguer",
+			"https://raw.githubusercontent.com/kevinvillajim/Portfolio/main/src/assets/portfolio/Creative/queHechoBurguer/5.jpg",
+			"Catalogue",
+		],
+		[
+			"Que Hecho Burguer",
+			"https://raw.githubusercontent.com/kevinvillajim/Portfolio/main/src/assets/portfolio/Creative/queHechoBurguer/6.jpg",
+			"Menu",
+		],
+		[
+			"Que Hecho Burguer",
+			"https://raw.githubusercontent.com/kevinvillajim/Portfolio/main/src/assets/portfolio/Creative/queHechoBurguer/7.jpg",
+			"Menu 2",
+		],
+		[
+			"Que Hecho Burguer",
+			"https://raw.githubusercontent.com/kevinvillajim/Portfolio/main/src/assets/portfolio/Creative/queHechoBurguer/8.jpg",
+			"Focus Group Invitation",
+		],
+		[
+			"Que Hecho Burguer",
+			"https://raw.githubusercontent.com/kevinvillajim/Portfolio/main/src/assets/portfolio/Creative/queHechoBurguer/9.jpg",
+			"Focus Group Invitation 2",
+		],
+	];
+
+	const ggBetPhotos = [
+		[
+			"GG Bet",
+			"https://raw.githubusercontent.com/kevinvillajim/Portfolio/main/src/assets/portfolio/Creative/ggBet/1.png",
+			"Logo",
+		],
+		[
+			"GG Bet",
+			"https://raw.githubusercontent.com/kevinvillajim/Portfolio/main/src/assets/portfolio/Creative/ggBet/2.png",
+			"Poker Chips",
+		],
+		[
+			"GG Bet",
+			"https://raw.githubusercontent.com/kevinvillajim/Portfolio/main/src/assets/portfolio/Creative/ggBet/3.jpg",
+			"Advertising Social Media 1",
+		],
+		[
+			"GG Bet",
+			"https://raw.githubusercontent.com/kevinvillajim/Portfolio/main/src/assets/portfolio/Creative/ggBet/4.jpg",
+			"Advertising Social Media 2",
+		],
+		[
+			"GG Bet",
+			"https://raw.githubusercontent.com/kevinvillajim/Portfolio/main/src/assets/portfolio/Creative/ggBet/5.jpg",
+			"Advertising Social Media 3",
+		],
+		[
+			"GG Bet",
+			"https://raw.githubusercontent.com/kevinvillajim/Portfolio/main/src/assets/portfolio/Creative/ggBet/6.png",
+			"Advertising Social Media 4",
+		],
+		[
+			"GG Bet",
+			"https://raw.githubusercontent.com/kevinvillajim/Portfolio/main/src/assets/portfolio/Creative/ggBet/7.jpg",
+			"Advertising Social Media 5",
+		],
+		[
+			"GG Bet",
+			"https://raw.githubusercontent.com/kevinvillajim/Portfolio/main/src/assets/portfolio/Creative/ggBet/9.jpg",
+			"Advertising Social Media 7",
+		],
+	];
+
+	const ecoDomoticHomePhotos = [
+		[
+			"Eco Domotic Home",
+			"https://raw.githubusercontent.com/kevinvillajim/Portfolio/main/src/assets/portfolio/Creative/ecoDomoticHome/1.png",
+			"Logo",
+		],
+		[
+			"Eco Domotic Home",
+			"https://raw.githubusercontent.com/kevinvillajim/Portfolio/main/src/assets/portfolio/Creative/ecoDomoticHome/2.jpg",
+			"Business Card",
+		],
+		[
+			"Eco Domotic Home",
+			"https://raw.githubusercontent.com/kevinvillajim/Portfolio/main/src/assets/portfolio/Creative/ecoDomoticHome/3.jpg",
+			"Advertising Social Media 1",
+		],
+		[
+			"Eco Domotic Home",
+			"https://raw.githubusercontent.com/kevinvillajim/Portfolio/main/src/assets/portfolio/Creative/ecoDomoticHome/4.jpg",
+			"Proforma Document",
+		],
+		[
+			"Eco Domotic Home",
+			"https://raw.githubusercontent.com/kevinvillajim/Portfolio/main/src/assets/portfolio/Creative/ecoDomoticHome/5.jpg",
+			"Catalogue 1",
+		],
+		[
+			"Eco Domotic Home",
+			"https://raw.githubusercontent.com/kevinvillajim/Portfolio/main/src/assets/portfolio/Creative/ecoDomoticHome/6.jpg",
+			"Catalogue 2",
+		],
+		[
+			"Eco Domotic Home",
+			"https://raw.githubusercontent.com/kevinvillajim/Portfolio/main/src/assets/portfolio/Creative/ecoDomoticHome/7.jpg",
+			"Catalogue 3",
+		],
+		[
+			"Eco Domotic Home",
+			"https://raw.githubusercontent.com/kevinvillajim/Portfolio/main/src/assets/portfolio/Creative/ecoDomoticHome/9.jpg",
+			"Catalogue 4",
+		],
+	];
+
+	const multiserviciosTecPhotos = [
+		[
+			"Multiservicios TEC",
+			"https://raw.githubusercontent.com/kevinvillajim/Portfolio/main/src/assets/portfolio/Creative/multiserviciosTec/1.png",
+			"Logo",
+		],
+		[
+			"Multiservicios TEC",
+			"https://raw.githubusercontent.com/kevinvillajim/Portfolio/main/src/assets/portfolio/Creative/multiserviciosTec/2.jpg",
+			"Business Card",
+		],
+		[
+			"Multiservicios TEC",
+			"https://raw.githubusercontent.com/kevinvillajim/Portfolio/main/src/assets/portfolio/Creative/multiserviciosTec/3.jpg",
+			"Business Card 2-1",
+		],
+		[
+			"Multiservicios TEC",
+			"https://raw.githubusercontent.com/kevinvillajim/Portfolio/main/src/assets/portfolio/Creative/multiserviciosTec/4.jpg",
+			"Flyer Service 1",
+		],
+		[
+			"Multiservicios TEC",
+			"https://raw.githubusercontent.com/kevinvillajim/Portfolio/main/src/assets/portfolio/Creative/multiserviciosTec/5.jpg",
+			"Flyer Service 2",
+		],
+		[
+			"Multiservicios TEC",
+			"https://raw.githubusercontent.com/kevinvillajim/Portfolio/main/src/assets/portfolio/Creative/multiserviciosTec/6.jpg",
+			"Flyer Service 3",
+		],
+		[
+			"Multiservicios TEC",
+			"https://raw.githubusercontent.com/kevinvillajim/Portfolio/main/src/assets/portfolio/Creative/multiserviciosTec/7.jpg",
+			"Flyer Service 4",
+		],
+		[
+			"Multiservicios TEC",
+			"https://raw.githubusercontent.com/kevinvillajim/Portfolio/main/src/assets/portfolio/Creative/multiserviciosTec/8.jpg",
+			"Flyer Service 5",
+		],
+		[
+			"Multiservicios TEC",
+			"https://raw.githubusercontent.com/kevinvillajim/Portfolio/main/src/assets/portfolio/Creative/multiserviciosTec/9.jpg",
+			"Flyer Service 6",
+		],
+		[
+			"Multiservicios TEC",
+			"https://raw.githubusercontent.com/kevinvillajim/Portfolio/main/src/assets/portfolio/Creative/multiserviciosTec/10.jpg",
+			"Social media Banner",
+		],
+		[
+			"Multiservicios TEC",
+			"https://raw.githubusercontent.com/kevinvillajim/Portfolio/main/src/assets/portfolio/Creative/multiserviciosTec/11.jpg",
+			"Proforma document",
+		],
+	];
+
+	const vinculoLicoresPhotos = [
+		[
+			"Vinculo Distribuidora",
+			"https://raw.githubusercontent.com/kevinvillajim/Portfolio/main/src/assets/portfolio/Creative/vinculoLicores/1.jpg",
+			"Logo 1",
+		],
+		[
+			"Vinculo Distribuidora",
+			"https://raw.githubusercontent.com/kevinvillajim/Portfolio/main/src/assets/portfolio/Creative/vinculoLicores/2.jpg",
+			"Logo 2",
+		],
+		[
+			"Vinculo Distribuidora",
+			"https://raw.githubusercontent.com/kevinvillajim/Portfolio/main/src/assets/portfolio/Creative/vinculoLicores/3.jpg",
+			"Logo 3",
+		],
+		[
+			"Vinculo Distribuidora",
+			"https://raw.githubusercontent.com/kevinvillajim/Portfolio/main/src/assets/portfolio/Creative/vinculoLicores/4.jpg",
+			"Logo Concept",
+		],
+		[
+			"Vinculo Distribuidora",
+			"https://raw.githubusercontent.com/kevinvillajim/Portfolio/main/src/assets/portfolio/Creative/vinculoLicores/5.jpg",
+			"Color personality",
+		],
+		[
+			"Vinculo Distribuidora",
+			"https://raw.githubusercontent.com/kevinvillajim/Portfolio/main/src/assets/portfolio/Creative/vinculoLicores/6.jpg",
+			"Business card",
+		],
+	];
+
 	const [modalVisible, setModalVisible] = useState(false);
+
+	const [currentArray, setCurrentArray] = useState(0);
 
 	return (
 		<>
@@ -291,7 +629,10 @@ function App() {
 							"https://raw.githubusercontent.com/kevinvillajim/Portfolio/main/src/assets/icons/ILL.png",
 							"https://raw.githubusercontent.com/kevinvillajim/Portfolio/main/src/assets/icons/PS.png",
 						]}
-						deploy="https://kevinvillajim.github.io/weatherProyectoFinalN2/"
+						setCurrentArray={setCurrentArray}
+						arrayNum={0}
+						modalVisible={modalVisible}
+						setModalVisible={setModalVisible}
 					/>
 					<CreativeCard
 						img="https://raw.githubusercontent.com/kevinvillajim/Portfolio/main/src/assets/portfolio/Creative/queHechoBurguer/1.jpg" //qwer
@@ -301,7 +642,10 @@ function App() {
 							"https://raw.githubusercontent.com/kevinvillajim/Portfolio/main/src/assets/icons/ILL.png",
 							"https://raw.githubusercontent.com/kevinvillajim/Portfolio/main/src/assets/icons/PS.png",
 						]}
-						deploy="https://kevinvillajim.github.io/weatherProyectoFinalN2/"
+						setCurrentArray={setCurrentArray}
+						arrayNum={1}
+						modalVisible={modalVisible}
+						setModalVisible={setModalVisible}
 					/>
 					<CreativeCard
 						img="https://raw.githubusercontent.com/kevinvillajim/Portfolio/main/src/assets/portfolio/Creative/ggBet/0.png"
@@ -311,7 +655,10 @@ function App() {
 							"https://raw.githubusercontent.com/kevinvillajim/Portfolio/main/src/assets/icons/ILL.png",
 							"https://raw.githubusercontent.com/kevinvillajim/Portfolio/main/src/assets/icons/PS.png",
 						]}
-						deploy="https://miniproyecton3kevinvillajim.000webhostapp.com/"
+						setCurrentArray={setCurrentArray}
+						arrayNum={2}
+						modalVisible={modalVisible}
+						setModalVisible={setModalVisible}
 					/>
 					<CreativeCard
 						img="https://raw.githubusercontent.com/kevinvillajim/Portfolio/main/src/assets/portfolio/Creative/ecoDomoticHome/1.png"
@@ -321,7 +668,10 @@ function App() {
 							"https://raw.githubusercontent.com/kevinvillajim/Portfolio/main/src/assets/icons/ILL.png",
 							"https://raw.githubusercontent.com/kevinvillajim/Portfolio/main/src/assets/icons/PS.png",
 						]}
-						deploy="https://github.com/kevinvillajim/miniProyecto4_API/tree/main/Capturas%20documentacion%20API%20Postman"
+						setCurrentArray={setCurrentArray}
+						arrayNum={3}
+						modalVisible={modalVisible}
+						setModalVisible={setModalVisible}
 					/>
 					<CreativeCard
 						img="https://raw.githubusercontent.com/kevinvillajim/Portfolio/main/src/assets/portfolio/Creative/multiserviciosTec/1.png"
@@ -331,7 +681,10 @@ function App() {
 							"https://raw.githubusercontent.com/kevinvillajim/Portfolio/main/src/assets/icons/ILL.png",
 							"https://raw.githubusercontent.com/kevinvillajim/Portfolio/main/src/assets/icons/PS.png",
 						]}
-						deploy="https://kevinvillajim.github.io/EcoPlagas/"
+						setCurrentArray={setCurrentArray}
+						arrayNum={4}
+						modalVisible={modalVisible}
+						setModalVisible={setModalVisible}
 					/>
 					<CreativeCard
 						img="https://raw.githubusercontent.com/kevinvillajim/Portfolio/main/src/assets/portfolio/Creative/vinculoLicores/1.jpg"
@@ -341,7 +694,10 @@ function App() {
 							"https://raw.githubusercontent.com/kevinvillajim/Portfolio/main/src/assets/icons/ILL.png",
 							"https://raw.githubusercontent.com/kevinvillajim/Portfolio/main/src/assets/icons/PS.png",
 						]}
-						deploy="https://kevinvillajim.github.io/windbnb2/"
+						setCurrentArray={setCurrentArray}
+						arrayNum={5}
+						modalVisible={modalVisible}
+						setModalVisible={setModalVisible}
 					/>
 					<div>
 						<CreativeCard
@@ -352,77 +708,83 @@ function App() {
 								"https://raw.githubusercontent.com/kevinvillajim/Portfolio/main/src/assets/icons/ILL.png",
 								"https://raw.githubusercontent.com/kevinvillajim/Portfolio/main/src/assets/icons/PS.png",
 							]}
+							setCurrentArray={setCurrentArray}
+							arrayNum={6}
 							modalVisible={modalVisible}
 							setModalVisible={setModalVisible}
 						/>
 						{modalVisible && (
-							<ModalImg
-								photos={[
-									[
-										"Del Frutas",
-										"https://raw.githubusercontent.com/kevinvillajim/Portfolio/main/src/assets/portfolio/Creative/otros/5.png",
-										"Label for powdered panela and fruit tea.",
-									],
-									[
-										"Soccer Championship Invitation",
-										"https://raw.githubusercontent.com/kevinvillajim/Portfolio/main/src/assets/portfolio/Creative/otros/1.png",
-										"Soccer championship invitation for social media",
-									],
-									[
-										"Final of Soccer Invitation",
-										"https://raw.githubusercontent.com/kevinvillajim/Portfolio/main/src/assets/portfolio/Creative/otros/2.png",
-										"Soccer championship invitation for social media.",
-									],
-									[
-										"Christmas Invitation",
-										"https://raw.githubusercontent.com/kevinvillajim/Portfolio/main/src/assets/portfolio/Creative/otros/3.jpg",
-										"Christmas activity invitation for social media.",
-									],
-									[
-										"Final of Soccer Invitation 2",
-										"https://raw.githubusercontent.com/kevinvillajim/Portfolio/main/src/assets/portfolio/Creative/otros/4.jpg",
-										"Soccer championship invitation for social media.",
-									],
-									[
-										"Flag",
-										"https://raw.githubusercontent.com/kevinvillajim/Portfolio/main/src/assets/portfolio/Creative/otros/8.png",
-										"Flag for a neighborhood soccer team.",
-									],
-									[
-										"Birthday",
-										"https://raw.githubusercontent.com/kevinvillajim/Portfolio/main/src/assets/portfolio/Creative/otros/9.jpg",
-										"Birthday party invitation for social media.",
-									],
-									[
-										"Medical prescription",
-										"https://raw.githubusercontent.com/kevinvillajim/Portfolio/main/src/assets/portfolio/Creative/otros/10.jpg",
-										"Medical recipe book for a clinic.",
-									],
-									[
-										"Label",
-										"https://raw.githubusercontent.com/kevinvillajim/Portfolio/main/src/assets/portfolio/Creative/otros/11.png",
-										"Vintage-style label for a bottle.",
-									],
-									[
-										"Solidary Event",
-										"https://raw.githubusercontent.com/kevinvillajim/Portfolio/main/src/assets/portfolio/Creative/otros/12.jpg",
-										"Solidarity lunch for charitable purposes.",
-									],
-									[
-										"Elixia",
-										"https://raw.githubusercontent.com/kevinvillajim/Portfolio/main/src/assets/portfolio/Creative/otros/13.png",
-										"Logo for a magically styled beverage.",
-									],
-									[
-										"Duo Esthetic",
-										"https://raw.githubusercontent.com/kevinvillajim/Portfolio/main/src/assets/portfolio/Creative/otros/14.png",
-										"Flyer for a beauty salon.",
-									],
-								]}
-								modalVisible={modalVisible}
-								setModalVisible={setModalVisible}
-								currentPhotoIndex={0}
-							/>
+							<>
+								{(() => {
+									switch (currentArray) {
+										case 0:
+											return (
+												<ModalImg
+													photos={ecoPlagasPhotos}
+													modalVisible={modalVisible}
+													setModalVisible={setModalVisible}
+													currentPhotoIndex={0}
+												/>
+											);
+										case 1:
+											return (
+												<ModalImg
+													photos={queHechoBurguerPhotos}
+													modalVisible={modalVisible}
+													setModalVisible={setModalVisible}
+													currentPhotoIndex={0}
+												/>
+											);
+										case 2:
+											return (
+												<ModalImg
+													photos={ggBetPhotos}
+													modalVisible={modalVisible}
+													setModalVisible={setModalVisible}
+													currentPhotoIndex={0}
+												/>
+											);
+										case 3:
+											return (
+												<ModalImg
+													photos={ecoDomoticHomePhotos}
+													modalVisible={modalVisible}
+													setModalVisible={setModalVisible}
+													currentPhotoIndex={0}
+												/>
+											);
+										case 4:
+											return (
+												<ModalImg
+													photos={multiserviciosTecPhotos}
+													modalVisible={modalVisible}
+													setModalVisible={setModalVisible}
+													currentPhotoIndex={0}
+												/>
+											);
+										case 5:
+											return (
+												<ModalImg
+													photos={vinculoLicoresPhotos}
+													modalVisible={modalVisible}
+													setModalVisible={setModalVisible}
+													currentPhotoIndex={0}
+												/>
+											);
+										case 6:
+											return (
+												<ModalImg
+													photos={otherPhotos}
+													modalVisible={modalVisible}
+													setModalVisible={setModalVisible}
+													currentPhotoIndex={0}
+												/>
+											);
+										default:
+											return null;
+									}
+								})()}
+							</>
 						)}
 					</div>
 				</div>
