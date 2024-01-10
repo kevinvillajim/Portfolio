@@ -1,5 +1,5 @@
 import Slider from "./components/Slider";
-import Header from "./components/Header";
+import {Header} from "./components/Header";
 import "./App.css";
 import {WhyCard} from "./components/WhyCard";
 import {Skills} from "./components/Skills";
@@ -375,9 +375,19 @@ function App() {
 
 	const [currentArray, setCurrentArray] = useState(0);
 
+	const scrollToReference = (referenceId) => {
+		const element = document.getElementById(referenceId);
+
+		if (element) {
+			element.scrollIntoView({
+				behavior: "smooth",
+			});
+		}
+	};
+
 	return (
 		<>
-			<Header />
+			<Header scrollToReference={scrollToReference} />
 			<Slider
 				img1="https://raw.githubusercontent.com/kevinvillajim/Portfolio/main/src/assets/Coder.png"
 				img2="https://raw.githubusercontent.com/kevinvillajim/Portfolio/main/src/assets/Designer.png"
@@ -387,7 +397,9 @@ function App() {
 				className="mt-[3rem] w-[100%]"
 			/>
 			<div className="w-[100%] px-[15rem] bg-[white] my-[0.5px] py-[4rem]">
-				<h1 className="text-[50px]">About</h1>
+				<h1 className="text-[50px]" id="about">
+					About
+				</h1>
 				<p className="text-start text-[20px] mb-[2rem]">
 					Hi there! :D, my name is Kevin Villacreses, I live in Ecuador and I am
 					27. Since 1 year ago have discover what I was made for, The Develop,
@@ -434,7 +446,7 @@ function App() {
 				className="w-[100%] mb-[3rem]"
 			/>
 			<section className="w-[100%] px-[12rem]">
-				<h1 className="text-[90px] mb-[5rem]">
+				<h1 className="text-[90px] mb-[5rem]" id="code">
 					<strong>&lt;code&gt;</strong> Portfolio <strong>&lt;/code&gt;</strong>
 				</h1>
 				<h2 className="text-[40px] text-start my-[2rem]">Skills:</h2>
@@ -610,7 +622,7 @@ function App() {
 				</div>
 			</section>
 			<section className="w-[100%] px-[12rem]">
-				<h1 className="text-[90px] mb-[5rem] mt-[8rem] fontDesign">
+				<h1 className="text-[90px] mb-[5rem] mt-[8rem] fontDesign" id="design">
 					<strong>Design and Creative Portfolio</strong>
 				</h1>
 				<h2 className="text-[40px] text-start my-[2rem]">Skills:</h2>
@@ -648,7 +660,7 @@ function App() {
 						setModalVisible={setModalVisible}
 					/>
 					<CreativeCard
-						img="https://raw.githubusercontent.com/kevinvillajim/Portfolio/main/src/assets/portfolio/Creative/ggBet/0.png"
+						img="https://raw.githubusercontent.com/kevinvillajim/Portfolio/main/src/assets/portfolio/Creative/ggBet/1.png"
 						title="GGBet"
 						text="Games Club, Social media advertising, and poker chips."
 						skills={[
@@ -789,6 +801,7 @@ function App() {
 					</div>
 				</div>
 			</section>
+			<h2 id="contact">Contact</h2>
 		</>
 	);
 }
