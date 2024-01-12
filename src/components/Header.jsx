@@ -14,26 +14,26 @@ export function Header({scrollToReference}) {
 				<ul className="text-[white] text-[18px] flex direction-row space-x-10">
 					<li
 						onClick={() => scrollToReference("about")}
-						className="cursor-pointer"
+						className="cursor-pointer transition-transform hover:transform hover:translate-y-[-1px] shaddow-glow"
 					>
 						About
 					</li>
 					{/* Agrega otras secciones según sea necesario */}
 					<li
 						onClick={() => scrollToReference("code")}
-						className="cursor-pointer"
+						className="cursor-pointer transition-transform hover:transform hover:translate-y-[-1px] shaddow-glow"
 					>
 						Code Portfolio
 					</li>
 					<li
 						onClick={() => scrollToReference("design")}
-						className="cursor-pointer"
+						className="cursor-pointer transition-transform hover:transform hover:translate-y-[-1px] shaddow-glow"
 					>
 						Design Portfolio
 					</li>
 					<li
 						onClick={() => scrollToReference("contact")}
-						className="cursor-pointer"
+						className="cursor-pointer transition-transform hover:transform hover:translate-y-[-1px] shaddow-glow"
 					>
 						Contact
 					</li>

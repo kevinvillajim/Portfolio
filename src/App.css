@@ -57,3 +57,7 @@
 .fontDesign {
 	font-family: "Lobster", sans-serif;
 }
+
+.shaddow-glow:hover {
+	text-shadow: 3px 3px 8px rgb(255, 255, 255);
+}

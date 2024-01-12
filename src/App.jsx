@@ -7,6 +7,7 @@ import {ProjectCard} from "./components/ProjectCard";
 import {CreativeCard} from "./components/CreativeCard";
 import {ModalImg} from "./components/ModalImg";
 import {useState} from "react";
+import {Footer} from "./components/Footer";
 
 function App() {
 	const skills = [
@@ -801,7 +802,9 @@ function App() {
 					</div>
 				</div>
 			</section>
-			<h2 id="contact">Contact</h2>
+			<section id="contact">
+				<Footer />
+			</section>
 		</>
 	);
 }
