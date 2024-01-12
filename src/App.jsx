@@ -802,8 +802,8 @@ function App() {
 					</div>
 				</div>
 			</section>
-			<section id="contact">
-				<Footer />
+			<section id="contact" className="mt-[2rem]">
+				<Footer scrollToReference={scrollToReference} />
 			</section>
 		</>
 	);
