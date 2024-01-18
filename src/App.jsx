@@ -459,6 +459,22 @@ function App() {
 				<h2 className="text-[40px] text-start my-[2rem]">Projects:</h2>
 				<div className="grid grid-cols-2 gap-3">
 					<ProjectCard
+						img="https://raw.githubusercontent.com/kevinvillajim/Portfolio/main/src/assets/portfolio/bitacora-project.png"
+						title="Bitacora App"
+						text="Full Stack App, working by API Rest and JWT, have a user profile, and some pages to interact, you can register, login, Create, Read, Update and Delete every part of the app and with a middleware register in tab Bitacora all the actions inside. Instructions to run inside the repo"
+						skills={[
+							"https://raw.githubusercontent.com/kevinvillajim/Portfolio/main/src/assets/icons/REACT.png",
+							"https://raw.githubusercontent.com/kevinvillajim/Portfolio/main/src/assets/icons/TW.svg",
+							"https://raw.githubusercontent.com/kevinvillajim/Portfolio/main/src/assets/icons/LV.png",
+							"https://raw.githubusercontent.com/kevinvillajim/Portfolio/main/src/assets/icons/HTML5.png",
+							"https://raw.githubusercontent.com/kevinvillajim/Portfolio/main/src/assets/icons/CSS.png",
+							"https://raw.githubusercontent.com/kevinvillajim/Portfolio/main/src/assets/icons/JS.png",
+							"https://raw.githubusercontent.com/kevinvillajim/Portfolio/main/src/assets/icons/GH.png",
+						]}
+						deploy="https://kevinvillajim.github.io/bitacoraPFN4/#/login"
+						git="https://github.com/kevinvillajim/bitacoraPFN4"
+					/>
+					<ProjectCard
 						img="https://raw.githubusercontent.com/kevinvillajim/Portfolio/main/src/assets/portfolio/weather-project.png"
 						title="Weather App"
 						text="Front end App, consumes api, can search every city in the world, you can save your favourite cities and can change the Degrees in C° or F° - Responsive Design"
@@ -472,6 +488,7 @@ function App() {
 						deploy="https://kevinvillajim.github.io/weatherProyectoFinalN2/"
 						git="https://github.com/kevinvillajim/weatherProyectoFinalN2"
 					/>
+
 					<ProjectCard
 						img="https://raw.githubusercontent.com/kevinvillajim/Portfolio/main/src/assets/portfolio/university-project.png"
 						title="University Platform"
