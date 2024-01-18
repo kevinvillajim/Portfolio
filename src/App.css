@@ -62,3 +62,21 @@
 .shaddow-glow:hover {
 	text-shadow: 3px 3px 8px rgb(255, 255, 255);
 }
+
+@media (max-width: 768px) {
+	.wrapper {
+		height: 300px;
+	}
+}
+
+@media (min-width: 1300px) {
+	.wrapper {
+		height: 600px;
+	}
+}
+
+@media (min-width: 1580px) {
+	.wrapper {
+		height: 900px;
+	}
+}
