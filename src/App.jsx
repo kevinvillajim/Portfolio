@@ -466,6 +466,7 @@ function App() {
 							"https://raw.githubusercontent.com/kevinvillajim/Portfolio/main/src/assets/icons/REACT.png",
 							"https://raw.githubusercontent.com/kevinvillajim/Portfolio/main/src/assets/icons/TW.svg",
 							"https://raw.githubusercontent.com/kevinvillajim/Portfolio/main/src/assets/icons/LV.png",
+							"https://raw.githubusercontent.com/kevinvillajim/Portfolio/main/src/assets/icons/PHP.png",
 							"https://raw.githubusercontent.com/kevinvillajim/Portfolio/main/src/assets/icons/HTML5.png",
 							"https://raw.githubusercontent.com/kevinvillajim/Portfolio/main/src/assets/icons/CSS.png",
 							"https://raw.githubusercontent.com/kevinvillajim/Portfolio/main/src/assets/icons/JS.png",
@@ -477,7 +478,7 @@ function App() {
 					<ProjectCard
 						img="https://raw.githubusercontent.com/kevinvillajim/Portfolio/main/src/assets/portfolio/weather-project.png"
 						title="Weather App"
-						text="Front end App, consumes api, can search every city in the world, you can save your favourite cities and can change the Degrees in C° or F° - Responsive Design"
+						text="Dev Challenges Front end App, consumes api, can search every city in the world, you can save your favourite cities and change the Degrees in C° or F° - Responsive Design"
 						skills={[
 							"https://raw.githubusercontent.com/kevinvillajim/Portfolio/main/src/assets/icons/REACT.png",
 							"https://raw.githubusercontent.com/kevinvillajim/Portfolio/main/src/assets/icons/HTML5.png",
@@ -492,7 +493,7 @@ function App() {
 					<ProjectCard
 						img="https://raw.githubusercontent.com/kevinvillajim/Portfolio/main/src/assets/portfolio/university-project.png"
 						title="University Platform"
-						text="Full Stack App with pure PHP, JS and CSS completly CRUD, relational tables, Role session and actions, grades, clases, inscriptions and message sistem inside."
+						text="Full Stack App with pure PHP, JS and CSS completly CRUD, relational tables, Role session and actions, grades, clases, inscriptions and message sistem inside. Only local"
 						skills={[
 							"https://raw.githubusercontent.com/kevinvillajim/Portfolio/main/src/assets/icons/PHP.png",
 							"https://raw.githubusercontent.com/kevinvillajim/Portfolio/main/src/assets/icons/MYSQL.png",
@@ -501,13 +502,13 @@ function App() {
 							"https://raw.githubusercontent.com/kevinvillajim/Portfolio/main/src/assets/icons/JS.png",
 							"https://raw.githubusercontent.com/kevinvillajim/Portfolio/main/src/assets/icons/GH.png",
 						]}
-						deploy="https://kevinvillajim.github.io/weatherProyectoFinalN2/"
+						deploy="https://github.com/kevinvillajim/ProyectoFinalN3"
 						git="https://github.com/kevinvillajim/ProyectoFinalN3"
 					/>
 					<ProjectCard
 						img="https://raw.githubusercontent.com/kevinvillajim/Portfolio/main/src/assets/portfolio/login-project.png"
 						title="Login Project"
-						text="Full Stack App with pure PHP and SQL. Functions: Dark Mode saving preferences by Local Storage, Hashed Password, Register of new users and Login, Profile with personal information, (CRUD Project) - Responsive Design"
+						text="Dev challenges Full Stack App with pure PHP and SQL. Functions: Dark Mode saving preferences by Local Storage, Hashed Password, Register of new users and Login, Profile with personal information, (CRUD Project) - Responsive Design"
 						skills={[
 							"https://raw.githubusercontent.com/kevinvillajim/Portfolio/main/src/assets/icons/PHP.png",
 							"https://raw.githubusercontent.com/kevinvillajim/Portfolio/main/src/assets/icons/MYSQL.png",
