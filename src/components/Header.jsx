@@ -3,7 +3,7 @@ import PropTypes from "prop-types";
 export function Header({scrollToReference}) {
 	return (
 		<div
-			className="w-screen h-[6rem] bg-[black] flex items-center justify-between px-[10rem] mb-[0.5rem]"
+			className="w-screen h-[6rem] bg-[black] flex items-center justify-between px-[10rem] mb-[0.5rem] sm: w-100%"
 			id="top"
 		>
 			<div className="w-[5rem] text-[white]">

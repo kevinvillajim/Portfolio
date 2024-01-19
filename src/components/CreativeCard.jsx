@@ -11,9 +11,16 @@ export function CreativeCard({
 }) {
 	return (
 		<>
-			<div className="w-[100%] rounded-lg shadow-md overflow-hidden bg-white flex flex-col justify-between">
+			<div
+				className="w-[100%] rounded-lg shadow-md overflow-hidden bg-white flex flex-col justify-between"
+				id="creative-card-container"
+			>
 				<div className="w-[100%] h-[500px] overflow-hidden flex justify-center">
-					<img src={img} className="h-[100%] object-cover p-[1rem]"></img>
+					<img
+						src={img}
+						className="h-[100%] object-cover p-[1rem]"
+						id="creative-img"
+					></img>
 				</div>
 				<div className="my-[1rem] mx-[1rem]">
 					<h3 className="text-[20px] mb-[0.5rem]">
@@ -33,6 +40,7 @@ export function CreativeCard({
 							setModalVisible(true);
 							setCurrentArray(arrayNum);
 						}}
+						id="show-button"
 					>
 						Show
 					</button>

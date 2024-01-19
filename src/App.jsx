@@ -397,7 +397,10 @@ function App() {
 				src="https://raw.githubusercontent.com/kevinvillajim/Portfolio/main/src/assets/divisorInvertido.png"
 				className="mt-[3rem] w-[100%]"
 			/>
-			<div className="w-[100%] px-[15rem] bg-[white] my-[0.5px] py-[4rem]">
+			<div
+				className="w-[100%] px-[15rem] bg-[white] my-[0.5px] py-[4rem]"
+				id="about-container"
+			>
 				<h1 className="text-[50px]" id="about">
 					About
 				</h1>
@@ -406,7 +409,7 @@ function App() {
 					27. Since 1 year ago have discover what I was made for, The Develop,
 					and it changes my focus. <u>There are 3 words that describes me:</u>
 				</p>
-				<div className="grid grid-cols-3 gap-20">
+				<div className="grid grid-cols-3 gap-20" id="why-container">
 					<WhyCard
 						img={
 							<img
@@ -446,18 +449,21 @@ function App() {
 				src="https://raw.githubusercontent.com/kevinvillajim/Portfolio/main/src/assets/divisor.png"
 				className="w-[100%] mb-[3rem]"
 			/>
-			<section className="w-[100%] px-[12rem]">
-				<h1 className="text-[90px] mb-[5rem]" id="code">
+			<section className="w-[100%] px-[12rem]" id="code-section">
+				<h1 className="text-[90px] mb-[5rem] sm:text-[10px]" id="code">
 					<strong>&lt;code&gt;</strong> Portfolio <strong>&lt;/code&gt;</strong>
 				</h1>
 				<h2 className="text-[40px] text-start my-[2rem]">Skills:</h2>
-				<div className="flex flex-row justify-between align-middle bg-white p-[2rem] rounded-xl">
+				<div
+					className="flex flex-row justify-between align-middle bg-white p-[2rem] rounded-xl"
+					id="code-skills"
+				>
 					{skills.map((item, index) => (
 						<Skills key={index} alt={`skill-${index}`} img={item} />
 					))}
 				</div>
 				<h2 className="text-[40px] text-start my-[2rem]">Projects:</h2>
-				<div className="grid grid-cols-2 gap-3">
+				<div className="grid grid-cols-2 gap-3" id="project-container">
 					<ProjectCard
 						img="https://raw.githubusercontent.com/kevinvillajim/Portfolio/main/src/assets/portfolio/bitacora-project.png"
 						title="Bitacora App"
@@ -640,18 +646,21 @@ function App() {
 					/>
 				</div>
 			</section>
-			<section className="w-[100%] px-[12rem]">
+			<section className="w-[100%] px-[12rem]" id="design-section">
 				<h1 className="text-[90px] mb-[5rem] mt-[8rem] fontDesign" id="design">
 					<strong>Design and Creative Portfolio</strong>
 				</h1>
 				<h2 className="text-[40px] text-start my-[2rem]">Skills:</h2>
-				<div className="flex flex-row justify-between align-middle bg-white p-[2rem] rounded-xl">
+				<div
+					className="flex flex-row justify-between align-middle bg-white p-[2rem] rounded-xl"
+					id="design-skills"
+				>
 					{skillsDesign.map((item, index) => (
 						<Skills key={index} alt={`skillDesign-${index}`} img={item} />
 					))}
 				</div>
 				<h2 className="text-[40px] text-start my-[2rem]">Projects:</h2>
-				<div className="grid grid-cols-2 gap-3">
+				<div className="grid grid-cols-2 gap-3" id="creative-container">
 					<CreativeCard
 						img="https://raw.githubusercontent.com/kevinvillajim/Portfolio/main/src/assets/portfolio/Creative/ecoPlagas/1.png" //qwer
 						title="Eco Plagas"
