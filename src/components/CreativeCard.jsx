@@ -15,11 +15,11 @@ export function CreativeCard({
 				<div className="w-[100%] h-[500px] overflow-hidden flex justify-center">
 					<img src={img} className="h-[100%] object-cover p-[1rem]"></img>
 				</div>
-				<div className="my-[1rem] gap-2">
-					<h3 className="text-[20px]">
+				<div className="my-[1rem] mx-[1rem]">
+					<h3 className="text-[20px] mb-[0.5rem]">
 						<strong>{title}</strong>
 					</h3>
-					<span className="mx-[1rem] text-start my-[1rem]">{text}</span>
+					<span className="text-start my-[1rem]">{text}</span>
 				</div>
 				<div className="flex flex-row w-[100%] justify-center gap-3 my-[2rem]">
 					{skills.map((item, index) => (
