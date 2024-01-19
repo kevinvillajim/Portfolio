@@ -27,7 +27,7 @@ export function Footer({scrollToReference}) {
 						img="https://raw.githubusercontent.com/kevinvillajim/Portfolio/main/src/assets/icons/email.png"
 					/>
 				</div>
-				<div className="flex justify-center">
+				<div className="flex justify-center" id="footer-nav">
 					<ul className="text-[white] text-[18px] flex direction-row space-x-10">
 						<li
 							onClick={() => scrollToReference("top")}
@@ -37,26 +37,26 @@ export function Footer({scrollToReference}) {
 						</li>
 						<li
 							onClick={() => scrollToReference("about")}
-							className="cursor-pointer transition-transform hover:transform hover:translate-y-[-1px] shaddow-glow"
+							className="cursor-pointer transition-transform hover:transform hover:translate-y-[-1px] shaddow-glow object-foot"
 						>
 							About
 						</li>
 						{/* Agrega otras secciones según sea necesario */}
 						<li
 							onClick={() => scrollToReference("code")}
-							className="cursor-pointer transition-transform hover:transform hover:translate-y-[-1px] shaddow-glow"
+							className="cursor-pointer transition-transform hover:transform hover:translate-y-[-1px] shaddow-glow object-foot"
 						>
 							Code Portfolio
 						</li>
 						<li
 							onClick={() => scrollToReference("design")}
-							className="cursor-pointer transition-transform hover:transform hover:translate-y-[-1px] shaddow-glow"
+							className="cursor-pointer transition-transform hover:transform hover:translate-y-[-1px] shaddow-glow object-foot"
 						>
 							Design Portfolio
 						</li>
 						<li
 							onClick={() => scrollToReference("contact")}
-							className="cursor-pointer transition-transform hover:transform hover:translate-y-[-1px] shaddow-glow"
+							className="cursor-pointer transition-transform hover:transform hover:translate-y-[-1px] shaddow-glow object-foot"
 						>
 							Contact
 						</li>

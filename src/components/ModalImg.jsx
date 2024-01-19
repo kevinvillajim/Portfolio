@@ -16,14 +16,21 @@ export function ModalImg({photos, currentPhotoIndex, setModalVisible}) {
 
 	return (
 		<>
-			<div className="fixed inset-0 bg-black bg-opacity-80 z-50 flex items-center justify-center">
-				<div className="bg-white px-[3rem] py-2 rounded-lg relative">
+			<div
+				className="fixed inset-0 bg-black bg-opacity-80 z-50 flex items-center justify-center"
+				id="modal-img-container"
+			>
+				<div
+					className="bg-white px-[3rem] py-2 rounded-lg relative"
+					id="whiteboard-container"
+				>
 					<h1 className="text-[40px] fontDesign">{photos[currentIndex][0]}</h1>
 					<div className="flex justify-center">
 						<img
 							src={photos[currentIndex][1]}
 							alt="Imagen Modal"
 							className="h-[550px]"
+							id="img-modal"
 						/>
 					</div>
 					<div className="bg-[#656565] p-[1rem] rounded-lg mt-[1rem] w-[100%]">

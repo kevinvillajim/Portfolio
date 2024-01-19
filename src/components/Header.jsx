@@ -11,9 +11,10 @@ export function Header({scrollToReference}) {
 					src="https://raw.githubusercontent.com/kevinvillajim/Portfolio/main/src/assets/logo.png"
 					className=" w-[85%]"
 					alt="logo"
+					id="logo"
 				/>
 			</div>
-			<div>
+			<div id="list">
 				<ul className="text-[white] text-[18px] flex direction-row space-x-10">
 					<li
 						onClick={() => scrollToReference("about")}
