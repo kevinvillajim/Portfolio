@@ -9,6 +9,7 @@
 	width: 100%;
 	display: flex;
 	justify-content: center;
+	align-items: center;
 }
 .wrapper {
 	text-align: center;
@@ -39,6 +40,48 @@
 	/* position: absolute; */
 	outline: none;
 	margin-left: -12px;
+}
+
+.arrowRigth {
+	color: rgb(0, 0, 0);
+	animation: bounce 1s infinite;
+}
+
+.arrowLeft {
+	color: rgb(0, 0, 0);
+	animation: bounce2 1s infinite;
+}
+
+@keyframes bounce {
+	0%,
+	20%,
+	50%,
+	80%,
+	100% {
+		transform: translateX(0);
+	}
+	40% {
+		transform: translateX(10px);
+	}
+	60% {
+		transform: translateX(-10px);
+	}
+}
+
+@keyframes bounce2 {
+	0%,
+	20%,
+	50%,
+	80%,
+	100% {
+		transform: translateX(0);
+	}
+	40% {
+		transform: translateX(-10px);
+	}
+	60% {
+		transform: translateX(10px);
+	}
 }
 
 .slider::-webkit-slider-thumb {
