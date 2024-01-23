@@ -450,7 +450,7 @@ function App() {
 				className="w-[100%] mb-[3rem]"
 			/>
 			<section className="w-[100%] px-[12rem]" id="code-section">
-				<h1 className="text-[90px] mb-[5rem] sm:text-[10px]" id="code">
+				<h1 className="text-[90px] mb-[5rem]" id="code">
 					<strong>&lt;code&gt;</strong> Portfolio <strong>&lt;/code&gt;</strong>
 				</h1>
 				<h2 className="text-[40px] text-start my-[2rem]">Skills:</h2>
@@ -830,7 +830,7 @@ function App() {
 				</div>
 			</section>
 			<section id="contact" className="mt-[2rem]">
-				<Footer scrollToReference={scrollToReference} />
+				<Footer />
 			</section>
 		</>
 	);
