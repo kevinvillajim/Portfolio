@@ -292,7 +292,7 @@ const translationPR = {
 	projectContent13:
 		"Site completo feito com WordPress, para um negócio de segurança eletrônica, alarmes e domótica. Foi um dos meus primeiros projetos.",
 
-	designPortfolioTitle: "Portfólio de Design e Criatividade",
+	designPortfolioTitle: "Portfólio de Design",
 	designSkills: "Habilidades:",
 	designProjects: "Projetos:",
 
