@@ -321,8 +321,8 @@ function App() {
 						skills={[
 							"https://raw.githubusercontent.com/kevinvillajim/Portfolio/main/src/assets/icons/WP.png",
 						]}
-						deploy="https://ecodomotichome.com/"
-						git="https://ecodomotichome.com/"
+						deploy="https://kevinvillajim.github.io/ecoDomoticHome/"
+						git="https://github.com/kevinvillajim/ecoDomoticHome"
 						translations={translations}
 					/>
 				</div>
