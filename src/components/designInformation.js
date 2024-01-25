@@ -283,13 +283,13 @@ const ggBetPhotos = [
 		descriptionES: "Publicidad en redes sociales 3",
 		descriptionPT: "Publicidade em redes sociais 3",
 	},
-	{
-		title: "GG Bet",
-		img: "https://raw.githubusercontent.com/kevinvillajim/Portfolio/main/src/assets/portfolio/Creative/ggBet/6.png",
-		descriptionEN: "Advertising Social Media 4",
-		descriptionES: "Publicidad en redes sociales 4",
-		descriptionPT: "Publicidade em redes sociais 4",
-	},
+	// {
+	// 	title: "GG Bet",
+	// 	img: "https://raw.githubusercontent.com/kevinvillajim/Portfolio/main/src/assets/portfolio/Creative/ggBet/6.png",
+	// 	descriptionEN: "Advertising Social Media 4",
+	// 	descriptionES: "Publicidad en redes sociales 4",
+	// 	descriptionPT: "Publicidade em redes sociais 4",
+	// },
 	{
 		title: "GG Bet",
 		img: "https://raw.githubusercontent.com/kevinvillajim/Portfolio/main/src/assets/portfolio/Creative/ggBet/7.jpg",
@@ -358,7 +358,7 @@ const ecoDomoticHomePhotos = [
 	},
 	{
 		title: "Eco Domotic Home",
-		img: "https://raw.githubusercontent.com/kevinvillajim/Portfolio/main/src/assets/portfolio/Creative/ecoDomoticHome/9.jpg",
+		img: "https://raw.githubusercontent.com/kevinvillajim/Portfolio/main/src/assets/portfolio/Creative/ecoDomoticHome/8.jpg",
 		descriptionEN: "Catalogue 4",
 		descriptionES: "Catálogo 4",
 		descriptionPT: "Catálogo 4",
@@ -429,13 +429,13 @@ const multiserviciosTecPhotos = [
 		descriptionES: "Flyer de servicio 6",
 		descriptionPT: "Panfleto de serviço 6",
 	},
-	{
-		title: "Multiservicios TEC",
-		img: "https://raw.githubusercontent.com/kevinvillajim/Portfolio/main/src/assets/portfolio/Creative/multiserviciosTec/10.jpg",
-		descriptionEN: "Social media Banner",
-		descriptionES: "Banner para redes sociales",
-		descriptionPT: "Banner para mídias sociais",
-	},
+	// {
+	// 	title: "Multiservicios TEC",
+	// 	img: "https://raw.githubusercontent.com/kevinvillajim/Portfolio/main/src/assets/portfolio/Creative/multiserviciosTec/10.jpg",
+	// 	descriptionEN: "Social media Banner",
+	// 	descriptionES: "Banner para redes sociales",
+	// 	descriptionPT: "Banner para mídias sociais",
+	// },
 	{
 		title: "Multiservicios TEC",
 		img: "https://raw.githubusercontent.com/kevinvillajim/Portfolio/main/src/assets/portfolio/Creative/multiserviciosTec/11.jpg",
