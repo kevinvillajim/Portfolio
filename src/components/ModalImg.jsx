@@ -29,7 +29,7 @@ export function ModalImg({
 					className="bg-white px-[3rem] py-2 rounded-lg relative"
 					id="whiteboard-container"
 				>
-					<h1 className="text-[40px] fontDesign">
+					<h1 className="text-[40px] fontDesign" id="modalImgTitle">
 						{photos[currentIndex].title}
 					</h1>
 					<div className="flex justify-center">
@@ -78,8 +78,7 @@ export function ModalImg({
 }
 
 ModalImg.propTypes = {
-	photos: PropTypes.arrayOf(PropTypes.arrayOf(PropTypes.string.isRequired))
-		.isRequired,
+	photos: PropTypes.array,
 	currentPhotoIndex: PropTypes.number.isRequired,
 	setModalVisible: PropTypes.func.isRequired,
 	language: PropTypes.string.isRequired,

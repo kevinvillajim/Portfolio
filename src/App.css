@@ -146,6 +146,8 @@
 	#code {
 		font-size: 80px;
 		margin-bottom: 0;
+		display: flex;
+		flex-direction: column;
 	}
 	#code-skills {
 		display: flex;
@@ -238,6 +240,9 @@
 		width: 60px;
 		height: 60px;
 		padding: 12px;
+	}
+	#modalImgTitle {
+		font-size: 34px;
 	}
 }
 
