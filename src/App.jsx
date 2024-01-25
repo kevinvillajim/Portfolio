@@ -433,7 +433,7 @@ function App() {
 					<div>
 						<CreativeCard
 							img="https://raw.githubusercontent.com/kevinvillajim/Portfolio/main/src/assets/portfolio/Creative/otros/5.png"
-							title="Other"
+							title={translations.designTitle7}
 							text={translations.designText7}
 							skills={[
 								"https://raw.githubusercontent.com/kevinvillajim/Portfolio/main/src/assets/icons/ILL.png",

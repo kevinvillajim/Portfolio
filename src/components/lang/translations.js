@@ -53,25 +53,28 @@ const translationEN = {
 		"Frontend Practice made with React, you can find your ideal appartment or house deppending your prefferences. Responsive design",
 
 	projectTitle8: "TikTakToe - Game",
-	projectContent8: "Hability game did by HTML CSS and ReactJS.",
+	projectContent8:
+		"Hability game did by HTML CSS and ReactJS, Responsive Design.",
 
 	projectTitle9: "Site - Eddie Website",
 	projectContent9:
 		"Frontend Practice of CSS coping the style of a website, Responsive Design",
 
 	projectTitle10: "Pokedex - Frontend consuming API",
-	projectContent10: "Practice website to search pokemon by name or type.",
+	projectContent10:
+		"Practice website to search pokemon by name or type. Responsive Design",
 
 	projectTitle11: "App - Tip Calculator",
-	projectContent11: "Tip calculator made with HTML, JS and CSS.",
+	projectContent11:
+		"Tip calculator made with HTML, JS and CSS. Responsive Design",
 
 	projectTitle12: "Site - Multiservicios Tec",
 	projectContent12:
-		"Full site and Web Shop made with WordPress, for a business of Electic and electronic solutions.",
+		"Real client - Full site and Web Shop made with WordPress, for a business of Electic and electronic solutions.",
 
 	projectTitle13: "Site - Eco Domotic Home",
 	projectContent13:
-		"Full site made with wordpress, for a business of electronic security, alarms and domotic, It was one of my first projects.",
+		" Real client - Full site made with wordpress, for a business of electronic security, alarms and domotic, It was one of my first projects.",
 
 	designPortfolioTitle: "Design and Creative Portfolio",
 	designSkills: "Skills:",
@@ -93,6 +96,7 @@ const translationEN = {
 
 	designText6: "Liquor Store, Logo, Corporative Image, Business cards.",
 
+	designTitle7: "Other",
 	designText7: "Various projects, like invitations, Labels, and other works.",
 
 	footerHome: "Home",
@@ -138,15 +142,15 @@ const translationES = {
 
 	projectTitle2: "Weather App",
 	projectContent2:
-		"Desafíos de desarrollo Frontend, consume una API, puede buscar cualquier ciudad en el mundo, puedes guardar tus ciudades favoritas y cambiar los grados en C° o F° - Diseño receptivo.",
+		"Ejercicio de DevChallenges en Frontend, consume una API de clima, puede buscar cualquier ciudad en el mundo, puedes guardar tus ciudades favoritas y cambiar los grados en C° o F° - Diseño responsivo.",
 
 	projectTitle3: "Plataforma Universitaria",
 	projectContent3:
-		"Aplicación Full Stack con PHP, JS y CSS completamente CRUD, tablas relacionales, sesión y acciones de roles, calificaciones, clases, inscripciones y sistema de mensajes en el interior. Despliegue solo local.",
+		"Aplicación Full Stack con PHP, JS y CSS completamente CRUD, tablas relacionales, sesión y acciones de roles, calificaciones, clases, inscripciones y sistema de mensajes en el interior. Despliegue solo en local.",
 
 	projectTitle4: "Proyecto de Inicio de Sesión",
 	projectContent4:
-		"Desafíos de desarrollo Full Stack con PHP y SQL puro. Funciones: Modo oscuro que guarda las preferencias en el almacenamiento local, contraseña con hash, registro de nuevos usuarios e inicio de sesión, perfil con información personal, (Proyecto CRUD) - Diseño receptivo.",
+		"Ejercicio de DevChallenges en Frontend con PHP y SQL puro. Funciones: Modo oscuro que guarda las preferencias en el almacenamiento local, contraseña con hash, registro de nuevos usuarios e inicio de sesión, perfil con información personal, (Proyecto CRUD) - Diseño responsivo.",
 
 	projectTitle5: "API de Universidad - Backend",
 	projectContent5:
@@ -154,33 +158,35 @@ const translationES = {
 
 	projectTitle6: "Sitio - Eco Plagas",
 	projectContent6:
-		"Cliente real - Sitio completo Frontend de servicios de control de plagas, hecho con React en una sola página, mostrando diferentes vistas - Sitio interactivo - Diseño receptivo.",
+		"Cliente real - Sitio completo Frontend de servicios de control de plagas, hecho con React en una sola página, mostrando diferentes vistas - Sitio interactivo - Diseño responsivo.",
 
 	projectTitle7: "Frontend - Clon de Airbnb",
 	projectContent7:
-		"Práctica de Frontend hecha con React, puedes encontrar tu departamento o casa ideal según tus preferencias. Diseño receptivo",
+		"Práctica de Frontend hecha con React, puedes encontrar tu departamento o casa ideal según tus preferencias. Diseño responsivo",
 
-	projectTitle8: "TikTakToe - Juego",
-	projectContent8: "Juego de habilidad hecho con HTML, CSS y ReactJS.",
+	projectTitle8: "Tres en Raya - Juego",
+	projectContent8:
+		"Juego de habilidad hecho con HTML, CSS y ReactJS, Diseño responsivo.",
 
 	projectTitle9: "Sitio - Sitio web de Eddie",
 	projectContent9:
-		"Práctica de Frontend de CSS imitando el estilo de un sitio web, Diseño receptivo",
+		"Práctica de Frontend de CSS imitando el estilo de un sitio web, Diseño responsivo",
 
 	projectTitle10: "Pokedex - Frontend consumiendo API",
 	projectContent10:
 		"Sitio web de práctica para buscar Pokémon por nombre o tipo.",
 
 	projectTitle11: "Aplicación - Calculadora de propinas",
-	projectContent11: "Calculadora de propinas hecha con HTML, JS y CSS.",
+	projectContent11:
+		"Calculadora de propinas hecha con HTML, JS y CSS. Diseño responsivo",
 
 	projectTitle12: "Sitio - Multiservicios Tec",
 	projectContent12:
-		"Sitio completo y tienda web hechos con WordPress, para un negocio de soluciones eléctricas y electrónicas.",
+		"Cliente real - Sitio completo y tienda web hechos con WordPress, para un negocio de soluciones eléctricas y electrónicas.",
 
 	projectTitle13: "Sitio - Eco Domotic Home",
 	projectContent13:
-		"Sitio completo hecho con WordPress, para un negocio de seguridad electrónica, alarmas y domótica. Fue uno de mis primeros proyectos.",
+		"Cliente real - Sitio completo hecho con WordPress, para un negocio de seguridad electrónica, alarmas y domótica. Fue uno de mis primeros proyectos.",
 
 	designPortfolioTitle: "Portafolio de Diseño y Creatividad",
 	designSkills: "Habilidades:",
@@ -203,6 +209,7 @@ const translationES = {
 
 	designText6: "Licorería, Logo, Imagen Corporativa, Tarjetas de Presentación.",
 
+	designTitle7: "Otros",
 	designText7:
 		"Proyectos varios, como invitaciones, etiquetas y otros trabajos.",
 
@@ -249,7 +256,7 @@ const translationPR = {
 
 	projectTitle2: "Weather App",
 	projectContent2:
-		"Desafios de desenvolvimento Frontend, consome uma API, pode pesquisar qualquer cidade do mundo, você pode salvar suas cidades favoritas e alterar as temperaturas em C° ou F° - Design responsivo.",
+		"Exercicio de DevChallenges de Frontend, consome uma API, pode pesquisar qualquer cidade do mundo, você pode salvar suas cidades favoritas e alterar as temperaturas em C° ou F° - Design responsivo.",
 
 	projectTitle3: "Plataforma Universitária",
 	projectContent3:
@@ -257,7 +264,7 @@ const translationPR = {
 
 	projectTitle4: "Projeto de Login",
 	projectContent4:
-		"Desafios de desenvolvimento Full Stack com PHP puro e SQL. Funções: Modo escuro que salva preferências no armazenamento local, senha com hash, registro de novos usuários e login, perfil com informações pessoais, (Projeto CRUD) - Design responsivo.",
+		"Exercicio de DevChallenges Full Stack com PHP puro e SQL. Funções: Modo escuro que salva preferências no armazenamento local, senha com hash, registro de novos usuários e login, perfil com informações pessoais, (Projeto CRUD) - Design responsivo.",
 
 	projectTitle5: "API Universitária - Backend",
 	projectContent5:
@@ -271,18 +278,21 @@ const translationPR = {
 	projectContent7:
 		"Prática de Frontend feita com React, você pode encontrar seu apartamento ou casa ideal de acordo com suas preferências. Design responsivo",
 
-	projectTitle8: "TikTakToe - Jogo",
-	projectContent8: "Jogo de habilidade feito com HTML, CSS e ReactJS.",
+	projectTitle8: "Jogo da Velha - Jogo",
+	projectContent8:
+		"Jogo de habilidade feito com HTML, CSS e ReactJS, Design responsivo.",
 
 	projectTitle9: "Site - Eddie Website",
 	projectContent9:
 		"Prática de Frontend de CSS imitando o estilo de um site, Design responsivo",
 
 	projectTitle10: "Pokedex - Frontend consumindo API",
-	projectContent10: "Site de prática para pesquisar Pokémon por nome ou tipo.",
+	projectContent10:
+		"Site de prática para pesquisar Pokémon por nome ou tipo, Design responsivo.",
 
 	projectTitle11: "App - Calculadora de Gorjeta",
-	projectContent11: "Calculadora de gorjeta feita com HTML, JS e CSS.",
+	projectContent11:
+		"Calculadora de gorjeta feita com HTML, JS e CSS, Design responsivo.",
 
 	projectTitle12: "Site - Multiservicios Tec",
 	projectContent12:
@@ -314,6 +324,7 @@ const translationPR = {
 	designText6:
 		"Loja de Bebidas, Logotipo, Imagem Corporativa, Cartões de Visita.",
 
+	designTitle7: "Outros",
 	designText7: "Projetos diversos, como convites, rótulos e outros trabalhos.",
 
 	footerHome: "Início",
