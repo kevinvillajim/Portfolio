@@ -1,7 +1,12 @@
 import {useState} from "react";
 import PropTypes from "prop-types";
 
-export function ModalImg({photos, currentPhotoIndex, setModalVisible}) {
+export function ModalImg({
+	photos,
+	currentPhotoIndex,
+	setModalVisible,
+	language,
+}) {
 	const [currentIndex, setCurrentIndex] = useState(currentPhotoIndex);
 
 	const goToNextPhoto = () => {
@@ -24,10 +29,12 @@ export function ModalImg({photos, currentPhotoIndex, setModalVisible}) {
 					className="bg-white px-[3rem] py-2 rounded-lg relative"
 					id="whiteboard-container"
 				>
-					<h1 className="text-[40px] fontDesign">{photos[currentIndex][0]}</h1>
+					<h1 className="text-[40px] fontDesign">
+						{photos[currentIndex].title}
+					</h1>
 					<div className="flex justify-center">
 						<img
-							src={photos[currentIndex][1]}
+							src={photos[currentIndex].img}
 							alt="Imagen Modal"
 							className="h-[550px]"
 							id="img-modal"
@@ -35,7 +42,11 @@ export function ModalImg({photos, currentPhotoIndex, setModalVisible}) {
 					</div>
 					<div className="bg-[#656565] p-[1rem] rounded-lg mt-[1rem] w-[100%]">
 						<p className="font-semibold text-[15px] text-[white]">
-							{photos[currentIndex][2]}
+							{language === "EN"
+								? photos[currentIndex].descriptionEN
+								: language === "ES"
+								? photos[currentIndex].descriptionES
+								: photos[currentIndex].descriptionPT}
 						</p>
 					</div>
 					<button
@@ -71,4 +82,5 @@ ModalImg.propTypes = {
 		.isRequired,
 	currentPhotoIndex: PropTypes.number.isRequired,
 	setModalVisible: PropTypes.func.isRequired,
+	language: PropTypes.string.isRequired,
 };

@@ -8,373 +8,35 @@ import {CreativeCard} from "./components/CreativeCard";
 import {ModalImg} from "./components/ModalImg";
 import {useState} from "react";
 import {Footer} from "./components/Footer";
+import {
+	skills,
+	skillsDesign,
+	otherPhotos,
+	ecoPlagasPhotos,
+	queHechoBurguerPhotos,
+	ggBetPhotos,
+	ecoDomoticHomePhotos,
+	multiserviciosTecPhotos,
+	vinculoLicoresPhotos,
+} from "./components/designInformation.js";
+import {
+	translationEN,
+	translationES,
+	translationPR,
+} from "./components/lang/translations.js";
 
 function App() {
-	const skills = [
-		"https://raw.githubusercontent.com/kevinvillajim/Portfolio/main/src/assets/icons/HTML5.png",
-		"https://raw.githubusercontent.com/kevinvillajim/Portfolio/main/src/assets/icons/CSS.png",
-		"https://raw.githubusercontent.com/kevinvillajim/Portfolio/main/src/assets/icons/JS.png",
-		"https://raw.githubusercontent.com/kevinvillajim/Portfolio/main/src/assets/icons/BS.png",
-		"https://raw.githubusercontent.com/kevinvillajim/Portfolio/main/src/assets/icons/REACT.png",
-		"https://raw.githubusercontent.com/kevinvillajim/Portfolio/main/src/assets/icons/WP.png",
-		"https://raw.githubusercontent.com/kevinvillajim/Portfolio/main/src/assets/icons/PHP.png",
-		"https://raw.githubusercontent.com/kevinvillajim/Portfolio/main/src/assets/icons/MYSQL.png",
-		"https://raw.githubusercontent.com/kevinvillajim/Portfolio/main/src/assets/icons/TW.svg",
-		"https://raw.githubusercontent.com/kevinvillajim/Portfolio/main/src/assets/icons/LV.png",
-		"https://raw.githubusercontent.com/kevinvillajim/Portfolio/main/src/assets/icons/GH.png",
-		"https://raw.githubusercontent.com/kevinvillajim/Portfolio/main/src/assets/icons/FIGMA.png",
-	];
-
-	const skillsDesign = [
-		"https://raw.githubusercontent.com/kevinvillajim/Portfolio/main/src/assets/icons/ILL.png",
-		"https://raw.githubusercontent.com/kevinvillajim/Portfolio/main/src/assets/icons/PS.png",
-		"https://raw.githubusercontent.com/kevinvillajim/Portfolio/main/src/assets/icons/PP.png",
-		"https://raw.githubusercontent.com/kevinvillajim/Portfolio/main/src/assets/icons/SKU.png",
-		"https://raw.githubusercontent.com/kevinvillajim/Portfolio/main/src/assets/icons/ARCHICAD.png",
-		"https://raw.githubusercontent.com/kevinvillajim/Portfolio/main/src/assets/icons/ACAD.webp",
-		"https://raw.githubusercontent.com/kevinvillajim/Portfolio/main/src/assets/icons/PB.png",
-		"https://raw.githubusercontent.com/kevinvillajim/Portfolio/main/src/assets/icons/FL.png",
-	];
-
-	const otherPhotos = [
-		[
-			"Del Frutas",
-			"https://raw.githubusercontent.com/kevinvillajim/Portfolio/main/src/assets/portfolio/Creative/otros/5.png",
-			"Label for powdered panela and fruit tea.",
-		],
-		[
-			"Soccer Championship Invitation",
-			"https://raw.githubusercontent.com/kevinvillajim/Portfolio/main/src/assets/portfolio/Creative/otros/1.png",
-			"Soccer championship invitation for social media",
-		],
-		[
-			"Final of Soccer Invitation",
-			"https://raw.githubusercontent.com/kevinvillajim/Portfolio/main/src/assets/portfolio/Creative/otros/2.png",
-			"Soccer championship invitation for social media.",
-		],
-		[
-			"Christmas Invitation",
-			"https://raw.githubusercontent.com/kevinvillajim/Portfolio/main/src/assets/portfolio/Creative/otros/3.jpg",
-			"Christmas activity invitation for social media.",
-		],
-		[
-			"Final of Soccer Invitation 2",
-			"https://raw.githubusercontent.com/kevinvillajim/Portfolio/main/src/assets/portfolio/Creative/otros/4.jpg",
-			"Soccer championship invitation for social media.",
-		],
-		[
-			"Flag",
-			"https://raw.githubusercontent.com/kevinvillajim/Portfolio/main/src/assets/portfolio/Creative/otros/8.png",
-			"Flag for a neighborhood soccer team.",
-		],
-		[
-			"Birthday",
-			"https://raw.githubusercontent.com/kevinvillajim/Portfolio/main/src/assets/portfolio/Creative/otros/9.jpg",
-			"Birthday party invitation for social media.",
-		],
-		[
-			"Medical prescription",
-			"https://raw.githubusercontent.com/kevinvillajim/Portfolio/main/src/assets/portfolio/Creative/otros/10.jpg",
-			"Medical recipe book for a clinic.",
-		],
-		[
-			"Label",
-			"https://raw.githubusercontent.com/kevinvillajim/Portfolio/main/src/assets/portfolio/Creative/otros/11.png",
-			"Vintage-style label for a bottle.",
-		],
-		[
-			"Solidary Event",
-			"https://raw.githubusercontent.com/kevinvillajim/Portfolio/main/src/assets/portfolio/Creative/otros/12.jpg",
-			"Solidarity lunch for charitable purposes.",
-		],
-		[
-			"Elixia",
-			"https://raw.githubusercontent.com/kevinvillajim/Portfolio/main/src/assets/portfolio/Creative/otros/13.png",
-			"Logo for a magically styled beverage.",
-		],
-		[
-			"Duo Esthetic",
-			"https://raw.githubusercontent.com/kevinvillajim/Portfolio/main/src/assets/portfolio/Creative/otros/14.png",
-			"Flyer for a beauty salon.",
-		],
-	];
-
-	const ecoPlagasPhotos = [
-		[
-			"Eco Plagas",
-			"https://raw.githubusercontent.com/kevinvillajim/Portfolio/main/src/assets/portfolio/Creative/ecoPlagas/1.png",
-			"Logo",
-		],
-		[
-			"Eco Plagas",
-			"https://raw.githubusercontent.com/kevinvillajim/Portfolio/main/src/assets/portfolio/Creative/ecoPlagas/2.png",
-			"Shield",
-		],
-		[
-			"Eco Plagas",
-			"https://raw.githubusercontent.com/kevinvillajim/Portfolio/main/src/assets/portfolio/Creative/ecoPlagas/3.jpg",
-			"Advertising Social Media 1",
-		],
-		[
-			"Eco Plagas",
-			"https://raw.githubusercontent.com/kevinvillajim/Portfolio/main/src/assets/portfolio/Creative/ecoPlagas/4.jpg",
-			"Advertising Social Media 2",
-		],
-		[
-			"Eco Plagas",
-			"https://raw.githubusercontent.com/kevinvillajim/Portfolio/main/src/assets/portfolio/Creative/ecoPlagas/5.jpg",
-			"Flyer",
-		],
-		[
-			"Eco Plagas",
-			"https://raw.githubusercontent.com/kevinvillajim/Portfolio/main/src/assets/portfolio/Creative/ecoPlagas/6.png",
-			"Fridge magnet",
-		],
-		[
-			"Eco Plagas",
-			"https://raw.githubusercontent.com/kevinvillajim/Portfolio/main/src/assets/portfolio/Creative/ecoPlagas/7.jpg",
-			"Proforma document",
-		],
-		[
-			"Eco Plagas",
-			"https://raw.githubusercontent.com/kevinvillajim/Portfolio/main/src/assets/portfolio/Creative/ecoPlagas/8.jpg",
-			"Presentation document",
-		],
-		[
-			"Eco Plagas",
-			"https://raw.githubusercontent.com/kevinvillajim/Portfolio/main/src/assets/portfolio/Creative/ecoPlagas/9.jpg",
-			"Certificate document",
-		],
-	];
-
-	const queHechoBurguerPhotos = [
-		[
-			"Que Hecho Burguer",
-			"https://raw.githubusercontent.com/kevinvillajim/Portfolio/main/src/assets/portfolio/Creative/queHechoBurguer/1.jpg",
-			"Logo",
-		],
-		[
-			"Que Hecho Burguer",
-			"https://raw.githubusercontent.com/kevinvillajim/Portfolio/main/src/assets/portfolio/Creative/queHechoBurguer/2.png",
-			"Sticker",
-		],
-		[
-			"Que Hecho Burguer",
-			"https://raw.githubusercontent.com/kevinvillajim/Portfolio/main/src/assets/portfolio/Creative/queHechoBurguer/3.jpg",
-			"Advertising Social Media 1",
-		],
-		[
-			"Que Hecho Burguer",
-			"https://raw.githubusercontent.com/kevinvillajim/Portfolio/main/src/assets/portfolio/Creative/queHechoBurguer/4.jpg",
-			"Advertising Social Media 2",
-		],
-		[
-			"Que Hecho Burguer",
-			"https://raw.githubusercontent.com/kevinvillajim/Portfolio/main/src/assets/portfolio/Creative/queHechoBurguer/5.jpg",
-			"Catalogue",
-		],
-		[
-			"Que Hecho Burguer",
-			"https://raw.githubusercontent.com/kevinvillajim/Portfolio/main/src/assets/portfolio/Creative/queHechoBurguer/6.jpg",
-			"Menu",
-		],
-		[
-			"Que Hecho Burguer",
-			"https://raw.githubusercontent.com/kevinvillajim/Portfolio/main/src/assets/portfolio/Creative/queHechoBurguer/7.jpg",
-			"Menu 2",
-		],
-		[
-			"Que Hecho Burguer",
-			"https://raw.githubusercontent.com/kevinvillajim/Portfolio/main/src/assets/portfolio/Creative/queHechoBurguer/8.jpg",
-			"Focus Group Invitation",
-		],
-		[
-			"Que Hecho Burguer",
-			"https://raw.githubusercontent.com/kevinvillajim/Portfolio/main/src/assets/portfolio/Creative/queHechoBurguer/9.jpg",
-			"Focus Group Invitation 2",
-		],
-	];
-
-	const ggBetPhotos = [
-		[
-			"GG Bet",
-			"https://raw.githubusercontent.com/kevinvillajim/Portfolio/main/src/assets/portfolio/Creative/ggBet/1.png",
-			"Logo",
-		],
-		[
-			"GG Bet",
-			"https://raw.githubusercontent.com/kevinvillajim/Portfolio/main/src/assets/portfolio/Creative/ggBet/2.png",
-			"Poker Chips",
-		],
-		[
-			"GG Bet",
-			"https://raw.githubusercontent.com/kevinvillajim/Portfolio/main/src/assets/portfolio/Creative/ggBet/3.jpg",
-			"Advertising Social Media 1",
-		],
-		[
-			"GG Bet",
-			"https://raw.githubusercontent.com/kevinvillajim/Portfolio/main/src/assets/portfolio/Creative/ggBet/4.jpg",
-			"Advertising Social Media 2",
-		],
-		[
-			"GG Bet",
-			"https://raw.githubusercontent.com/kevinvillajim/Portfolio/main/src/assets/portfolio/Creative/ggBet/5.jpg",
-			"Advertising Social Media 3",
-		],
-		[
-			"GG Bet",
-			"https://raw.githubusercontent.com/kevinvillajim/Portfolio/main/src/assets/portfolio/Creative/ggBet/6.png",
-			"Advertising Social Media 4",
-		],
-		[
-			"GG Bet",
-			"https://raw.githubusercontent.com/kevinvillajim/Portfolio/main/src/assets/portfolio/Creative/ggBet/7.jpg",
-			"Advertising Social Media 5",
-		],
-		[
-			"GG Bet",
-			"https://raw.githubusercontent.com/kevinvillajim/Portfolio/main/src/assets/portfolio/Creative/ggBet/9.jpg",
-			"Advertising Social Media 7",
-		],
-	];
-
-	const ecoDomoticHomePhotos = [
-		[
-			"Eco Domotic Home",
-			"https://raw.githubusercontent.com/kevinvillajim/Portfolio/main/src/assets/portfolio/Creative/ecoDomoticHome/1.png",
-			"Logo",
-		],
-		[
-			"Eco Domotic Home",
-			"https://raw.githubusercontent.com/kevinvillajim/Portfolio/main/src/assets/portfolio/Creative/ecoDomoticHome/2.jpg",
-			"Business Card",
-		],
-		[
-			"Eco Domotic Home",
-			"https://raw.githubusercontent.com/kevinvillajim/Portfolio/main/src/assets/portfolio/Creative/ecoDomoticHome/3.jpg",
-			"Advertising Social Media 1",
-		],
-		[
-			"Eco Domotic Home",
-			"https://raw.githubusercontent.com/kevinvillajim/Portfolio/main/src/assets/portfolio/Creative/ecoDomoticHome/4.jpg",
-			"Proforma Document",
-		],
-		[
-			"Eco Domotic Home",
-			"https://raw.githubusercontent.com/kevinvillajim/Portfolio/main/src/assets/portfolio/Creative/ecoDomoticHome/5.jpg",
-			"Catalogue 1",
-		],
-		[
-			"Eco Domotic Home",
-			"https://raw.githubusercontent.com/kevinvillajim/Portfolio/main/src/assets/portfolio/Creative/ecoDomoticHome/6.jpg",
-			"Catalogue 2",
-		],
-		[
-			"Eco Domotic Home",
-			"https://raw.githubusercontent.com/kevinvillajim/Portfolio/main/src/assets/portfolio/Creative/ecoDomoticHome/7.jpg",
-			"Catalogue 3",
-		],
-		[
-			"Eco Domotic Home",
-			"https://raw.githubusercontent.com/kevinvillajim/Portfolio/main/src/assets/portfolio/Creative/ecoDomoticHome/9.jpg",
-			"Catalogue 4",
-		],
-	];
-
-	const multiserviciosTecPhotos = [
-		[
-			"Multiservicios TEC",
-			"https://raw.githubusercontent.com/kevinvillajim/Portfolio/main/src/assets/portfolio/Creative/multiserviciosTec/1.png",
-			"Logo",
-		],
-		[
-			"Multiservicios TEC",
-			"https://raw.githubusercontent.com/kevinvillajim/Portfolio/main/src/assets/portfolio/Creative/multiserviciosTec/2.jpg",
-			"Business Card",
-		],
-		[
-			"Multiservicios TEC",
-			"https://raw.githubusercontent.com/kevinvillajim/Portfolio/main/src/assets/portfolio/Creative/multiserviciosTec/3.jpg",
-			"Business Card 2-1",
-		],
-		[
-			"Multiservicios TEC",
-			"https://raw.githubusercontent.com/kevinvillajim/Portfolio/main/src/assets/portfolio/Creative/multiserviciosTec/4.jpg",
-			"Flyer Service 1",
-		],
-		[
-			"Multiservicios TEC",
-			"https://raw.githubusercontent.com/kevinvillajim/Portfolio/main/src/assets/portfolio/Creative/multiserviciosTec/5.jpg",
-			"Flyer Service 2",
-		],
-		[
-			"Multiservicios TEC",
-			"https://raw.githubusercontent.com/kevinvillajim/Portfolio/main/src/assets/portfolio/Creative/multiserviciosTec/6.jpg",
-			"Flyer Service 3",
-		],
-		[
-			"Multiservicios TEC",
-			"https://raw.githubusercontent.com/kevinvillajim/Portfolio/main/src/assets/portfolio/Creative/multiserviciosTec/7.jpg",
-			"Flyer Service 4",
-		],
-		[
-			"Multiservicios TEC",
-			"https://raw.githubusercontent.com/kevinvillajim/Portfolio/main/src/assets/portfolio/Creative/multiserviciosTec/8.jpg",
-			"Flyer Service 5",
-		],
-		[
-			"Multiservicios TEC",
-			"https://raw.githubusercontent.com/kevinvillajim/Portfolio/main/src/assets/portfolio/Creative/multiserviciosTec/9.jpg",
-			"Flyer Service 6",
-		],
-		[
-			"Multiservicios TEC",
-			"https://raw.githubusercontent.com/kevinvillajim/Portfolio/main/src/assets/portfolio/Creative/multiserviciosTec/10.jpg",
-			"Social media Banner",
-		],
-		[
-			"Multiservicios TEC",
-			"https://raw.githubusercontent.com/kevinvillajim/Portfolio/main/src/assets/portfolio/Creative/multiserviciosTec/11.jpg",
-			"Proforma document",
-		],
-	];
-
-	const vinculoLicoresPhotos = [
-		[
-			"Vinculo Distribuidora",
-			"https://raw.githubusercontent.com/kevinvillajim/Portfolio/main/src/assets/portfolio/Creative/vinculoLicores/1.jpg",
-			"Logo 1",
-		],
-		[
-			"Vinculo Distribuidora",
-			"https://raw.githubusercontent.com/kevinvillajim/Portfolio/main/src/assets/portfolio/Creative/vinculoLicores/2.jpg",
-			"Logo 2",
-		],
-		[
-			"Vinculo Distribuidora",
-			"https://raw.githubusercontent.com/kevinvillajim/Portfolio/main/src/assets/portfolio/Creative/vinculoLicores/3.jpg",
-			"Logo 3",
-		],
-		[
-			"Vinculo Distribuidora",
-			"https://raw.githubusercontent.com/kevinvillajim/Portfolio/main/src/assets/portfolio/Creative/vinculoLicores/4.jpg",
-			"Logo Concept",
-		],
-		[
-			"Vinculo Distribuidora",
-			"https://raw.githubusercontent.com/kevinvillajim/Portfolio/main/src/assets/portfolio/Creative/vinculoLicores/5.jpg",
-			"Color personality",
-		],
-		[
-			"Vinculo Distribuidora",
-			"https://raw.githubusercontent.com/kevinvillajim/Portfolio/main/src/assets/portfolio/Creative/vinculoLicores/6.jpg",
-			"Business card",
-		],
-	];
-
 	const [modalVisible, setModalVisible] = useState(false);
 
 	const [currentArray, setCurrentArray] = useState(0);
+
+	const [language, setLanguage] = useState("EN");
+	const translations =
+		language === "EN"
+			? translationEN
+			: language === "ES"
+			? translationES
+			: translationPR;
 
 	const scrollToReference = (referenceId) => {
 		const element = document.getElementById(referenceId);
@@ -388,7 +50,12 @@ function App() {
 
 	return (
 		<>
-			<Header scrollToReference={scrollToReference} />
+			<Header
+				scrollToReference={scrollToReference}
+				language={language}
+				setLanguage={setLanguage}
+				translations={translations}
+			/>
 			<Slider
 				img1="https://raw.githubusercontent.com/kevinvillajim/Portfolio/main/src/assets/Coder.png"
 				img2="https://raw.githubusercontent.com/kevinvillajim/Portfolio/main/src/assets/Designer.png"
@@ -402,12 +69,10 @@ function App() {
 				id="about-container"
 			>
 				<h1 className="text-[50px]" id="about">
-					About
+					{translations.aboutTitle}
 				</h1>
 				<p className="text-start text-[20px] mb-[2rem]">
-					Hi there! :D, my name is Kevin Villacreses, I live in Ecuador and I am
-					27. Since 1 year ago have discover what I was made for, The Develop,
-					and it changes my focus. <u>There are 3 words that describes me:</u>
+					{translations.aboutContent} <u>{translations.aboutContentU}</u>
 				</p>
 				<div className="grid grid-cols-3 gap-20" id="why-container">
 					<WhyCard
@@ -417,9 +82,8 @@ function App() {
 								className="text-center w-[140px]"
 							/>
 						}
-						title="1. Curious"
-						text="I love to learn, most of my time I spend learning new
-        skills and exercising the mind, I think the association of logic and creativity brings bigest results."
+						title={translations.aboutCardTitle1}
+						text={translations.aboutCardText1}
 					/>
 					<WhyCard
 						img={
@@ -428,9 +92,8 @@ function App() {
 								className="text-center w-[140px]"
 							/>
 						}
-						title="2. Issues-solver"
-						text="Sometimes I enjoy the problems, why not? it is an oportunity to grow up, I focus on find the root of the problem an then in
-        solution. Sometimes knowing deeper about the problem makes the difference. Inside the simplicity are the marvelous things"
+						title={translations.aboutCardTitle2}
+						text={translations.aboutCardText2}
 					/>
 					<WhyCard
 						img={
@@ -439,9 +102,8 @@ function App() {
 								className="text-center w-[140px]"
 							/>
 						}
-						title="3. Peacefull"
-						text="One of the things I appreciate is the calm and peace, every
-        day I do introspection to improve my self and do my best."
+						title={translations.aboutCardTitle3}
+						text={translations.aboutCardText3}
 					/>
 				</div>
 			</div>
@@ -451,9 +113,13 @@ function App() {
 			/>
 			<section className="w-[100%] px-[12rem]" id="code-section">
 				<h1 className="text-[90px] mb-[5rem]" id="code">
-					<strong>&lt;code&gt;</strong> Portfolio <strong>&lt;/code&gt;</strong>
+					<strong>&lt;code&gt;</strong>
+					{translations.codePortfolioTitle}
+					<strong>&lt;/code&gt;</strong>
 				</h1>
-				<h2 className="text-[40px] text-start my-[2rem]">Skills:</h2>
+				<h2 className="text-[40px] text-start my-[2rem]">
+					{translations.codePortfolioSkills}
+				</h2>
 				<div
 					className="flex flex-row justify-between align-middle bg-white p-[2rem] rounded-xl"
 					id="code-skills"
@@ -462,12 +128,14 @@ function App() {
 						<Skills key={index} alt={`skill-${index}`} img={item} />
 					))}
 				</div>
-				<h2 className="text-[40px] text-start my-[2rem]">Projects:</h2>
+				<h2 className="text-[40px] text-start my-[2rem]">
+					{translations.codePortfolioProjects}
+				</h2>
 				<div className="grid grid-cols-2 gap-3" id="project-container">
 					<ProjectCard
 						img="https://raw.githubusercontent.com/kevinvillajim/Portfolio/main/src/assets/portfolio/bitacora-project.png"
-						title="Bitacora App"
-						text="Full Stack App, working by API Rest and JWT, have a user profile, and some pages to interact, you can register, login, Create, Read, Update and Delete every part of the app and with a middleware register in tab Bitacora all the actions inside. Instructions to run inside the repo"
+						title={translations.projectTitle1}
+						text={translations.projectContent1}
 						skills={[
 							"https://raw.githubusercontent.com/kevinvillajim/Portfolio/main/src/assets/icons/REACT.png",
 							"https://raw.githubusercontent.com/kevinvillajim/Portfolio/main/src/assets/icons/TW.svg",
@@ -480,11 +148,12 @@ function App() {
 						]}
 						deploy="https://kevinvillajim.github.io/bitacoraPFN4/#/login"
 						git="https://github.com/kevinvillajim/bitacoraPFN4"
+						translations={translations}
 					/>
 					<ProjectCard
 						img="https://raw.githubusercontent.com/kevinvillajim/Portfolio/main/src/assets/portfolio/weather-project.png"
-						title="Weather App"
-						text="Dev Challenges Front end App, consumes api, can search every city in the world, you can save your favourite cities and change the Degrees in C° or F° - Responsive Design"
+						title={translations.projectTitle2}
+						text={translations.projectContent2}
 						skills={[
 							"https://raw.githubusercontent.com/kevinvillajim/Portfolio/main/src/assets/icons/REACT.png",
 							"https://raw.githubusercontent.com/kevinvillajim/Portfolio/main/src/assets/icons/HTML5.png",
@@ -494,12 +163,13 @@ function App() {
 						]}
 						deploy="https://kevinvillajim.github.io/weatherProyectoFinalN2/"
 						git="https://github.com/kevinvillajim/weatherProyectoFinalN2"
+						translations={translations}
 					/>
 
 					<ProjectCard
 						img="https://raw.githubusercontent.com/kevinvillajim/Portfolio/main/src/assets/portfolio/university-project.png"
-						title="University Platform"
-						text="Full Stack App with pure PHP, JS and CSS completly CRUD, relational tables, Role session and actions, grades, clases, inscriptions and message sistem inside. Only local"
+						title={translations.projectTitle3}
+						text={translations.projectContent3}
 						skills={[
 							"https://raw.githubusercontent.com/kevinvillajim/Portfolio/main/src/assets/icons/PHP.png",
 							"https://raw.githubusercontent.com/kevinvillajim/Portfolio/main/src/assets/icons/MYSQL.png",
@@ -510,11 +180,12 @@ function App() {
 						]}
 						deploy="https://github.com/kevinvillajim/ProyectoFinalN3"
 						git="https://github.com/kevinvillajim/ProyectoFinalN3"
+						translations={translations}
 					/>
 					<ProjectCard
 						img="https://raw.githubusercontent.com/kevinvillajim/Portfolio/main/src/assets/portfolio/login-project.png"
-						title="Login Project"
-						text="Dev challenges Full Stack App with pure PHP and SQL. Functions: Dark Mode saving preferences by Local Storage, Hashed Password, Register of new users and Login, Profile with personal information, (CRUD Project) - Responsive Design"
+						title={translations.projectTitle4}
+						text={translations.projectContent4}
 						skills={[
 							"https://raw.githubusercontent.com/kevinvillajim/Portfolio/main/src/assets/icons/PHP.png",
 							"https://raw.githubusercontent.com/kevinvillajim/Portfolio/main/src/assets/icons/MYSQL.png",
@@ -525,11 +196,12 @@ function App() {
 						]}
 						deploy="https://miniproyecton3kevinvillajim.000webhostapp.com/"
 						git="https://github.com/kevinvillajim/miniproyectoN3_Login"
+						translations={translations}
 					/>
 					<ProjectCard
 						img="https://raw.githubusercontent.com/kevinvillajim/Portfolio/main/src/assets/portfolio/API-university.png"
-						title="API University - Backend"
-						text="Backend API Project with Laravel, CRUD of university, with Students and Teachers to take list and attendance, The documentation is in the project folder."
+						title={translations.projectTitle5}
+						text={translations.projectContent5}
 						skills={[
 							"https://raw.githubusercontent.com/kevinvillajim/Portfolio/main/src/assets/icons/LV.png",
 							"https://raw.githubusercontent.com/kevinvillajim/Portfolio/main/src/assets/icons/PHP.png",
@@ -539,11 +211,12 @@ function App() {
 						]}
 						deploy="https://github.com/kevinvillajim/miniProyecto4_API/tree/main/Capturas%20documentacion%20API%20Postman"
 						git="https://github.com/kevinvillajim/miniProyecto4_API"
+						translations={translations}
 					/>
 					<ProjectCard
 						img="https://raw.githubusercontent.com/kevinvillajim/Portfolio/main/src/assets/portfolio/ecoplagas-site.png"
-						title="Site - Eco Plagas"
-						text="Frontend full Site of Pest control services, Made with React on a single page, showing diferent views - Interactive site - Responsive Design"
+						title={translations.projectTitle6}
+						text={translations.projectContent6}
 						skills={[
 							"https://raw.githubusercontent.com/kevinvillajim/Portfolio/main/src/assets/icons/REACT.png",
 							"https://raw.githubusercontent.com/kevinvillajim/Portfolio/main/src/assets/icons/BS.png",
@@ -554,11 +227,12 @@ function App() {
 						]}
 						deploy="https://ecoplagasecuador.com/"
 						git="https://github.com/kevinvillajim/EcoPlagas"
+						translations={translations}
 					/>
 					<ProjectCard
 						img="https://raw.githubusercontent.com/kevinvillajim/Portfolio/main/src/assets/portfolio/windbnb-practice.png"
-						title="Frontend - Clone of Airbnb"
-						text="Frontend Practice made with React, you can find your ideal appartment or house deppending your prefferences. Responsive design"
+						title={translations.projectTitle7}
+						text={translations.projectContent7}
 						skills={[
 							"https://raw.githubusercontent.com/kevinvillajim/Portfolio/main/src/assets/icons/REACT.png",
 							"https://raw.githubusercontent.com/kevinvillajim/Portfolio/main/src/assets/icons/BS.png",
@@ -569,11 +243,12 @@ function App() {
 						]}
 						deploy="https://kevinvillajim.github.io/windbnb2/"
 						git="https://github.com/kevinvillajim/windbnb2"
+						translations={translations}
 					/>
 					<ProjectCard
 						img="https://raw.githubusercontent.com/kevinvillajim/Portfolio/main/src/assets/portfolio/tiktaktoe-game.png"
-						title="TikTakToe - Game"
-						text="Hability game did by HTML CSS and JS"
+						title={translations.projectTitle8}
+						text={translations.projectContent8}
 						skills={[
 							"https://raw.githubusercontent.com/kevinvillajim/Portfolio/main/src/assets/icons/REACT.png",
 							"https://raw.githubusercontent.com/kevinvillajim/Portfolio/main/src/assets/icons/HTML5.png",
@@ -583,11 +258,12 @@ function App() {
 						]}
 						deploy="https://kevinvillajim.github.io/tikTakToe/"
 						git="https://github.com/kevinvillajim/tikTakToe"
+						translations={translations}
 					/>
 					<ProjectCard
 						img="https://raw.githubusercontent.com/kevinvillajim/Portfolio/main/src/assets/portfolio/eddiewebsite-practice.png"
-						title="Site - Eddie Website"
-						text="Frontend Practice of CSS coping the style of a website, Responsive Design"
+						title={translations.projectTitle9}
+						text={translations.projectContent9}
 						skills={[
 							"https://raw.githubusercontent.com/kevinvillajim/Portfolio/main/src/assets/icons/REACT.png",
 							"https://raw.githubusercontent.com/kevinvillajim/Portfolio/main/src/assets/icons/HTML5.png",
@@ -596,11 +272,12 @@ function App() {
 						]}
 						deploy="https://kevinvillajim.github.io/edieSite/"
 						git="https://github.com/kevinvillajim/edieSite"
+						translations={translations}
 					/>
 					<ProjectCard
 						img="https://raw.githubusercontent.com/kevinvillajim/Portfolio/main/src/assets/portfolio/pokedex-practice.png"
-						title="Pokedex - Frontend consuming API"
-						text="Practice website to search pokemon by name or type."
+						title={translations.projectTitle10}
+						text={translations.projectContent10}
 						skills={[
 							"https://raw.githubusercontent.com/kevinvillajim/Portfolio/main/src/assets/icons/REACT.png",
 							"https://raw.githubusercontent.com/kevinvillajim/Portfolio/main/src/assets/icons/HTML5.png",
@@ -610,11 +287,12 @@ function App() {
 						]}
 						deploy="https://kevinvillajim.github.io/pokeDex/"
 						git="https://github.com/kevinvillajim/pokeDex"
+						translations={translations}
 					/>
 					<ProjectCard
 						img="https://raw.githubusercontent.com/kevinvillajim/Portfolio/main/src/assets/portfolio/tipcalculator.png"
-						title="App - Tip Calculator"
-						text="Tip calculator made with HTML, JS and CSS"
+						title={translations.projectTitle11}
+						text={translations.projectContent11}
 						skills={[
 							"https://raw.githubusercontent.com/kevinvillajim/Portfolio/main/src/assets/icons/HTML5.png",
 							"https://raw.githubusercontent.com/kevinvillajim/Portfolio/main/src/assets/icons/CSS.png",
@@ -623,34 +301,39 @@ function App() {
 						]}
 						deploy="https://kevinvillajim.github.io/tipCalculator/"
 						git="https://github.com/kevinvillajim/tipCalculator"
+						translations={translations}
 					/>
 					<ProjectCard
 						img="https://raw.githubusercontent.com/kevinvillajim/Portfolio/main/src/assets/portfolio/multiserviciostec-site.png"
-						title="Site - Multiservicios Tec"
-						text="Full site and Web Shop made with WordPress, for a business of Electic and electronic solutions"
+						title={translations.projectTitle12}
+						text={translations.projectContent12}
 						skills={[
 							"https://raw.githubusercontent.com/kevinvillajim/Portfolio/main/src/assets/icons/WP.png",
 						]}
 						deploy="https://multiserviciostec.com/"
 						git="https://multiserviciostec.com/"
+						translations={translations}
 					/>
 					<ProjectCard
 						img="https://raw.githubusercontent.com/kevinvillajim/Portfolio/main/src/assets/portfolio/ecodomotichome-site.png"
-						title="Site - Eco Domotic Home"
-						text="Full site made with wordpress, for a business of electronic security, alarms and domotic, It was one of my first projects."
+						title={translations.projectTitle13}
+						text={translations.projectContent13}
 						skills={[
 							"https://raw.githubusercontent.com/kevinvillajim/Portfolio/main/src/assets/icons/WP.png",
 						]}
 						deploy="https://ecodomotichome.com/"
 						git="https://ecodomotichome.com/"
+						translations={translations}
 					/>
 				</div>
 			</section>
 			<section className="w-[100%] px-[12rem]" id="design-section">
 				<h1 className="text-[90px] mb-[5rem] mt-[8rem] fontDesign" id="design">
-					<strong>Design and Creative Portfolio</strong>
+					<strong>{translations.designPortfolioTitle}</strong>
 				</h1>
-				<h2 className="text-[40px] text-start my-[2rem]">Skills:</h2>
+				<h2 className="text-[40px] text-start my-[2rem]">
+					{translations.designSkills}
+				</h2>
 				<div
 					className="flex flex-row justify-between align-middle bg-white p-[2rem] rounded-xl"
 					id="design-skills"
@@ -659,12 +342,14 @@ function App() {
 						<Skills key={index} alt={`skillDesign-${index}`} img={item} />
 					))}
 				</div>
-				<h2 className="text-[40px] text-start my-[2rem]">Projects:</h2>
+				<h2 className="text-[40px] text-start my-[2rem]">
+					{translations.designProjects}
+				</h2>
 				<div className="grid grid-cols-2 gap-3" id="creative-container">
 					<CreativeCard
 						img="https://raw.githubusercontent.com/kevinvillajim/Portfolio/main/src/assets/portfolio/Creative/ecoPlagas/1.png" //qwer
 						title="Eco Plagas"
-						text="Pest Control Enterprise. Logo, Corporative Image, Social media advertising, Material advertising and Documentation."
+						text={translations.designText1}
 						skills={[
 							"https://raw.githubusercontent.com/kevinvillajim/Portfolio/main/src/assets/icons/ILL.png",
 							"https://raw.githubusercontent.com/kevinvillajim/Portfolio/main/src/assets/icons/PS.png",
@@ -673,11 +358,12 @@ function App() {
 						arrayNum={0}
 						modalVisible={modalVisible}
 						setModalVisible={setModalVisible}
+						translations={translations}
 					/>
 					<CreativeCard
 						img="https://raw.githubusercontent.com/kevinvillajim/Portfolio/main/src/assets/portfolio/Creative/queHechoBurguer/1.jpg" //qwer
 						title="Que Hecho Burguer"
-						text="Dark Kitchen focused on minimalism, Logo, Stickers, Social media advertising, Menu, Invitations"
+						text={translations.designText2}
 						skills={[
 							"https://raw.githubusercontent.com/kevinvillajim/Portfolio/main/src/assets/icons/ILL.png",
 							"https://raw.githubusercontent.com/kevinvillajim/Portfolio/main/src/assets/icons/PS.png",
@@ -686,11 +372,12 @@ function App() {
 						arrayNum={1}
 						modalVisible={modalVisible}
 						setModalVisible={setModalVisible}
+						translations={translations}
 					/>
 					<CreativeCard
 						img="https://raw.githubusercontent.com/kevinvillajim/Portfolio/main/src/assets/portfolio/Creative/ggBet/1.png"
 						title="GGBet"
-						text="Games Club, Social media advertising, and poker chips."
+						text={translations.designText3}
 						skills={[
 							"https://raw.githubusercontent.com/kevinvillajim/Portfolio/main/src/assets/icons/ILL.png",
 							"https://raw.githubusercontent.com/kevinvillajim/Portfolio/main/src/assets/icons/PS.png",
@@ -699,11 +386,12 @@ function App() {
 						arrayNum={2}
 						modalVisible={modalVisible}
 						setModalVisible={setModalVisible}
+						translations={translations}
 					/>
 					<CreativeCard
 						img="https://raw.githubusercontent.com/kevinvillajim/Portfolio/main/src/assets/portfolio/Creative/ecoDomoticHome/1.png"
 						title="Eco Domotic Home"
-						text="Electronic Security and Domotic Enterprise. Corporative Image, Logo, Business cards, Social media advertising and Documentation."
+						text={translations.designText4}
 						skills={[
 							"https://raw.githubusercontent.com/kevinvillajim/Portfolio/main/src/assets/icons/ILL.png",
 							"https://raw.githubusercontent.com/kevinvillajim/Portfolio/main/src/assets/icons/PS.png",
@@ -712,11 +400,12 @@ function App() {
 						arrayNum={3}
 						modalVisible={modalVisible}
 						setModalVisible={setModalVisible}
+						translations={translations}
 					/>
 					<CreativeCard
 						img="https://raw.githubusercontent.com/kevinvillajim/Portfolio/main/src/assets/portfolio/Creative/multiserviciosTec/1.png"
 						title="Multiservicios TEC"
-						text="Services business focused in electric and electronic issues, Logo, Corporative Image, Business cards, Social media advertising, Material advertising and Documentation."
+						text={translations.designText5}
 						skills={[
 							"https://raw.githubusercontent.com/kevinvillajim/Portfolio/main/src/assets/icons/ILL.png",
 							"https://raw.githubusercontent.com/kevinvillajim/Portfolio/main/src/assets/icons/PS.png",
@@ -725,11 +414,12 @@ function App() {
 						arrayNum={4}
 						modalVisible={modalVisible}
 						setModalVisible={setModalVisible}
+						translations={translations}
 					/>
 					<CreativeCard
 						img="https://raw.githubusercontent.com/kevinvillajim/Portfolio/main/src/assets/portfolio/Creative/vinculoLicores/1.jpg"
 						title="Vínculo Distribuidora"
-						text="Liquor Store, Logo, Corporative Image, Business cards"
+						text={translations.designText6}
 						skills={[
 							"https://raw.githubusercontent.com/kevinvillajim/Portfolio/main/src/assets/icons/ILL.png",
 							"https://raw.githubusercontent.com/kevinvillajim/Portfolio/main/src/assets/icons/PS.png",
@@ -738,12 +428,13 @@ function App() {
 						arrayNum={5}
 						modalVisible={modalVisible}
 						setModalVisible={setModalVisible}
+						translations={translations}
 					/>
 					<div>
 						<CreativeCard
 							img="https://raw.githubusercontent.com/kevinvillajim/Portfolio/main/src/assets/portfolio/Creative/otros/5.png"
 							title="Other"
-							text="Various projects, like invitations, Labels, and other works"
+							text={translations.designText7}
 							skills={[
 								"https://raw.githubusercontent.com/kevinvillajim/Portfolio/main/src/assets/icons/ILL.png",
 								"https://raw.githubusercontent.com/kevinvillajim/Portfolio/main/src/assets/icons/PS.png",
@@ -752,6 +443,7 @@ function App() {
 							arrayNum={6}
 							modalVisible={modalVisible}
 							setModalVisible={setModalVisible}
+							translations={translations}
 						/>
 						{modalVisible && (
 							<>
@@ -764,6 +456,7 @@ function App() {
 													modalVisible={modalVisible}
 													setModalVisible={setModalVisible}
 													currentPhotoIndex={0}
+													language={language}
 												/>
 											);
 										case 1:
@@ -773,6 +466,7 @@ function App() {
 													modalVisible={modalVisible}
 													setModalVisible={setModalVisible}
 													currentPhotoIndex={0}
+													language={language}
 												/>
 											);
 										case 2:
@@ -782,6 +476,7 @@ function App() {
 													modalVisible={modalVisible}
 													setModalVisible={setModalVisible}
 													currentPhotoIndex={0}
+													language={language}
 												/>
 											);
 										case 3:
@@ -791,6 +486,7 @@ function App() {
 													modalVisible={modalVisible}
 													setModalVisible={setModalVisible}
 													currentPhotoIndex={0}
+													language={language}
 												/>
 											);
 										case 4:
@@ -800,6 +496,7 @@ function App() {
 													modalVisible={modalVisible}
 													setModalVisible={setModalVisible}
 													currentPhotoIndex={0}
+													language={language}
 												/>
 											);
 										case 5:
@@ -809,6 +506,7 @@ function App() {
 													modalVisible={modalVisible}
 													setModalVisible={setModalVisible}
 													currentPhotoIndex={0}
+													language={language}
 												/>
 											);
 										case 6:
@@ -818,6 +516,7 @@ function App() {
 													modalVisible={modalVisible}
 													setModalVisible={setModalVisible}
 													currentPhotoIndex={0}
+													language={language}
 												/>
 											);
 										default:
@@ -830,7 +529,10 @@ function App() {
 				</div>
 			</section>
 			<section id="contact" className="mt-[2rem]">
-				<Footer scrollToReference={scrollToReference} />
+				<Footer
+					scrollToReference={scrollToReference}
+					translations={translations}
+				/>
 			</section>
 		</>
 	);

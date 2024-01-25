@@ -8,6 +8,7 @@ export function CreativeCard({
 	setModalVisible,
 	setCurrentArray,
 	arrayNum,
+	translations,
 }) {
 	return (
 		<>
@@ -42,7 +43,7 @@ export function CreativeCard({
 						}}
 						id="show-button"
 					>
-						Show
+						{translations.designButton}
 					</button>
 				</div>
 			</div>
@@ -58,4 +59,5 @@ CreativeCard.propTypes = {
 	setModalVisible: PropTypes.func,
 	setCurrentArray: PropTypes.func,
 	arrayNum: PropTypes.number,
+	translations: PropTypes.object.isRequired,
 };

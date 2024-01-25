@@ -1,6 +1,14 @@
 import PropTypes from "prop-types";
 
-export function ProjectCard({img, title, text, skills, deploy, git}) {
+export function ProjectCard({
+	img,
+	title,
+	text,
+	skills,
+	deploy,
+	git,
+	translations,
+}) {
 	return (
 		<>
 			<div className="w-[100%] rounded-lg shadow-md overflow-hidden bg-white flex flex-col justify-between">
@@ -27,7 +35,7 @@ export function ProjectCard({img, title, text, skills, deploy, git}) {
 							className="bg-black px-[10rem] py-[0.6rem] rounded-md text-white"
 							id="deploy-button"
 						>
-							Deploy
+							{translations.codeButton}
 						</button>
 					</a>
 					<a href={git} target="_blank" rel="noreferrer">
@@ -55,4 +63,5 @@ ProjectCard.propTypes = {
 	skills: PropTypes.node,
 	deploy: PropTypes.string.isRequired,
 	git: PropTypes.string.isRequired,
+	translations: PropTypes.object.isRequired,
 };

@@ -1,7 +1,7 @@
 import PropTypes from "prop-types";
 import {Social} from "./Social";
 
-export function Footer({scrollToReference}) {
+export function Footer({scrollToReference, translations}) {
 	return (
 		<>
 			<div className="bg-[black] w-[100%] h-[250px] flex flex-col justify-center items-center p-[1rem] gap-5">
@@ -33,32 +33,32 @@ export function Footer({scrollToReference}) {
 							onClick={() => scrollToReference("top")}
 							className="cursor-pointer transition-transform hover:transform hover:translate-y-[-1px] shaddow-glow"
 						>
-							Home
+							{translations.footerHome}
 						</li>
 						<li
 							onClick={() => scrollToReference("about")}
 							className="cursor-pointer transition-transform hover:transform hover:translate-y-[-1px] shaddow-glow object-foot"
 						>
-							About
+							{translations.footerAbout}
 						</li>
 						{/* Agrega otras secciones según sea necesario */}
 						<li
 							onClick={() => scrollToReference("code")}
 							className="cursor-pointer transition-transform hover:transform hover:translate-y-[-1px] shaddow-glow object-foot"
 						>
-							Code Portfolio
+							{translations.footerCodePortfolio}
 						</li>
 						<li
 							onClick={() => scrollToReference("design")}
 							className="cursor-pointer transition-transform hover:transform hover:translate-y-[-1px] shaddow-glow object-foot"
 						>
-							Design Portfolio
+							{translations.footerDesignPortfolio}
 						</li>
 						<li
 							onClick={() => scrollToReference("contact")}
 							className="cursor-pointer transition-transform hover:transform hover:translate-y-[-1px] shaddow-glow object-foot"
 						>
-							Contact
+							{translations.footerContact}
 						</li>
 					</ul>
 				</div>
@@ -73,4 +73,5 @@ export function Footer({scrollToReference}) {
 
 Footer.propTypes = {
 	scrollToReference: PropTypes.func,
+	translations: PropTypes.object,
 };

@@ -1,6 +1,11 @@
 import PropTypes from "prop-types";
 
-export function Header({scrollToReference}) {
+export function Header({
+	scrollToReference,
+	language,
+	setLanguage,
+	translations,
+}) {
 	return (
 		<div
 			className="w-screen h-[6rem] bg-[black] flex items-center justify-between px-[10rem] mb-[0.5rem] sm: w-100%"
@@ -14,34 +19,65 @@ export function Header({scrollToReference}) {
 					id="logo"
 				/>
 			</div>
-			<div id="list">
-				<ul className="text-[white] text-[18px] flex direction-row space-x-10">
+			<div className="flex items-center">
+				<ul
+					id="list"
+					className="text-[white] text-[18px] flex direction-row space-x-10 items-center"
+				>
 					<li
 						onClick={() => scrollToReference("about")}
 						className="cursor-pointer transition-transform hover:transform hover:translate-y-[-1px] shaddow-glow"
 					>
-						About
+						{translations.headerAbout}
 					</li>
-					{/* Agrega otras secciones según sea necesario */}
 					<li
 						onClick={() => scrollToReference("code")}
 						className="cursor-pointer transition-transform hover:transform hover:translate-y-[-1px] shaddow-glow"
 					>
-						Code Portfolio
+						{translations.headerCodePortfolio}
 					</li>
 					<li
 						onClick={() => scrollToReference("design")}
 						className="cursor-pointer transition-transform hover:transform hover:translate-y-[-1px] shaddow-glow"
 					>
-						Design Portfolio
+						{translations.headerDesignPortfolio}
 					</li>
 					<li
 						onClick={() => scrollToReference("contact")}
 						className="cursor-pointer transition-transform hover:transform hover:translate-y-[-1px] shaddow-glow"
 					>
-						Contact
+						{translations.headerContact}
 					</li>
 				</ul>
+				<button
+					id="lang"
+					className="border-[2px] border-white rounded-full p-[7px] ml-[2rem]"
+					onClick={() => {
+						setLanguage(
+							language === "EN" ? "ES" : language === "ES" ? "PR" : "EN"
+						);
+					}}
+				>
+					{language === "ES" ? (
+						<img
+							src="https://raw.githubusercontent.com/kevinvillajim/CV/main/images/icons/ES.png"
+							className="h-[30px]"
+							alt="ES Language"
+						/>
+					) : language === "EN" ? (
+						<img
+							src="https://raw.githubusercontent.com/kevinvillajim/CV/main/images/icons/EN.png"
+							className="h-[30px]"
+							alt="EN Language"
+						/>
+					) : (
+						<img
+							src="https://raw.githubusercontent.com/kevinvillajim/CV/main/images/icons/PR.png"
+							className="h-[30px]"
+							alt="PR Language"
+						/>
+					)}
+				</button>
 			</div>
 		</div>
 	);
@@ -49,4 +85,7 @@ export function Header({scrollToReference}) {
 
 Header.propTypes = {
 	scrollToReference: PropTypes.func.isRequired,
+	language: PropTypes.string.isRequired,
+	setLanguage: PropTypes.func.isRequired,
+	translations: PropTypes.object.isRequired,
 };
