@@ -133,6 +133,75 @@ function App() {
 				</h2>
 				<div className="grid grid-cols-2 gap-3" id="project-container">
 					<ProjectCard
+						img="https://raw.githubusercontent.com/kevinvillajim/Portfolio/main/src/assets/portfolio/weather-project.png"
+						title={translations.projectTitle2}
+						text={translations.projectContent2}
+						skills={[
+							"https://raw.githubusercontent.com/kevinvillajim/Portfolio/main/src/assets/icons/REACT.png",
+							"https://raw.githubusercontent.com/kevinvillajim/Portfolio/main/src/assets/icons/HTML5.png",
+							"https://raw.githubusercontent.com/kevinvillajim/Portfolio/main/src/assets/icons/CSS.png",
+							"https://raw.githubusercontent.com/kevinvillajim/Portfolio/main/src/assets/icons/JS.png",
+							"https://raw.githubusercontent.com/kevinvillajim/Portfolio/main/src/assets/icons/GH.png",
+						]}
+						deploy="https://kevinvillajim.github.io/weatherProyectoFinalN2/"
+						git="https://github.com/kevinvillajim/weatherProyectoFinalN2"
+						translations={translations}
+					/>
+					<ProjectCard
+						img="https://raw.githubusercontent.com/kevinvillajim/Portfolio/main/src/assets/portfolio/ecoplagas-site.png"
+						title={translations.projectTitle6}
+						text={translations.projectContent6}
+						skills={[
+							"https://raw.githubusercontent.com/kevinvillajim/Portfolio/main/src/assets/icons/REACT.png",
+							"https://raw.githubusercontent.com/kevinvillajim/Portfolio/main/src/assets/icons/BS.png",
+							"https://raw.githubusercontent.com/kevinvillajim/Portfolio/main/src/assets/icons/HTML5.png",
+							"https://raw.githubusercontent.com/kevinvillajim/Portfolio/main/src/assets/icons/CSS.png",
+							"https://raw.githubusercontent.com/kevinvillajim/Portfolio/main/src/assets/icons/JS.png",
+							"https://raw.githubusercontent.com/kevinvillajim/Portfolio/main/src/assets/icons/GH.png",
+						]}
+						deploy="https://ecoplagasecuador.com/"
+						git="https://github.com/kevinvillajim/EcoPlagas"
+						translations={translations}
+					/>
+					<ProjectCard
+						img="https://raw.githubusercontent.com/kevinvillajim/Portfolio/main/src/assets/portfolio/multiserviciostec-site.png"
+						title={translations.projectTitle12}
+						text={translations.projectContent12}
+						skills={[
+							"https://raw.githubusercontent.com/kevinvillajim/Portfolio/main/src/assets/icons/WP.png",
+						]}
+						deploy="https://kevinvillajim.github.io/multiserviciosTEC/"
+						git="https://github.com/kevinvillajim/multiserviciosTEC"
+						translations={translations}
+					/>
+					<ProjectCard
+						img="https://raw.githubusercontent.com/kevinvillajim/Portfolio/main/src/assets/portfolio/ecodomotichome-site.png"
+						title={translations.projectTitle13}
+						text={translations.projectContent13}
+						skills={[
+							"https://raw.githubusercontent.com/kevinvillajim/Portfolio/main/src/assets/icons/WP.png",
+						]}
+						deploy="https://kevinvillajim.github.io/ecoDomoticHome/"
+						git="https://github.com/kevinvillajim/ecoDomoticHome"
+						translations={translations}
+					/>
+					<ProjectCard
+						img="https://raw.githubusercontent.com/kevinvillajim/Portfolio/main/src/assets/portfolio/login-project.png"
+						title={translations.projectTitle4}
+						text={translations.projectContent4}
+						skills={[
+							"https://raw.githubusercontent.com/kevinvillajim/Portfolio/main/src/assets/icons/PHP.png",
+							"https://raw.githubusercontent.com/kevinvillajim/Portfolio/main/src/assets/icons/MYSQL.png",
+							"https://raw.githubusercontent.com/kevinvillajim/Portfolio/main/src/assets/icons/HTML5.png",
+							"https://raw.githubusercontent.com/kevinvillajim/Portfolio/main/src/assets/icons/CSS.png",
+							"https://raw.githubusercontent.com/kevinvillajim/Portfolio/main/src/assets/icons/JS.png",
+							"https://raw.githubusercontent.com/kevinvillajim/Portfolio/main/src/assets/icons/GH.png",
+						]}
+						deploy="https://miniproyecton3kevinvillajim.000webhostapp.com/"
+						git="https://github.com/kevinvillajim/miniproyectoN3_Login"
+						translations={translations}
+					/>
+					<ProjectCard
 						img="https://raw.githubusercontent.com/kevinvillajim/Portfolio/main/src/assets/portfolio/bitacora-project.png"
 						title={translations.projectTitle1}
 						text={translations.projectContent1}
@@ -148,21 +217,6 @@ function App() {
 						]}
 						deploy="https://kevinvillajim.github.io/bitacoraPFN4/#/login"
 						git="https://github.com/kevinvillajim/bitacoraPFN4"
-						translations={translations}
-					/>
-					<ProjectCard
-						img="https://raw.githubusercontent.com/kevinvillajim/Portfolio/main/src/assets/portfolio/weather-project.png"
-						title={translations.projectTitle2}
-						text={translations.projectContent2}
-						skills={[
-							"https://raw.githubusercontent.com/kevinvillajim/Portfolio/main/src/assets/icons/REACT.png",
-							"https://raw.githubusercontent.com/kevinvillajim/Portfolio/main/src/assets/icons/HTML5.png",
-							"https://raw.githubusercontent.com/kevinvillajim/Portfolio/main/src/assets/icons/CSS.png",
-							"https://raw.githubusercontent.com/kevinvillajim/Portfolio/main/src/assets/icons/JS.png",
-							"https://raw.githubusercontent.com/kevinvillajim/Portfolio/main/src/assets/icons/GH.png",
-						]}
-						deploy="https://kevinvillajim.github.io/weatherProyectoFinalN2/"
-						git="https://github.com/kevinvillajim/weatherProyectoFinalN2"
 						translations={translations}
 					/>
 
@@ -183,22 +237,6 @@ function App() {
 						translations={translations}
 					/>
 					<ProjectCard
-						img="https://raw.githubusercontent.com/kevinvillajim/Portfolio/main/src/assets/portfolio/login-project.png"
-						title={translations.projectTitle4}
-						text={translations.projectContent4}
-						skills={[
-							"https://raw.githubusercontent.com/kevinvillajim/Portfolio/main/src/assets/icons/PHP.png",
-							"https://raw.githubusercontent.com/kevinvillajim/Portfolio/main/src/assets/icons/MYSQL.png",
-							"https://raw.githubusercontent.com/kevinvillajim/Portfolio/main/src/assets/icons/HTML5.png",
-							"https://raw.githubusercontent.com/kevinvillajim/Portfolio/main/src/assets/icons/CSS.png",
-							"https://raw.githubusercontent.com/kevinvillajim/Portfolio/main/src/assets/icons/JS.png",
-							"https://raw.githubusercontent.com/kevinvillajim/Portfolio/main/src/assets/icons/GH.png",
-						]}
-						deploy="https://miniproyecton3kevinvillajim.000webhostapp.com/"
-						git="https://github.com/kevinvillajim/miniproyectoN3_Login"
-						translations={translations}
-					/>
-					<ProjectCard
 						img="https://raw.githubusercontent.com/kevinvillajim/Portfolio/main/src/assets/portfolio/API-university.png"
 						title={translations.projectTitle5}
 						text={translations.projectContent5}
@@ -213,22 +251,7 @@ function App() {
 						git="https://github.com/kevinvillajim/miniProyecto4_API"
 						translations={translations}
 					/>
-					<ProjectCard
-						img="https://raw.githubusercontent.com/kevinvillajim/Portfolio/main/src/assets/portfolio/ecoplagas-site.png"
-						title={translations.projectTitle6}
-						text={translations.projectContent6}
-						skills={[
-							"https://raw.githubusercontent.com/kevinvillajim/Portfolio/main/src/assets/icons/REACT.png",
-							"https://raw.githubusercontent.com/kevinvillajim/Portfolio/main/src/assets/icons/BS.png",
-							"https://raw.githubusercontent.com/kevinvillajim/Portfolio/main/src/assets/icons/HTML5.png",
-							"https://raw.githubusercontent.com/kevinvillajim/Portfolio/main/src/assets/icons/CSS.png",
-							"https://raw.githubusercontent.com/kevinvillajim/Portfolio/main/src/assets/icons/JS.png",
-							"https://raw.githubusercontent.com/kevinvillajim/Portfolio/main/src/assets/icons/GH.png",
-						]}
-						deploy="https://ecoplagasecuador.com/"
-						git="https://github.com/kevinvillajim/EcoPlagas"
-						translations={translations}
-					/>
+
 					<ProjectCard
 						img="https://raw.githubusercontent.com/kevinvillajim/Portfolio/main/src/assets/portfolio/windbnb-practice.png"
 						title={translations.projectTitle7}
@@ -301,28 +324,6 @@ function App() {
 						]}
 						deploy="https://kevinvillajim.github.io/tipCalculator/"
 						git="https://github.com/kevinvillajim/tipCalculator"
-						translations={translations}
-					/>
-					<ProjectCard
-						img="https://raw.githubusercontent.com/kevinvillajim/Portfolio/main/src/assets/portfolio/multiserviciostec-site.png"
-						title={translations.projectTitle12}
-						text={translations.projectContent12}
-						skills={[
-							"https://raw.githubusercontent.com/kevinvillajim/Portfolio/main/src/assets/icons/WP.png",
-						]}
-						deploy="https://multiserviciostec.com/"
-						git="https://multiserviciostec.com/"
-						translations={translations}
-					/>
-					<ProjectCard
-						img="https://raw.githubusercontent.com/kevinvillajim/Portfolio/main/src/assets/portfolio/ecodomotichome-site.png"
-						title={translations.projectTitle13}
-						text={translations.projectContent13}
-						skills={[
-							"https://raw.githubusercontent.com/kevinvillajim/Portfolio/main/src/assets/icons/WP.png",
-						]}
-						deploy="https://kevinvillajim.github.io/ecoDomoticHome/"
-						git="https://github.com/kevinvillajim/ecoDomoticHome"
 						translations={translations}
 					/>
 				</div>
