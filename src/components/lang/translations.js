@@ -193,7 +193,7 @@ const translationES = {
 
 	projectTitle14: "Sitio - Blaget",
 	projectContent14:
-		"Cliente real - React JS y Tailwind, para una plataforma educativa. Solo se hizo la página de aterrizaje (Trabajo en progreso).",
+		"Cliente real - React JS y Tailwind, para una plataforma educativa. Avance de landing Page (Trabajo en progreso).",
 
 	designPortfolioTitle: "Portafolio de Diseño y Creatividad",
 	designSkills: "Habilidades:",
@@ -311,7 +311,7 @@ const translationPR = {
 
 	projectTitle14: "Site - Blaget",
 	projectContent14:
-		"Cliente real - React JS e Tailwind, para uma plataforma educacional. Feita apenas a página de entrada (Trabalho em progresso).",
+		"Cliente real - React JS e Tailwind, para uma plataforma educacional. Feita landing page (Trabalho em progresso).",
 
 	designPortfolioTitle: "Portfólio de Design",
 	designSkills: "Habilidades:",
