@@ -75,6 +75,9 @@ const translationEN = {
 	projectTitle13: "Site - Eco Domotic Home",
 	projectContent13:
 		" Real client - Full site made with wordpress, for a business of electronic security, alarms and domotic, It was one of my first projects.",
+	projectTitle14: "Site - Blaget",
+	projectContent14:
+		" Real client - React JS and Tailwind, for an educational platform, Did landing page only (Work in progress)",
 
 	designPortfolioTitle: "Design and Creative Portfolio",
 	designSkills: "Skills:",
@@ -187,6 +190,10 @@ const translationES = {
 	projectTitle13: "Sitio - Eco Domotic Home",
 	projectContent13:
 		"Cliente real - Sitio completo hecho con WordPress, para un negocio de seguridad electrónica, alarmas y domótica. Fue uno de mis primeros proyectos.",
+
+	projectTitle14: "Sitio - Blaget",
+	projectContent14:
+		"Cliente real - React JS y Tailwind, para una plataforma educativa. Solo se hizo la página de aterrizaje (Trabajo en progreso).",
 
 	designPortfolioTitle: "Portafolio de Diseño y Creatividad",
 	designSkills: "Habilidades:",
@@ -301,6 +308,10 @@ const translationPR = {
 	projectTitle13: "Site - Eco Domotic Home",
 	projectContent13:
 		"Site completo feito com WordPress, para um negócio de segurança eletrônica, alarmes e domótica. Foi um dos meus primeiros projetos.",
+
+	projectTitle14: "Site - Blaget",
+	projectContent14:
+		"Cliente real - React JS e Tailwind, para uma plataforma educacional. Feita apenas a página de entrada (Trabalho em progresso).",
 
 	designPortfolioTitle: "Portfólio de Design",
 	designSkills: "Habilidades:",

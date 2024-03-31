@@ -133,6 +133,22 @@ function App() {
 				</h2>
 				<div className="grid grid-cols-2 gap-3" id="project-container">
 					<ProjectCard
+						img="https://raw.githubusercontent.com/kevinvillajim/Portfolio/main/src/assets/portfolio/blaget-site.png"
+						title={translations.projectTitle14}
+						text={translations.projectContent14}
+						skills={[
+							"https://raw.githubusercontent.com/kevinvillajim/Portfolio/main/src/assets/icons/REACT.png",
+							"https://raw.githubusercontent.com/kevinvillajim/Portfolio/main/src/assets/icons/TW.svg",
+							"https://raw.githubusercontent.com/kevinvillajim/Portfolio/main/src/assets/icons/HTML5.png",
+							"https://raw.githubusercontent.com/kevinvillajim/Portfolio/main/src/assets/icons/CSS.png",
+							"https://raw.githubusercontent.com/kevinvillajim/Portfolio/main/src/assets/icons/JS.png",
+							"https://raw.githubusercontent.com/kevinvillajim/Portfolio/main/src/assets/icons/GH.png",
+						]}
+						deploy="https://kevinvillajim.github.io/weatherProyectoFinalN2/"
+						git="https://github.com/kevinvillajim/weatherProyectoFinalN2"
+						translations={translations}
+					/>
+					<ProjectCard
 						img="https://raw.githubusercontent.com/kevinvillajim/Portfolio/main/src/assets/portfolio/weather-project.png"
 						title={translations.projectTitle2}
 						text={translations.projectContent2}
