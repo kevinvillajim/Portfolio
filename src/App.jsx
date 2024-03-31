@@ -30,7 +30,7 @@ function App() {
 
 	const [currentArray, setCurrentArray] = useState(0);
 
-	const [language, setLanguage] = useState("EN");
+	const [language, setLanguage] = useState("ES");
 	const translations =
 		language === "EN"
 			? translationEN
@@ -144,8 +144,8 @@ function App() {
 							"https://raw.githubusercontent.com/kevinvillajim/Portfolio/main/src/assets/icons/JS.png",
 							"https://raw.githubusercontent.com/kevinvillajim/Portfolio/main/src/assets/icons/GH.png",
 						]}
-						deploy="https://kevinvillajim.github.io/weatherProyectoFinalN2/"
-						git="https://github.com/kevinvillajim/weatherProyectoFinalN2"
+						deploy="https://kevinvillajim.github.io/Blaget/"
+						git="https://github.com/kevinvillajim/Blaget"
 						translations={translations}
 					/>
 					<ProjectCard
