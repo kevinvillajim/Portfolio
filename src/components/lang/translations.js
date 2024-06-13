@@ -71,14 +71,14 @@ const translationEN = {
 	projectTitle12: "Site - Multiservicios Tec",
 	projectContent12:
 		"Real client - Full site and Web Shop made with WordPress, for a business of Electic and electronic solutions.",
-
 	projectTitle13: "Site - Eco Domotic Home",
 	projectContent13:
 		" Real client - Full site made with wordpress, for a business of electronic security, alarms and domotic, It was one of my first projects.",
 	projectTitle14: "Site - Blaget",
 	projectContent14:
 		" Real client - React JS and Tailwind, for an educational platform, Did landing page only (Work in progress)",
-
+	projectTitleÑ: "Site - Bconnect",
+	projectContent15: "Website - React JS and Tailwind, for a tecnology enterprise",
 	designPortfolioTitle: "Design and Creative Portfolio",
 	designSkills: "Skills:",
 	designProjects: "Projects:",
@@ -185,16 +185,17 @@ const translationES = {
 
 	projectTitle12: "Sitio - Multiservicios Tec",
 	projectContent12:
-		"Cliente real - Sitio completo y tienda web hechos con WordPress, para un negocio de soluciones eléctricas y electrónicas.",
+		"Página Web - Sitio completo y tienda web hechos con WordPress, para un negocio de soluciones eléctricas y electrónicas.",
 
 	projectTitle13: "Sitio - Eco Domotic Home",
 	projectContent13:
-		"Cliente real - Sitio completo hecho con WordPress, para un negocio de seguridad electrónica, alarmas y domótica. Fue uno de mis primeros proyectos.",
+		"Página Web - Sitio completo hecho con WordPress, para un negocio de seguridad electrónica, alarmas y domótica. Fue uno de mis primeros proyectos.",
 
 	projectTitle14: "Sitio - Blaget",
 	projectContent14:
-		"Cliente real - React JS y Tailwind, para una plataforma educativa. Avance de landing Page (Trabajo en progreso).",
-
+		"Pagina Web - React JS y Tailwind, para una plataforma educativa. Avance de landing Page (Trabajo en progreso).",
+	projectTitle15: "Sitio - Bconnect",
+	projectContent15: "Pagina Web - React JS and Tailwind, for an tecnology enterprise",
 	designPortfolioTitle: "Portafolio de Diseño y Creatividad",
 	designSkills: "Habilidades:",
 	designProjects: "Proyectos:",
@@ -313,6 +314,8 @@ const translationPR = {
 	projectContent14:
 		"Cliente real - React JS e Tailwind, para uma plataforma educacional. Feita landing page (Trabalho em progresso).",
 
+	projectTitle15: "Site - Bconnect",
+	projectContent15: "Site Web - React JS e Tailwind, para uma empresa de tecnología",
 	designPortfolioTitle: "Portfólio de Design",
 	designSkills: "Habilidades:",
 	designProjects: "Projetos:",
