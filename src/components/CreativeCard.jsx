@@ -1,4 +1,5 @@
 import PropTypes from "prop-types";
+import {Button} from "./Button";
 
 export function CreativeCard({
 	img,
@@ -34,17 +35,14 @@ export function CreativeCard({
 						<img src={item} key={index} className="h-[50px]" />
 					))}
 				</div>
-				<div className="flex justify-evenly align-middle mb-[1rem]">
-					<button
-						className="bg-black px-[10rem] py-[0.6rem] rounded-md text-white"
+				<div className="flex justify-evenly align-middle mb-[1rem] p-[1rem]">
+					<Button
+						text={translations.designButton}
 						onClick={() => {
 							setModalVisible(true);
 							setCurrentArray(arrayNum);
 						}}
-						id="show-button"
-					>
-						{translations.designButton}
-					</button>
+					/>
 				</div>
 			</div>
 		</>

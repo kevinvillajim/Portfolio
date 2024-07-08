@@ -11,8 +11,11 @@ export function WhyCard({img, title, text}) {
 	return (
 		<>
 			<div
-				className="flex flex-col justify-center text-center rounded-md p-[20px] bg-[#fff] border border-solid border-gray-300 cursor-pointer"
+				className={`flex flex-col justify-center text-center rounded-md p-[20px] bg-[#fff] border border-solid border-gray-300 cursor-pointer ${
+					showDetails ? "clicked" : ""
+				}`}
 				onClick={toggleDetails}
+				id="why-card"
 			>
 				{showDetails ? (
 					<>

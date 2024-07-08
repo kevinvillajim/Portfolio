@@ -1,4 +1,5 @@
 import PropTypes from "prop-types";
+import {Button} from "./Button";
 
 export function ProjectCard({
 	img,
@@ -29,27 +30,20 @@ export function ProjectCard({
 						<img src={item} key={index} className="h-[50px]" />
 					))}
 				</div>
-				<div className="flex justify-evenly align-middle mb-[1rem]">
-					<a href={deploy} target="_blank" rel="noreferrer">
-						<button
-							className="bg-black px-[10rem] py-[0.6rem] rounded-md text-white"
-							id="deploy-button"
-						>
-							{translations.codeButton}
-						</button>
-					</a>
-					<a href={git} target="_blank" rel="noreferrer">
-						<button
-							className="bg-black px-[0.9rem] py-[0.8rem] rounded-md text-white"
-							id="git-button"
-						>
-							<img
-								src="https://raw.githubusercontent.com/kevinvillajim/Portfolio/main/src/assets/icons/GH.svg"
-								alt="github"
-								className="h-[18px]"
-							/>
-						</button>
-					</a>
+				<div className="flex justify-evenly align-middle items-center mb-[1rem] gap-3 px-[1rem]">
+					<Button text={translations.codeButton} link={deploy} />
+					<div className="w-[20%]" id="git-button">
+						<Button
+							text={
+								<img
+									src="https://raw.githubusercontent.com/kevinvillajim/Portfolio/main/src/assets/icons/GH.svg"
+									alt="github"
+									className="h-[18px]"
+								/>
+							}
+							link={git}
+						/>
+					</div>
 				</div>
 			</div>
 		</>

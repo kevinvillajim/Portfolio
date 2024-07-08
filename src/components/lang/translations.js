@@ -78,7 +78,8 @@ const translationEN = {
 	projectContent14:
 		" Real client - React JS and Tailwind, for an educational platform, Did landing page only (Work in progress)",
 	projectTitleÑ: "Site - Bconnect",
-	projectContent15: "Website - React JS and Tailwind, for a tecnology enterprise",
+	projectContent15:
+		"Website - React JS and Tailwind, for a tecnology enterprise - Responsive Design.",
 	designPortfolioTitle: "Design and Creative Portfolio",
 	designSkills: "Skills:",
 	designProjects: "Projects:",
@@ -195,7 +196,8 @@ const translationES = {
 	projectContent14:
 		"Pagina Web - React JS y Tailwind, para una plataforma educativa. Avance de landing Page (Trabajo en progreso).",
 	projectTitle15: "Sitio - Bconnect",
-	projectContent15: "Pagina Web - React JS and Tailwind, for an tecnology enterprise",
+	projectContent15:
+		"Pagina Web - React JS and Tailwind, para una empresa de tecnología - Diseño responsivo.",
 	designPortfolioTitle: "Portafolio de Diseño y Creatividad",
 	designSkills: "Habilidades:",
 	designProjects: "Proyectos:",
@@ -315,7 +317,8 @@ const translationPR = {
 		"Cliente real - React JS e Tailwind, para uma plataforma educacional. Feita landing page (Trabalho em progresso).",
 
 	projectTitle15: "Site - Bconnect",
-	projectContent15: "Site Web - React JS e Tailwind, para uma empresa de tecnología",
+	projectContent15:
+		"Site Web - React JS e Tailwind, para uma empresa de tecnología - Design responsivo.",
 	designPortfolioTitle: "Portfólio de Design",
 	designSkills: "Habilidades:",
 	designProjects: "Projetos:",
