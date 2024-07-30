@@ -77,9 +77,13 @@ const translationEN = {
 	projectTitle14: "Site - Blaget",
 	projectContent14:
 		" Real client - React JS and Tailwind, for an educational platform, Did landing page only (Work in progress)",
-	projectTitleÑ: "Site - Bconnect",
+	projectTitle15: "Site - Bconnect",
 	projectContent15:
 		"Website - React JS and Tailwind, for a tecnology enterprise - Responsive Design.",
+	projectTitle16: "Site - Bitsoft Team",
+	projectContent16:
+		"Website - React JS, React router dom and Tailwind Website for a tecnology enterprise - Responsive Design.",
+
 	designPortfolioTitle: "Design and Creative Portfolio",
 	designSkills: "Skills:",
 	designProjects: "Projects:",
@@ -195,9 +199,15 @@ const translationES = {
 	projectTitle14: "Sitio - Blaget",
 	projectContent14:
 		"Pagina Web - React JS y Tailwind, para una plataforma educativa. Avance de landing Page (Trabajo en progreso).",
+
 	projectTitle15: "Sitio - Bconnect",
 	projectContent15:
 		"Pagina Web - React JS and Tailwind, para una empresa de tecnología - Diseño responsivo.",
+
+	projectTitle16: "Sitio - Bitsoft Team",
+	projectContent16:
+		"Pagina Web - React JS, React router dom y Tailwind Para empresa de tecnología - Diseño Responsivo.",
+
 	designPortfolioTitle: "Portafolio de Diseño y Creatividad",
 	designSkills: "Habilidades:",
 	designProjects: "Proyectos:",
@@ -319,6 +329,11 @@ const translationPR = {
 	projectTitle15: "Site - Bconnect",
 	projectContent15:
 		"Site Web - React JS e Tailwind, para uma empresa de tecnología - Design responsivo.",
+
+	projectTitle16: "Site - Bitsoft Team",
+	projectContent16:
+		"Site Web - React JS, React router dom e Tailwind Para empresa de tecnología - Design Responsivo.",
+
 	designPortfolioTitle: "Portfólio de Design",
 	designSkills: "Habilidades:",
 	designProjects: "Projetos:",

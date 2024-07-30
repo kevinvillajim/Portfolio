@@ -133,6 +133,22 @@ function App() {
 				</h2>
 				<div className="grid grid-cols-2 gap-3" id="project-container">
 					<ProjectCard
+						img="https://raw.githubusercontent.com/kevinvillajim/Portfolio/main/src/assets/portfolio/bitsoftTeam-site.png"
+						title={translations.projectTitle16}
+						text={translations.projectContent16}
+						skills={[
+							"https://raw.githubusercontent.com/kevinvillajim/Portfolio/main/src/assets/icons/REACT.png",
+							"https://raw.githubusercontent.com/kevinvillajim/Portfolio/main/src/assets/icons/TW.svg",
+							"https://raw.githubusercontent.com/kevinvillajim/Portfolio/main/src/assets/icons/HTML5.png",
+							"https://raw.githubusercontent.com/kevinvillajim/Portfolio/main/src/assets/icons/CSS.png",
+							"https://raw.githubusercontent.com/kevinvillajim/Portfolio/main/src/assets/icons/JS.png",
+							"https://raw.githubusercontent.com/kevinvillajim/Portfolio/main/src/assets/icons/GH.png",
+						]}
+						deploy="https://bitsofteam.com/"
+						git="https://github.com/kevinvillajim/BitsoftTeam"
+						translations={translations}
+					/>
+					<ProjectCard
 						img="https://raw.githubusercontent.com/kevinvillajim/Portfolio/main/src/assets/portfolio/b-connect-site.png"
 						title={translations.projectTitle15}
 						text={translations.projectContent15}
