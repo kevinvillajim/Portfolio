@@ -83,6 +83,9 @@ const translationEN = {
 	projectTitle16: "Site - Bitsoft Team",
 	projectContent16:
 		"Website - React JS, React router dom and Tailwind Website for a tecnology enterprise - Responsive Design.",
+	projectTitle17: "Education Platform - Cooperativa Cooprogreso",
+	projectContent17:
+		"Full Stack Website platform - Responsive Design - Complete CRUD, relational tables, session and role actions, grades, courses, certificates, and reports. Private Project.",
 
 	designPortfolioTitle: "Design and Creative Portfolio",
 	designSkills: "Skills:",
@@ -207,6 +210,10 @@ const translationES = {
 	projectTitle16: "Sitio - Bitsoft Team",
 	projectContent16:
 		"Pagina Web - React JS, React router dom y Tailwind Para empresa de tecnología - Diseño Responsivo.",
+
+	projectTitle17: "Plataforma Educativa - Cooperativa Cooprogreso",
+	projectContent17:
+		"Plataforma web Full Stack - Diseño Responsivo - CRUD completo, tablas relacionales, acciones de sesión y roles, calificaciones, cursos, certificados e informes. Proyecto Privado.",
 
 	designPortfolioTitle: "Portafolio de Diseño y Creatividad",
 	designSkills: "Habilidades:",
@@ -333,6 +340,10 @@ const translationPR = {
 	projectTitle16: "Site - Bitsoft Team",
 	projectContent16:
 		"Site Web - React JS, React router dom e Tailwind Para empresa de tecnología - Design Responsivo.",
+
+	projectTitle17: "Plataforma Educacional - Cooperativa Cooprogreso",
+	projectContent17:
+		"Plataforma web Full Stack - Design Responsivo - CRUD completo, tabelas relacionais, ações de sessão e papéis, notas, cursos, certificados e relatórios. Projeto Privado.",
 
 	designPortfolioTitle: "Portfólio de Design",
 	designSkills: "Habilidades:",

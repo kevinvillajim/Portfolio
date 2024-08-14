@@ -8,8 +8,22 @@ export function ProjectCard({
 	skills,
 	deploy,
 	git,
+	onClick,
 	translations,
+	isPrivate,
+	setModalVisible,
+	setCurrentArray,
+	arrayNum,
 }) {
+	const handleImgClick = () => {
+		if (isPrivate && onClick) {
+			setModalVisible(true);
+			setCurrentArray(arrayNum);
+		} else if (git) {
+			window.open(git, "_blank");
+		}
+	};
+
 	return (
 		<>
 			<div className="w-[100%] rounded-lg shadow-md overflow-hidden bg-white flex flex-col justify-between">
@@ -36,12 +50,17 @@ export function ProjectCard({
 						<Button
 							text={
 								<img
-									src="https://raw.githubusercontent.com/kevinvillajim/Portfolio/main/src/assets/icons/GH.svg"
+									src={
+										isPrivate
+											? "https://raw.githubusercontent.com/kevinvillajim/Portfolio/main/src/assets/icons/img.svg"
+											: "https://raw.githubusercontent.com/kevinvillajim/Portfolio/main/src/assets/icons/GH.svg"
+									}
 									alt="github"
 									className="h-[18px]"
 								/>
 							}
-							link={git}
+							// link={git}
+							onClick={handleImgClick}
 						/>
 					</div>
 				</div>
@@ -56,6 +75,11 @@ ProjectCard.propTypes = {
 	text: PropTypes.string.isRequired,
 	skills: PropTypes.node,
 	deploy: PropTypes.string.isRequired,
-	git: PropTypes.string.isRequired,
+	git: PropTypes.string,
+	onClick: PropTypes.func,
+	isPrivate: PropTypes.bool,
 	translations: PropTypes.object.isRequired,
+	setModalVisible: PropTypes.func,
+	setCurrentArray: PropTypes.func,
+	arrayNum: PropTypes.number,
 };

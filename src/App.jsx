@@ -18,6 +18,7 @@ import {
 	ecoDomoticHomePhotos,
 	multiserviciosTecPhotos,
 	vinculoLicoresPhotos,
+	cooprogresoPhotos,
 } from "./components/designInformation.js";
 import {
 	translationEN,
@@ -27,9 +28,8 @@ import {
 
 function App() {
 	const [modalVisible, setModalVisible] = useState(false);
-
+	const [currentProjectImages, setCurrentProjectImages] = useState([]);
 	const [currentArray, setCurrentArray] = useState(0);
-
 	const [language, setLanguage] = useState("ES");
 	const translations =
 		language === "EN"
@@ -46,6 +46,11 @@ function App() {
 				behavior: "smooth",
 			});
 		}
+	};
+
+	const handleProjectImages = (projectImages) => {
+		setCurrentProjectImages(projectImages);
+		setModalVisible(true);
 	};
 
 	return (
@@ -132,6 +137,29 @@ function App() {
 					{translations.codePortfolioProjects}
 				</h2>
 				<div className="grid grid-cols-2 gap-3" id="project-container">
+					<ProjectCard
+						img="https://raw.githubusercontent.com/kevinvillajim/Portfolio/main/src/assets/portfolio/cooprogreso-platform.png"
+						title={translations.projectTitle17}
+						text={translations.projectContent17}
+						skills={[
+							"https://raw.githubusercontent.com/kevinvillajim/Portfolio/main/src/assets/icons/REACT.png",
+							"https://raw.githubusercontent.com/kevinvillajim/Portfolio/main/src/assets/icons/TW.svg",
+							"https://raw.githubusercontent.com/kevinvillajim/Portfolio/main/src/assets/icons/PHP.png",
+							"https://raw.githubusercontent.com/kevinvillajim/Portfolio/main/src/assets/icons/LV.png",
+							"https://raw.githubusercontent.com/kevinvillajim/Portfolio/main/src/assets/icons/MYSQL.png",
+							"https://raw.githubusercontent.com/kevinvillajim/Portfolio/main/src/assets/icons/HTML5.png",
+							"https://raw.githubusercontent.com/kevinvillajim/Portfolio/main/src/assets/icons/CSS.png",
+							"https://raw.githubusercontent.com/kevinvillajim/Portfolio/main/src/assets/icons/JS.png",
+							"https://raw.githubusercontent.com/kevinvillajim/Portfolio/main/src/assets/icons/GH.png",
+						]}
+						deploy="https://capacitacion-cooprogreso.com/"
+						onClick={handleProjectImages}
+						translations={translations}
+						isPrivate={true}
+						setModalVisible={setModalVisible}
+						setCurrentArray={setCurrentArray}
+						arrayNum={7}
+					/>
 					<ProjectCard
 						img="https://raw.githubusercontent.com/kevinvillajim/Portfolio/main/src/assets/portfolio/bitsoftTeam-site.png"
 						title={translations.projectTitle16}
@@ -563,6 +591,16 @@ function App() {
 											return (
 												<ModalImg
 													photos={otherPhotos}
+													modalVisible={modalVisible}
+													setModalVisible={setModalVisible}
+													currentPhotoIndex={0}
+													language={language}
+												/>
+											);
+										case 7:
+											return (
+												<ModalImg
+													photos={cooprogresoPhotos}
 													modalVisible={modalVisible}
 													setModalVisible={setModalVisible}
 													currentPhotoIndex={0}

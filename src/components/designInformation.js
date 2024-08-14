@@ -13,6 +13,72 @@ const skills = [
 	"https://raw.githubusercontent.com/kevinvillajim/Portfolio/main/src/assets/icons/FIGMA.png",
 ];
 
+const cooprogresoPhotos = [
+	{
+		title: "Proyecto privado en Github, Imágenes del proyecto",
+		img: "https://raw.githubusercontent.com/kevinvillajim/Portfolio/main/src/assets/portfolio/cooprogreso-platform-img1.png",
+		descriptionEN: "Homepage.",
+		descriptionES: "Página de inicio.",
+		descriptionPT: "Página inicial.",
+	},
+	{
+		title: "Cooprogreso",
+		img: "https://raw.githubusercontent.com/kevinvillajim/Portfolio/main/src/assets/portfolio/cooprogreso-platform-img2.png",
+		descriptionEN: "Login page.",
+		descriptionES: "Página de inicio de sesión.",
+		descriptionPT: "Página de login.",
+	},
+	{
+		title: "Cooprogreso",
+		img: "https://raw.githubusercontent.com/kevinvillajim/Portfolio/main/src/assets/portfolio/cooprogreso-platform.png",
+		descriptionEN: "Dashboard Admin.",
+		descriptionES: "Dashboard Administrador",
+		descriptionPT: "Painel Principal Administrador",
+	},
+	{
+		title: "Cooprogreso",
+		img: "https://raw.githubusercontent.com/kevinvillajim/Portfolio/main/src/assets/portfolio/cooprogreso-platform-img4.png",
+		descriptionEN: "Users administation.",
+		descriptionES: "Administración de usuarios.",
+		descriptionPT: "Administração de usuários.",
+	},
+	{
+		title: "Cooprogreso",
+		img: "https://raw.githubusercontent.com/kevinvillajim/Portfolio/main/src/assets/portfolio/cooprogreso-platform-img5.png",
+		descriptionEN: "Students and certifications.",
+		descriptionES: "Estudiantes y certificaciones.",
+		descriptionPT: "Estudantes e certificações.",
+	},
+	{
+		title: "Cooprogreso",
+		img: "https://raw.githubusercontent.com/kevinvillajim/Portfolio/main/src/assets/portfolio/cooprogreso-platform-img6.png",
+		descriptionEN: "Profile settings.",
+		descriptionES: "Configuración de perfil.",
+		descriptionPT: "Configurações de perfil.",
+	},
+	{
+		title: "Cooprogreso",
+		img: "https://raw.githubusercontent.com/kevinvillajim/Portfolio/main/src/assets/portfolio/cooprogreso-platform-img7.png",
+		descriptionEN: "Dashboard Student.",
+		descriptionES: "Dashboard Estudiante.",
+		descriptionPT: "Painel Principal Estudante.",
+	},
+	{
+		title: "Cooprogreso",
+		img: "https://raw.githubusercontent.com/kevinvillajim/Portfolio/main/src/assets/portfolio/cooprogreso-platform-img8.png",
+		descriptionEN: "Courses platform.",
+		descriptionES: "Plataforma de cursos.",
+		descriptionPT: "Plataforma de cursos.",
+	},
+	{
+		title: "Cooprogreso",
+		img: "https://raw.githubusercontent.com/kevinvillajim/Portfolio/main/src/assets/portfolio/cooprogreso-platform-img9.png",
+		descriptionEN: "Certification.",
+		descriptionES: "Certificación.",
+		descriptionPT: "Certificação.",
+	},
+];
+
 const skillsDesign = [
 	"https://raw.githubusercontent.com/kevinvillajim/Portfolio/main/src/assets/icons/ILL.png",
 	"https://raw.githubusercontent.com/kevinvillajim/Portfolio/main/src/assets/icons/PS.png",
@@ -500,4 +566,5 @@ export {
 	ecoDomoticHomePhotos,
 	multiserviciosTecPhotos,
 	vinculoLicoresPhotos,
+	cooprogresoPhotos,
 };
