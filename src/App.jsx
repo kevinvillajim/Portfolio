@@ -19,6 +19,7 @@ import {
 	multiserviciosTecPhotos,
 	vinculoLicoresPhotos,
 	cooprogresoPhotos,
+	lagascaPhotos,
 } from "./components/designInformation.js";
 import {
 	translationEN,
@@ -137,6 +138,29 @@ function App() {
 					{translations.codePortfolioProjects}
 				</h2>
 				<div className="grid grid-cols-2 gap-3" id="project-container">
+					<ProjectCard
+						img="https://raw.githubusercontent.com/kevinvillajim/Portfolio/main/src/assets/portfolio/lagasca-platform.png"
+						title={translations.projectTitle18}
+						text={translations.projectContent18}
+						skills={[
+							"https://raw.githubusercontent.com/kevinvillajim/Portfolio/main/src/assets/icons/REACT.png",
+							"https://raw.githubusercontent.com/kevinvillajim/Portfolio/main/src/assets/icons/TW.svg",
+							"https://raw.githubusercontent.com/kevinvillajim/Portfolio/main/src/assets/icons/PHP.png",
+							"https://raw.githubusercontent.com/kevinvillajim/Portfolio/main/src/assets/icons/LV.png",
+							"https://raw.githubusercontent.com/kevinvillajim/Portfolio/main/src/assets/icons/MYSQL.png",
+							"https://raw.githubusercontent.com/kevinvillajim/Portfolio/main/src/assets/icons/HTML5.png",
+							"https://raw.githubusercontent.com/kevinvillajim/Portfolio/main/src/assets/icons/CSS.png",
+							"https://raw.githubusercontent.com/kevinvillajim/Portfolio/main/src/assets/icons/JS.png",
+							"https://raw.githubusercontent.com/kevinvillajim/Portfolio/main/src/assets/icons/GH.png",
+						]}
+						deploy="https://lista-lagasca.capacitacion-cooprogreso.com/"
+						onClick={handleProjectImages}
+						translations={translations}
+						isPrivate={true}
+						setModalVisible={setModalVisible}
+						setCurrentArray={setCurrentArray}
+						arrayNum={8}
+					/>
 					<ProjectCard
 						img="https://raw.githubusercontent.com/kevinvillajim/Portfolio/main/src/assets/portfolio/cooprogreso-platform.png"
 						title={translations.projectTitle17}
@@ -607,6 +631,16 @@ function App() {
 													language={language}
 												/>
 											);
+										case 8:
+										return (
+											<ModalImg
+												photos={lagascaPhotos}
+												modalVisible={modalVisible}
+												setModalVisible={setModalVisible}
+												currentPhotoIndex={0}
+												language={language}
+											/>
+										);
 										default:
 											return null;
 									}

@@ -83,10 +83,12 @@ const translationEN = {
 	projectTitle16: "Site - Bitsoft Team",
 	projectContent16:
 		"Website - React JS, React router dom and Tailwind Website for a tecnology enterprise - Responsive Design.",
-	projectTitle17: "Education Platform - Cooperativa Cooprogreso",
-	projectContent17:
-		"Full Stack Website platform - Responsive Design - Complete CRUD, relational tables, session and role actions, grades, courses, certificates, and reports. Private Project.",
-
+		
+	projectTitle17: "Educational Platform - Cooprogreso Cooperative",
+	projectContent17: "Full Stack Platform Website - Responsive Design - Complete CRUD with JWT, relational tables, session actions and roles, grades, platform reports and XML reports, course platform for users and user certifications.",
+	projectTitle18: "Attendance Platform - Church of Jesus Christ, La Gasca Ward",
+	projectContent18: "Full Stack Attendance Platform - Responsive Design - Complete CRUD, relational tables, JWT authentication, attendance platform for users and user reports, personalized message center and WhatsApp reminders.",
+		  
 	designPortfolioTitle: "Design and Creative Portfolio",
 	designSkills: "Skills:",
 	designProjects: "Projects:",
@@ -212,9 +214,10 @@ const translationES = {
 		"Pagina Web - React JS, React router dom y Tailwind Para empresa de tecnología - Diseño Responsivo.",
 
 	projectTitle17: "Plataforma Educativa - Cooperativa Cooprogreso",
-	projectContent17:
-		"Plataforma web Full Stack - Diseño Responsivo - CRUD completo, tablas relacionales, acciones de sesión y roles, calificaciones, cursos, certificados e informes. Proyecto Privado.",
-
+	projectContent17: "Plataforma Full Stack Website - Diseño Responsive - CRUD Completo con JWT, tablas relacionales, acciones de sesión y roles, calificaciones, reportes de plataforma y reportes XML, plataforma de cursos para usuarios y certificaciones de usuarios.",
+	projectTitle18: "Plataforma de Asistencia - Iglesia de Jesucristo, Barrio La Gasca",
+	projectContent18: "Plataforma de Asistencia Full Stack - Diseño Responsive - CRUD Completo, tablas relacionales, autenticación JWT, plataforma de asistencia para usuarios y reportes de usuarios, centro de mensajes personalizados y recordatorios de WhatsApp.",
+	
 	designPortfolioTitle: "Portafolio de Diseño y Creatividad",
 	designSkills: "Habilidades:",
 	designProjects: "Proyectos:",
@@ -342,9 +345,10 @@ const translationPR = {
 		"Site Web - React JS, React router dom e Tailwind Para empresa de tecnología - Design Responsivo.",
 
 	projectTitle17: "Plataforma Educacional - Cooperativa Cooprogreso",
-	projectContent17:
-		"Plataforma web Full Stack - Design Responsivo - CRUD completo, tabelas relacionais, ações de sessão e papéis, notas, cursos, certificados e relatórios. Projeto Privado.",
-
+	projectContent17: "Plataforma Full Stack Website - Design Responsivo - CRUD Completo com JWT, tabelas relacionais, ações de sessão e funções, notas, relatórios da plataforma e relatórios XML, plataforma de cursos para usuários e certificações de usuários.",
+	projectTitle18: "Plataforma de Assistência - Igreja de Jesus Cristo, Bairro La Gasca",
+	projectContent18: "Plataforma de Assistência Full Stack - Design Responsivo - CRUD Completo, tabelas relacionais, autenticação JWT, plataforma de assistência para usuários e relatórios de usuários, centro de mensagens personalizadas e lembretes de WhatsApp.",
+	
 	designPortfolioTitle: "Portfólio de Design",
 	designSkills: "Habilidades:",
 	designProjects: "Projetos:",

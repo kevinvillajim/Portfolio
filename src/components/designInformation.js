@@ -13,6 +13,58 @@ const skills = [
 	"https://raw.githubusercontent.com/kevinvillajim/Portfolio/main/src/assets/icons/FIGMA.png",
 ];
 
+const lagascaPhotos = [
+	{
+		title: "Proyecto privado en Github, Imágenes del proyecto",
+		img: "https://raw.githubusercontent.com/kevinvillajim/Portfolio/main/src/assets/portfolio/lagasca-platform-img1.png",
+		descriptionEN: "Login page.",
+		descriptionES: "Página de inicio de sesión.",
+		descriptionPT: "Página de login.",
+	},
+	{
+		title: "Barrio la Gasca",
+		img: "https://raw.githubusercontent.com/kevinvillajim/Portfolio/main/src/assets/portfolio/lagasca-platform-img2.png",
+		descriptionEN: "Dashboard",
+		descriptionES: "Dashboard",
+		descriptionPT: "Painel Principal",
+	},
+	{
+		title: "Barrio la Gasca",
+		img: "https://raw.githubusercontent.com/kevinvillajim/Portfolio/main/src/assets/portfolio/lagasca-platform.png",
+		descriptionEN: "Users administation.",
+		descriptionES: "Administración de usuarios.",
+		descriptionPT: "Administração de usuários.",
+	},
+	{
+		title: "Barrio la Gasca",
+		img: "https://raw.githubusercontent.com/kevinvillajim/Portfolio/main/src/assets/portfolio/lagasca-platform-img4.png",
+		descriptionEN: "Member administation.",
+		descriptionES: "Administración de miembros.",
+		descriptionPT: "Administração de membros.",
+	},
+	{
+		title: "Barrio la Gasca",
+		img: "https://raw.githubusercontent.com/kevinvillajim/Portfolio/main/src/assets/portfolio/lagasca-platform-img5.png",
+		descriptionEN: "Attendance calendar.",
+		descriptionES: "Calendario de asistencias.",
+		descriptionPT: "Atendimento.",
+	},
+	{
+		title: "Barrio la Gasca",
+		img: "https://raw.githubusercontent.com/kevinvillajim/Portfolio/main/src/assets/portfolio/lagasca-platform-img6.png",
+		descriptionEN: "Whatsapp personalized messages.",
+		descriptionES: "Mensajes personalizados de whastapp.",
+		descriptionPT: "Mensagens personalizadas do WhatsApp.",
+	},
+	{
+		title: "Barrio la Gasca",
+		img: "https://raw.githubusercontent.com/kevinvillajim/Portfolio/main/src/assets/portfolio/lagasca-platform-img7.png",
+		descriptionEN: "Attendance list and edit by date.",
+		descriptionES: "Lista de asistencia y edición por fecha.",
+		descriptionPT: "Lista de presença e edição por data.",
+	},
+];
+
 const cooprogresoPhotos = [
 	{
 		title: "Proyecto privado en Github, Imágenes del proyecto",
@@ -567,4 +619,5 @@ export {
 	multiserviciosTecPhotos,
 	vinculoLicoresPhotos,
 	cooprogresoPhotos,
+	lagascaPhotos,
 };
