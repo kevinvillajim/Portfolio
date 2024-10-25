@@ -63,8 +63,8 @@ function App() {
 				translations={translations}
 			/>
 			<Slider
-				img1="https://raw.githubusercontent.com/kevinvillajim/Portfolio/main/src/assets/Coder.png"
-				img2="https://raw.githubusercontent.com/kevinvillajim/Portfolio/main/src/assets/Designer.png"
+				img1="https://raw.githubusercontent.com/kevinvillajim/Portfolio/main/src/assets/Coder.jpg"
+				img2="https://raw.githubusercontent.com/kevinvillajim/Portfolio/main/src/assets/Designer.jpg"
 			/>
 			<img
 				src="https://raw.githubusercontent.com/kevinvillajim/Portfolio/main/src/assets/divisorInvertido.png"
@@ -632,15 +632,15 @@ function App() {
 												/>
 											);
 										case 8:
-										return (
-											<ModalImg
-												photos={lagascaPhotos}
-												modalVisible={modalVisible}
-												setModalVisible={setModalVisible}
-												currentPhotoIndex={0}
-												language={language}
-											/>
-										);
+											return (
+												<ModalImg
+													photos={lagascaPhotos}
+													modalVisible={modalVisible}
+													setModalVisible={setModalVisible}
+													currentPhotoIndex={0}
+													language={language}
+												/>
+											);
 										default:
 											return null;
 									}
