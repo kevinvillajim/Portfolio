@@ -127,7 +127,7 @@ function App() {
 					{translations.codePortfolioSkills}
 				</h2>
 				<div
-					className="flex flex-row justify-between align-middle bg-white p-[2rem] rounded-xl"
+					className="flex flex-row flex-wrap gap-5 justify-center align-middle bg-white p-[2rem] rounded-xl"
 					id="code-skills"
 				>
 					{skills.map((item, index) => (
