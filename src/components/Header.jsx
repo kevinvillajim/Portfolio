@@ -60,18 +60,21 @@ export function Header({
 				>
 					{language === "ES" ? (
 						<img
+							title="Cambiar el Idioma"
 							src="https://raw.githubusercontent.com/kevinvillajim/CV/main/images/icons/ES.png"
 							className="h-[30px]"
 							alt="ES Language"
 						/>
 					) : language === "EN" ? (
 						<img
+							title="Change the Language"
 							src="https://raw.githubusercontent.com/kevinvillajim/CV/main/images/icons/EN.png"
 							className="h-[30px]"
 							alt="EN Language"
 						/>
 					) : (
 						<img
+							title="Troca o Idioma"
 							src="https://raw.githubusercontent.com/kevinvillajim/CV/main/images/icons/PR.png"
 							className="h-[30px]"
 							alt="PR Language"

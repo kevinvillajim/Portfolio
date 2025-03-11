@@ -10,7 +10,9 @@ import {useState} from "react";
 import {Footer} from "./components/Footer";
 import {
 	skills,
+	nameSkills,
 	skillsDesign,
+	nameSkillsDesign,
 	otherPhotos,
 	ecoPlagasPhotos,
 	queHechoBurguerPhotos,
@@ -131,7 +133,12 @@ function App() {
 					id="code-skills"
 				>
 					{skills.map((item, index) => (
-						<Skills key={index} alt={`skill-${index}`} img={item} />
+						<Skills
+							title={nameSkills[index]}
+							key={index}
+							alt={`skill-${index}`}
+							img={item}
+						/>
 					))}
 				</div>
 				<h2 className="text-[40px] text-start my-[2rem]">
@@ -441,7 +448,12 @@ function App() {
 					id="design-skills"
 				>
 					{skillsDesign.map((item, index) => (
-						<Skills key={index} alt={`skillDesign-${index}`} img={item} />
+						<Skills
+							title={nameSkillsDesign[index]}
+							key={index}
+							alt={`skillDesign-${index}`}
+							img={item}
+						/>
 					))}
 				</div>
 				<h2 className="text-[40px] text-start my-[2rem]">

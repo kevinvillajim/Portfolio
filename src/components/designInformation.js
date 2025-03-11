@@ -17,6 +17,25 @@ const skills = [
 	"https://raw.githubusercontent.com/kevinvillajim/Portfolio/main/src/assets/icons/GH.png",
 	"https://raw.githubusercontent.com/kevinvillajim/Portfolio/main/src/assets/icons/FIGMA.png",
 ];
+const nameSkills = [
+	"HTML",
+	"CSS",
+	"Javascript",
+	"PHP",
+	"Python",
+	"C#",
+	"NodeJS",
+	"Bootstrap",
+	"React",
+	"Wordpress",
+	"MySQL",
+	"PostgreSQL",
+	"MongoDB",
+	"Tailwind",
+	"Laravel",
+	"GitHub",
+	"Figma",
+];
 
 const lagascaPhotos = [
 	{
@@ -145,6 +164,17 @@ const skillsDesign = [
 	"https://raw.githubusercontent.com/kevinvillajim/Portfolio/main/src/assets/icons/ACAD.webp",
 	"https://raw.githubusercontent.com/kevinvillajim/Portfolio/main/src/assets/icons/PB.png",
 	"https://raw.githubusercontent.com/kevinvillajim/Portfolio/main/src/assets/icons/FL.png",
+];
+
+const nameSkillsDesign = [
+	"Photoshop",
+	"Illustrador",
+	"PremierePro",
+	"SketchUp",
+	"ArchiCAD",
+	"AutoCAD",
+	"PolyBoard",
+	"FLStudio",
 ];
 
 const otherPhotos = [
@@ -615,7 +645,9 @@ const vinculoLicoresPhotos = [
 
 export {
 	skills,
+	nameSkills,
 	skillsDesign,
+	nameSkillsDesign,
 	otherPhotos,
 	ecoPlagasPhotos,
 	queHechoBurguerPhotos,
