@@ -4,7 +4,7 @@ const skills = [
 	"https://raw.githubusercontent.com/kevinvillajim/Portfolio/main/src/assets/icons/JS.png",
 	"https://raw.githubusercontent.com/kevinvillajim/Portfolio/main/src/assets/icons/PHP.png",
 	"https://raw.githubusercontent.com/kevinvillajim/Portfolio/main/src/assets/icons/PY.webp",
-	"https://raw.githubusercontent.com/kevinvillajim/Portfolio/main/src/assets/icons/C#.svg",
+	"https://raw.githubusercontent.com/kevinvillajim/Portfolio/main/src/assets/icons/C%23.svg",
 	"https://raw.githubusercontent.com/kevinvillajim/Portfolio/main/src/assets/icons/NODE.png",
 	"https://raw.githubusercontent.com/kevinvillajim/Portfolio/main/src/assets/icons/BS.png",
 	"https://raw.githubusercontent.com/kevinvillajim/Portfolio/main/src/assets/icons/REACT.png",
