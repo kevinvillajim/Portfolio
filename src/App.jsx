@@ -252,6 +252,7 @@ function App() {
 							"https://raw.githubusercontent.com/kevinvillajim/Portfolio/main/src/assets/icons/GH.png",
 						]}
 						deploy="https://ecoplagasecuador.com/"
+						// deploy="https://ecoplagasecuador.com/"
 						git="https://github.com/kevinvillajim/EcoPlagas"
 						translations={translations}
 					/>
