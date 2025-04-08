@@ -251,7 +251,7 @@ function App() {
 							"https://raw.githubusercontent.com/kevinvillajim/Portfolio/main/src/assets/icons/JS.png",
 							"https://raw.githubusercontent.com/kevinvillajim/Portfolio/main/src/assets/icons/GH.png",
 						]}
-						deploy="https://ecoplagasecuador.com/"
+						deploy="https://kevinvillajim.github.io/EcoPlagas/"
 						// deploy="https://ecoplagasecuador.com/"
 						git="https://github.com/kevinvillajim/EcoPlagas"
 						translations={translations}
