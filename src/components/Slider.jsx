@@ -116,7 +116,7 @@ function Slider({
 						}}
 					>
 						<h2
-							className="text-xl lg:text-7xl font-bold mb-2"
+							className="text-xl lg:text-8xl font-bold mb-2"
 							dangerouslySetInnerHTML={{__html: coderTitle}}
 						></h2>
 						<p className="text-xs lg:text-xl">{coderText}</p>
@@ -154,7 +154,7 @@ function Slider({
 					<div
 						className={`max-w-[43%] absolute lg:top-[44%] lg:right-10 right-6 bottom-4 ${textDesigner} text-right`}
 					>
-						<h2 className="text-xl lg:text-7xl font-bold mb-4 fontDesign">
+						<h2 className="text-xl lg:text-8xl font-bold mb-4 fontDesign">
 							{designerTitle}
 						</h2>
 						<p className="text-[11px] lg:text-xl">{designerText}</p>
