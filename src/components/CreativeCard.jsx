@@ -13,7 +13,7 @@ const CreativeCard = ({
 }) => {
 	return (
 		<div className="w-full rounded-lg shadow-lg overflow-hidden bg-white flex flex-col justify-between transform transition-all duration-300 hover:shadow-2xl hover:-translate-y-1">
-			<div className="relative overflow-hidden group h-[30rem]">
+			<div className="relative overflow-hidden group h-[18rem] md:h-[30rem]">
 				<img
 					src={img}
 					className="w-full md:h-full lg:h-full object-cover p-2 transform transition-transform duration-500 group-hover:scale-105"
