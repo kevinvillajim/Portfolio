@@ -15,7 +15,7 @@ export function WhyCard({img, title, text}) {
 	};
 
 	return (
-		<div className="w-full h-64 perspective">
+		<div className="flex flex-col md:flex.row w-full h-64 perspective">
 			<div
 				className={`relative w-full h-full transition-transform duration-500 preserve-3d cursor-pointer ${
 					flipped ? "rotate-y-180" : ""
