@@ -65,8 +65,12 @@ function App() {
 				translations={translations}
 			/>
 			<Slider
-				img1="https://raw.githubusercontent.com/kevinvillajim/Portfolio/main/src/assets/Coder.png"
-				img2="https://raw.githubusercontent.com/kevinvillajim/Portfolio/main/src/assets/Designer.png"
+				img1="https://raw.githubusercontent.com/kevinvillajim/Portfolio/refs/heads/main/src/assets/Coder.png"
+				img2="https://raw.githubusercontent.com/kevinvillajim/Portfolio/refs/heads/main/src/assets/Designer.png"
+				coderTitle={translations.coderTitle}
+				designerTitle={translations.designerTitle}
+				coderText={translations.coderText}
+				designerText={translations.designerText}
 			/>
 			<img
 				src="https://raw.githubusercontent.com/kevinvillajim/Portfolio/main/src/assets/divisorInvertido.png"

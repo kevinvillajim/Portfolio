@@ -1,40 +1,66 @@
+import {useState, useEffect} from "react";
 import PropTypes from "prop-types";
-import {useState} from "react";
 
 export function WhyCard({img, title, text}) {
 	const [showDetails, setShowDetails] = useState(false);
+	const [flipped, setFlipped] = useState(false);
 
-	const toggleDetails = () => {
-		setShowDetails(!showDetails);
+	const handleClick = () => {
+		setFlipped(!flipped);
+
+		// Cambiamos el contenido a mitad de la animación
+		setTimeout(() => {
+			setShowDetails(!showDetails);
+		}, 150);
 	};
 
 	return (
-		<>
+		<div className="w-full h-64 perspective">
 			<div
-				className={`flex flex-col justify-center text-center rounded-md p-[20px] bg-[#fff] border border-solid border-gray-300 cursor-pointer ${
-					showDetails ? "clicked" : ""
+				className={`relative w-full h-full transition-transform duration-500 preserve-3d cursor-pointer ${
+					flipped ? "rotate-y-180" : ""
 				}`}
-				onClick={toggleDetails}
-				id="why-card"
+				onClick={handleClick}
 			>
-				{showDetails ? (
-					<>
-						<h4 className="my-[1rem] text-[30px] text-[#a83f47] font-bold">
-							{title}
-						</h4>
-						<span className="why-text">{text}</span>
-					</>
-				) : (
-					<div className="w-[100%] flex justify-center">{img}</div>
-				)}
+				{/* Cara frontal */}
+				<div className="absolute w-full h-full backface-hidden bg-white rounded-xl shadow-lg border border-gray-200 flex items-center justify-center p-6">
+					<div className="transition-transform duration-300 hover:scale-110">
+						{img}
+					</div>
+				</div>
+
+				{/* Cara trasera */}
+				<div className="absolute w-full h-full backface-hidden bg-gradient-to-br from-white to-gray-50 rounded-xl shadow-lg border border-gray-200 rotate-y-180 p-6 flex flex-col">
+					<h4 className="text-2xl font-bold mb-4 text-rose-600 pb-2 border-b border-rose-200">
+						{title}
+					</h4>
+					<div className="text-gray-700 overflow-auto text-sm">{text}</div>
+				</div>
 			</div>
-		</>
+
+			<style>{`
+				.perspective {
+					perspective: 1000px;
+				}
+
+				.preserve-3d {
+					transform-style: preserve-3d;
+				}
+
+				.backface-hidden {
+					backface-visibility: hidden;
+				}
+
+				.rotate-y-180 {
+					transform: rotateY(180deg);
+				}
+			`}</style>
+		</div>
 	);
 }
 
 WhyCard.propTypes = {
 	img: PropTypes.node.isRequired,
-	img2: PropTypes.node,
 	title: PropTypes.string.isRequired,
 	text: PropTypes.string.isRequired,
 };

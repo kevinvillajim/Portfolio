@@ -72,7 +72,7 @@ const ModalImg = ({
 		<div className="fixed inset-0 bg-black/80 z-50 flex items-center justify-center backdrop-blur-sm">
 			<div className="w-full max-w-6xl bg-white rounded-lg shadow-2xl overflow-hidden relative max-h-[90vh]">
 				{/* Cabecera */}
-				<div className="px-6 py-4 border-b border-gray-200 flex justify-between items-center bg-gradient-to-r from-black to-gray-800 text-white">
+				<div className="px-6 py-4 border-b border-gray-200 flex justify-between items-center bg-gradient-to-r from-[#242423] to-[#f5cb5c] text-white">
 					<h2 className="md:text-2xl font-bold font-design">
 						{photos[currentIndex].title}
 					</h2>
@@ -150,7 +150,7 @@ const ModalImg = ({
 										key={idx}
 										className={`w-16 h-16 flex-shrink-0 rounded cursor-pointer overflow-hidden transition-all ${
 											idx === currentIndex
-												? "ring-2 ring-blue-500 ring-offset-2"
+												? "ring-2 ring-[#f5cb5c] ring-offset-2"
 												: "opacity-70 hover:opacity-100"
 										}`}
 										onClick={() => {

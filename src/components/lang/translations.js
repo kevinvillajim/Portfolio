@@ -4,6 +4,11 @@ const translationEN = {
 	headerDesignPortfolio: "Design Portfolio",
 	headerContact: "Contact",
 
+	coderTitle:"&lt;CODER&gt;",
+	designerTitle:"Designer",
+	coderText:"Full Stack developer with solid knowledge and 2 years of freelance exprience",
+	designerText:"Versatile graphic designer with 11 years of experience, crafting visual brands and digital experiences",
+
 	aboutTitle: "About",
 	aboutContent:
 		"Hi there! :D, my name is Kevin Villacreses, I live in Ecuador and I am 27. Since 1 year ago have discover what I was made for, The Develop, and it changes my focus.",
@@ -88,7 +93,7 @@ const translationEN = {
 	projectContent17: "Full Stack Platform Website - Responsive Design - Complete CRUD with JWT, relational tables, session actions and roles, grades, platform reports and XML reports, course platform for users and user certifications.",
 	projectTitle18: "Attendance Platform - Church of Jesus Christ, La Gasca Ward",
 	projectContent18: "Full Stack Attendance Platform - Responsive Design - Complete CRUD, relational tables, JWT authentication, attendance platform for users and user reports, personalized message center and WhatsApp reminders.",
-		  
+
 	designPortfolioTitle: "Design and Creative Portfolio",
 	designSkills: "Skills:",
 	designProjects: "Projects:",
@@ -127,6 +132,11 @@ const translationES = {
 	headerCodePortfolio: "Portafolio de Código",
 	headerDesignPortfolio: "Portafolio de Diseño",
 	headerContact: "Contacto",
+
+	coderTitle: "&lt;CODER&gt;",
+	designerTitle: "Designer",
+	coderText: "Desarrollador Full Stack con sólidos conocimientos y 2 años de experiencia como freelance.",
+	designerText: "Diseñador gráfico versátil con 11 años de experiencia, creando marcas visuales y experiencias digitales.",
 
 	aboutTitle: "Acerca de",
 	aboutContent:
@@ -214,10 +224,13 @@ const translationES = {
 		"Pagina Web - React JS, React router dom y Tailwind Para empresa de tecnología - Diseño Responsivo.",
 
 	projectTitle17: "Plataforma Educativa - Cooperativa Cooprogreso",
-	projectContent17: "Plataforma Full Stack Website - Diseño Responsive - CRUD Completo con JWT, tablas relacionales, acciones de sesión y roles, calificaciones, reportes de plataforma y reportes XML, plataforma de cursos para usuarios y certificaciones de usuarios.",
-	projectTitle18: "Plataforma de Asistencia - Iglesia de Jesucristo, Barrio La Gasca",
-	projectContent18: "Plataforma de Asistencia Full Stack - Diseño Responsive - CRUD Completo, tablas relacionales, autenticación JWT, plataforma de asistencia para usuarios y reportes de usuarios, centro de mensajes personalizados y recordatorios de WhatsApp.",
-	
+	projectContent17:
+		"Plataforma Full Stack Website - Diseño Responsive - CRUD Completo con JWT, tablas relacionales, acciones de sesión y roles, calificaciones, reportes de plataforma y reportes XML, plataforma de cursos para usuarios y certificaciones de usuarios.",
+	projectTitle18:
+		"Plataforma de Asistencia - Iglesia de Jesucristo, Barrio La Gasca",
+	projectContent18:
+		"Plataforma de Asistencia Full Stack - Diseño Responsive - CRUD Completo, tablas relacionales, autenticación JWT, plataforma de asistencia para usuarios y reportes de usuarios, centro de mensajes personalizados y recordatorios de WhatsApp.",
+
 	designPortfolioTitle: "Portafolio de Diseño y Creatividad",
 	designSkills: "Habilidades:",
 	designProjects: "Proyectos:",
@@ -258,6 +271,13 @@ const translationPR = {
 	headerCodePortfolio: "Portfólio de Código",
 	headerDesignPortfolio: "Portfólio de Design",
 	headerContact: "Contato",
+
+	coderTitle: "&lt;CODER&gt;",
+	designerTitle: "Designer",
+	coderText:
+		"Desenvolvedor Full Stack com sólidos conhecimentos e 2 anos de experiência como freelancer.",
+	designerText:
+		"Designer gráfico versátil com 11 anos de experiência, criando marcas visuais e experiências digitais.",
 
 	aboutTitle: "Sobre",
 	aboutContent:
@@ -345,10 +365,13 @@ const translationPR = {
 		"Site Web - React JS, React router dom e Tailwind Para empresa de tecnología - Design Responsivo.",
 
 	projectTitle17: "Plataforma Educacional - Cooperativa Cooprogreso",
-	projectContent17: "Plataforma Full Stack Website - Design Responsivo - CRUD Completo com JWT, tabelas relacionais, ações de sessão e funções, notas, relatórios da plataforma e relatórios XML, plataforma de cursos para usuários e certificações de usuários.",
-	projectTitle18: "Plataforma de Assistência - Igreja de Jesus Cristo, Bairro La Gasca",
-	projectContent18: "Plataforma de Assistência Full Stack - Design Responsivo - CRUD Completo, tabelas relacionais, autenticação JWT, plataforma de assistência para usuários e relatórios de usuários, centro de mensagens personalizadas e lembretes de WhatsApp.",
-	
+	projectContent17:
+		"Plataforma Full Stack Website - Design Responsivo - CRUD Completo com JWT, tabelas relacionais, ações de sessão e funções, notas, relatórios da plataforma e relatórios XML, plataforma de cursos para usuários e certificações de usuários.",
+	projectTitle18:
+		"Plataforma de Assistência - Igreja de Jesus Cristo, Bairro La Gasca",
+	projectContent18:
+		"Plataforma de Assistência Full Stack - Design Responsivo - CRUD Completo, tabelas relacionais, autenticação JWT, plataforma de assistência para usuários e relatórios de usuários, centro de mensagens personalizadas e lembretes de WhatsApp.",
+
 	designPortfolioTitle: "Portfólio de Design",
 	designSkills: "Habilidades:",
 	designProjects: "Projetos:",

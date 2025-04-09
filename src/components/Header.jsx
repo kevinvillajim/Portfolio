@@ -8,7 +8,7 @@ export function Header({
 }) {
 	return (
 		<div
-			className="w-screen h-[6rem] bg-[black] flex items-center justify-between px-[10rem] mb-[0.5rem] sm: w-100%"
+			className="w-screen h-[6rem] bg-[#242423] flex items-center justify-between px-[10rem] mb-[0.5rem] sm: w-100%"
 			id="top"
 		>
 			<div className="w-[5rem] text-[white]">

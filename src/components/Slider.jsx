@@ -1,13 +1,18 @@
 import {useState, useEffect, useRef} from "react";
 import PropTypes from "prop-types";
 
+const textCoder = "text-white"
+const textDesigner = "text-black";
+
 function Slider({
-	img1 = "https://raw.githubusercontent.com/kevinvillajim/Portfolio/main/src/assets/Coder.jpg",
-	img2 = "https://raw.githubusercontent.com/kevinvillajim/Portfolio/main/src/assets/Designer.jpg",
+	img1 = "https://raw.githubusercontent.com/kevinvillajim/Portfolio/refs/heads/main/src/assets/Coder.png",
+	img2 = "https://raw.githubusercontent.com/kevinvillajim/Portfolio/refs/heads/main/src/assets/Designer.png",
 	coderTitle = "&lt;CODER&gt;",
 	designerTitle = "Designer",
 	coderText = "Full Stack developer with solid knowledge and 2 years of freelance exprience",
 	designerText = "Versatile graphic designer with 11 years of experience, crafting visual brands and digital experiences",
+	bgColorLeft = "#333533", // Color de fondo para el lado izquierdo (coder)
+	bgColorRight = "#f5cb5c", // Color de fondo para el lado derecho (designer)
 }) {
 	const [slideValue, setSlideValue] = useState(50);
 	const [animating, setAnimating] = useState(false);
@@ -88,28 +93,45 @@ function Slider({
 				arrow_back_ios
 			</span>
 			<div className="wrapper" ref={wrapperRef}>
-				{/* IMAGEN 1 (Coder) - Capa base */}
-				<div className="bg-blue">
-				<img
-					src={img1}
-					alt="Image 1"
-					className="img1 w-full h-full object-cover absolute inset-0"
-					style={{zIndex: 1}}
-				/>
-
-				{/* TEXTO CODER - Siempre visible, encima de la imagen base */}
+				{/* Fondo izquierdo (coder) */}
 				<div
-					className="max-w-[43%] absolute left-5 bottom-5 text-black text-left"
+					className="absolute inset-0"
+					style={{backgroundColor: bgColorLeft, zIndex: 0}}
+				></div>
+
+				{/* IMAGEN 1 (Coder) - Capa base */}
+				<div className="absolute inset-0">
+					<img
+						src={img1}
+						alt="Image 1"
+						className="img1 w-full h-full object-cover absolute inset-0"
+						style={{zIndex: 1}}
+					/>
+
+					{/* TEXTO CODER - Siempre visible, encima de la imagen base */}
+					<div
+						className={`max-w-[43%] lg:top-[44%] lg:left-10 absolute left-5 bottom-5 ${textCoder} text-left`}
+						style={{
+							zIndex: 2,
+						}}
+					>
+						<h2
+							className="text-xl lg:text-7xl font-bold mb-2"
+							dangerouslySetInnerHTML={{__html: coderTitle}}
+						></h2>
+						<p className="text-xs lg:text-xl">{coderText}</p>
+					</div>
+				</div>
+
+				{/* Fondo derecho (designer) con clip-path */}
+				<div
+					className="absolute inset-0"
 					style={{
+						backgroundColor: bgColorRight,
 						zIndex: 2,
+						clipPath: clipPathValue,
 					}}
-				>
-					<h2
-						className="text-xl  font-bold mb-2"
-						dangerouslySetInnerHTML={{__html: coderTitle}}
-					></h2>
-					<p className="text-xs">{coderText}</p>
-				</div></div>
+				></div>
 
 				{/* IMAGEN 2 (Designer) con clip-path - Se muestra por encima del contenido Coder */}
 				<div className="absolute inset-0" style={{zIndex: 3}}>
@@ -129,17 +151,19 @@ function Slider({
 						clipPath: clipPathValue,
 					}}
 				>
-					<div className="max-w-[43%] absolute right-6 bottom-4 text-black text-right">
-						<h2 className="text-xl font-bold mb-2 fontDesign">
+					<div
+						className={`max-w-[43%] absolute lg:top-[44%] lg:right-10 right-6 bottom-4 ${textDesigner} text-right`}
+					>
+						<h2 className="text-xl lg:text-7xl font-bold mb-4 fontDesign">
 							{designerTitle}
 						</h2>
-						<p className="text-[11px]">{designerText}</p>
+						<p className="text-[11px] lg:text-xl">{designerText}</p>
 					</div>
 				</div>
 
 				{/* LÍNEA DIVISORIA */}
 				<div
-					className="absolute inset-y-0 w-1 bg-white shadow-lg"
+					className="absolute inset-y-0 w-[1px] bg-white shadow-lg"
 					style={{
 						left: `${slideValue}%`,
 						zIndex: 5,
@@ -186,6 +210,8 @@ Slider.propTypes = {
 	designerTitle: PropTypes.string,
 	coderText: PropTypes.string,
 	designerText: PropTypes.string,
+	bgColorLeft: PropTypes.string, // Nuevo prop para el color de fondo izquierdo
+	bgColorRight: PropTypes.string, // Nuevo prop para el color de fondo derecho
 };
 
 export default Slider;

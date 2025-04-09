@@ -4,7 +4,7 @@ import {Social} from "./Social";
 export function Footer({scrollToReference, translations}) {
 	return (
 		<>
-			<div className="bg-[black] w-[100%] h-[250px] flex flex-col justify-center items-center p-[1rem] gap-5">
+			<div className="bg-[#242423] w-[100%] h-[250px] flex flex-col justify-center items-center p-[1rem] gap-5">
 				<div className="flex gap-3">
 					<Social
 						link="https://api.whatsapp.com/send?phone=593963368896&text=Buenas%20tardes,%20me%20contacto%20desde%20tu%20portfolio."
