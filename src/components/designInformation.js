@@ -582,13 +582,6 @@ const multiserviciosTecPhotos = [
 		descriptionES: "Flyer de servicio 6",
 		descriptionPT: "Panfleto de serviço 6",
 	},
-	// {
-	// 	title: "Multiservicios TEC",
-	// 	img: "https://raw.githubusercontent.com/kevinvillajim/Portfolio/main/src/assets/portfolio/Creative/multiserviciosTec/10.jpg",
-	// 	descriptionEN: "Social media Banner",
-	// 	descriptionES: "Banner para redes sociales",
-	// 	descriptionPT: "Banner para mídias sociais",
-	// },
 	{
 		title: "Multiservicios TEC",
 		img: "https://raw.githubusercontent.com/kevinvillajim/Portfolio/main/src/assets/portfolio/Creative/multiserviciosTec/11.jpg",
