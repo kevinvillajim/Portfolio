@@ -26,32 +26,48 @@ export function Header({
 				>
 					<li
 						onClick={() => scrollToReference("about")}
-						className="cursor-pointer transition-transform hover:transform hover:translate-y-[-1px] shaddow-glow"
+						className="cursor-pointer relative overflow-hidden group px-3 py-1"
 					>
-						{translations.headerAbout}
+						<span className="relative z-10">{translations.headerAbout}</span>
+						<span className="absolute bottom-0 left-0 w-0 h-0.5 bg-white transition-all duration-300 group-hover:w-full"></span>
+						<span className="absolute top-0 right-0 w-0 h-0.5 bg-white transition-all duration-300 group-hover:w-full"></span>
+						<span className="absolute inset-0 bg-white opacity-0 scale-0 z-0 transition-all duration-300 group-hover:opacity-10 group-hover:scale-100 rounded"></span>
 					</li>
 					<li
 						onClick={() => scrollToReference("code")}
-						className="cursor-pointer transition-transform hover:transform hover:translate-y-[-1px] shaddow-glow"
+						className="cursor-pointer relative overflow-hidden group px-3 py-1"
 					>
-						{translations.headerCodePortfolio}
+						<span className="relative z-10">
+							{translations.headerCodePortfolio}
+						</span>
+						<span className="absolute bottom-0 left-0 w-0 h-0.5 bg-white transition-all duration-300 group-hover:w-full"></span>
+						<span className="absolute top-0 right-0 w-0 h-0.5 bg-white transition-all duration-300 group-hover:w-full"></span>
+						<span className="absolute inset-0 bg-white opacity-0 scale-0 z-0 transition-all duration-300 group-hover:opacity-10 group-hover:scale-100 rounded"></span>
 					</li>
 					<li
 						onClick={() => scrollToReference("design")}
-						className="cursor-pointer transition-transform hover:transform hover:translate-y-[-1px] shaddow-glow"
+						className="cursor-pointer relative overflow-hidden group px-3 py-1"
 					>
-						{translations.headerDesignPortfolio}
+						<span className="relative z-10">
+							{translations.headerDesignPortfolio}
+						</span>
+						<span className="absolute bottom-0 left-0 w-0 h-0.5 bg-white transition-all duration-300 group-hover:w-full"></span>
+						<span className="absolute top-0 right-0 w-0 h-0.5 bg-white transition-all duration-300 group-hover:w-full"></span>
+						<span className="absolute inset-0 bg-white opacity-0 scale-0 z-0 transition-all duration-300 group-hover:opacity-10 group-hover:scale-100 rounded"></span>
 					</li>
 					<li
 						onClick={() => scrollToReference("contact")}
-						className="cursor-pointer transition-transform hover:transform hover:translate-y-[-1px] shaddow-glow"
+						className="cursor-pointer relative overflow-hidden group px-3 py-1"
 					>
-						{translations.headerContact}
+						<span className="relative z-10">{translations.headerContact}</span>
+						<span className="absolute bottom-0 left-0 w-0 h-0.5 bg-white transition-all duration-300 group-hover:w-full"></span>
+						<span className="absolute top-0 right-0 w-0 h-0.5 bg-white transition-all duration-300 group-hover:w-full"></span>
+						<span className="absolute inset-0 bg-white opacity-0 scale-0 z-0 transition-all duration-300 group-hover:opacity-10 group-hover:scale-100 rounded"></span>
 					</li>
 				</ul>
 				<button
 					id="lang"
-					className="border-[2px] border-white rounded-full p-[7px] ml-[2rem]"
+					className="border-[2px] border-white rounded-full p-[7px] ml-[2rem] hover:scale-105"
 					onClick={() => {
 						setLanguage(
 							language === "EN" ? "ES" : language === "ES" ? "PR" : "EN"

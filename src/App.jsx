@@ -3,11 +3,11 @@ import {Header} from "./components/Header";
 import "./App.css";
 import {WhyCard} from "./components/WhyCard";
 import {Skills} from "./components/Skills";
-import {ProjectCard} from "./components/ProjectCard";
-import {CreativeCard} from "./components/CreativeCard";
-import {ModalImg} from "./components/ModalImg";
+import ProjectCard from "./components/ProjectCard";
+import CreativeCard from "./components/CreativeCard";
+import ModalImg from "./components/ModalImg";
 import {useState} from "react";
-import {Footer} from "./components/Footer";
+import { Footer } from "./components/Footer";
 import {
 	skills,
 	nameSkills,
@@ -65,8 +65,8 @@ function App() {
 				translations={translations}
 			/>
 			<Slider
-				img1="https://raw.githubusercontent.com/kevinvillajim/Portfolio/main/src/assets/Coder.jpg"
-				img2="https://raw.githubusercontent.com/kevinvillajim/Portfolio/main/src/assets/Designer.jpg"
+				img1="https://raw.githubusercontent.com/kevinvillajim/Portfolio/main/src/assets/Coder.png"
+				img2="https://raw.githubusercontent.com/kevinvillajim/Portfolio/main/src/assets/Designer.png"
 			/>
 			<img
 				src="https://raw.githubusercontent.com/kevinvillajim/Portfolio/main/src/assets/divisorInvertido.png"
@@ -120,7 +120,10 @@ function App() {
 				className="w-[100%] mb-[3rem]"
 			/>
 			<section className="w-[100%] px-[12rem]" id="code-section">
-				<h1 className="text-[90px] mb-[5rem]" id="code">
+				<h1
+					className="text-[50px] justify-center flex flex-wrap md:text-[60px] lg:text-[90px] mb-[5rem]"
+					id="code"
+				>
 					<strong>&lt;code&gt;</strong>
 					{translations.codePortfolioTitle}
 					<strong>&lt;/code&gt;</strong>
@@ -438,7 +441,10 @@ function App() {
 				</div>
 			</section>
 			<section className="w-[100%] px-[12rem]" id="design-section">
-				<h1 className="text-[90px] mb-[5rem] mt-[8rem] fontDesign" id="design">
+				<h1
+					className="text-[37px] md:text-[60px] lg:text-[90px] mb-[5rem] mt-[8rem] fontDesign"
+					id="design"
+				>
 					<strong>{translations.designPortfolioTitle}</strong>
 				</h1>
 				<h2 className="text-[40px] text-start my-[2rem]">
