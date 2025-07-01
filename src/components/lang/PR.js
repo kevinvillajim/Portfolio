@@ -104,7 +104,7 @@ export const translationPR = {
 	projectContent18:
 		"Plataforma de Assistência Full Stack - Design Responsivo - CRUD Completo, tabelas relacionais, autenticação JWT, plataforma de assistência para usuários e relatórios de usuários, centro de mensagens personalizadas e lembretes de WhatsApp.",
 	projectTitle19:
-		"Redesign de Site - React JS e Tailwind, Empresa de Tecnologia - Design Responsivo.",
+		"Redesign de Site - Bconnect - React JS e Tailwind, Empresa de Tecnologia - Design Responsivo.",
 	projectContent19:
 		"Site com roteador - React JS, React Router DOM e Tailwind para empresa de tecnologia - Design Responsivo.",
 	designPortfolioTitle: "Portfólio de Design",

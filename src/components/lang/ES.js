@@ -104,7 +104,7 @@ const translationES = {
 	projectContent18:
 		"Plataforma de Asistencia Full Stack - Diseño Responsive - CRUD Completo, tablas relacionales, autenticación JWT, plataforma de asistencia para usuarios y reportes de usuarios, centro de mensajes personalizados y recordatorios de WhatsApp.",
 	projectTitle19:
-		"Rediseño de Pagina Web - React JS and Tailwind, Empresa de tecnología - Diseño responsivo.",
+		"Rediseño de Pagina Web - Bconnect - React JS and Tailwind, Empresa de tecnología - Diseño responsivo.",
 	projectContent19:
 		"Pagina Web con enrutador - React JS, React router dom y Tailwind Para empresa de tecnología - Diseño Responsivo.",
 

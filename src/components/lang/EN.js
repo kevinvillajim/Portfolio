@@ -4,10 +4,12 @@ const translationEN = {
 	headerDesignPortfolio: "Design Portfolio",
 	headerContact: "Contact",
 
-	coderTitle:"&lt;CODER&gt;",
-	designerTitle:"Designer",
-	coderText:"Full Stack developer with solid knowledge and 2 years of freelance exprience",
-	designerText:"Versatile graphic designer with 11 years of experience, crafting visual brands and digital experiences",
+	coderTitle: "&lt;CODER&gt;",
+	designerTitle: "Designer",
+	coderText:
+		"Full Stack developer with solid knowledge and 2 years of freelance exprience",
+	designerText:
+		"Versatile graphic designer with 11 years of experience, crafting visual brands and digital experiences",
 
 	aboutTitle: "About",
 	aboutContent:
@@ -88,16 +90,17 @@ const translationEN = {
 	projectTitle16: "Site - Bitsoft Team",
 	projectContent16:
 		"Website - React JS, React router dom and Tailwind Website for a tecnology enterprise - Responsive Design.",
-		
-	projectTitle17: "Educational Platform - Cooprogreso Cooperative",
-	projectContent17: "Full Stack Platform Website - Responsive Design - Complete CRUD with JWT, relational tables, session actions and roles, grades, platform reports and XML reports, course platform for users and user certifications.",
-	projectTitle18: "Attendance Platform - Church of Jesus Christ, La Gasca Ward",
-	projectContent18: "Full Stack Attendance Platform - Responsive Design - Complete CRUD, relational tables, JWT authentication, attendance platform for users and user reports, personalized message center and WhatsApp reminders.",
 
-    projectTitle19:
-	"Website Redesign - React JS and Tailwind, Technology Company - Responsive Design.",
-    projectContent19:
-	"Website with router - React JS, React Router DOM",
+	projectTitle17: "Educational Platform - Cooprogreso Cooperative",
+	projectContent17:
+		"Full Stack Platform Website - Responsive Design - Complete CRUD with JWT, relational tables, session actions and roles, grades, platform reports and XML reports, course platform for users and user certifications.",
+	projectTitle18: "Attendance Platform - Church of Jesus Christ, La Gasca Ward",
+	projectContent18:
+		"Full Stack Attendance Platform - Responsive Design - Complete CRUD, relational tables, JWT authentication, attendance platform for users and user reports, personalized message center and WhatsApp reminders.",
+
+	projectTitle19:
+		"Website Redesign - Bconnect - React JS and Tailwind, Technology Company - Responsive Design.",
+	projectContent19: "Website with router - React JS, React Router DOM",
 
 	designPortfolioTitle: "Design and Creative Portfolio",
 	designSkills: "Skills:",
