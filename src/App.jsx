@@ -153,6 +153,22 @@ function App() {
 				</h2>
 				<div className="grid grid-cols-2 gap-3" id="project-container">
 					<ProjectCard
+						img="https://raw.githubusercontent.com/kevinvillajim/Portfolio/main/src/assets/portfolio/b-connect2.0-site.png"
+						title={translations.projectTitle19}
+						text={translations.projectContent19}
+						skills={[
+							"https://raw.githubusercontent.com/kevinvillajim/Portfolio/main/src/assets/icons/REACT.png",
+							"https://raw.githubusercontent.com/kevinvillajim/Portfolio/main/src/assets/icons/TW.svg",
+							"https://raw.githubusercontent.com/kevinvillajim/Portfolio/main/src/assets/icons/HTML5.png",
+							"https://raw.githubusercontent.com/kevinvillajim/Portfolio/main/src/assets/icons/CSS.png",
+							"https://raw.githubusercontent.com/kevinvillajim/Portfolio/main/src/assets/icons/JS.png",
+							"https://raw.githubusercontent.com/kevinvillajim/Portfolio/main/src/assets/icons/GH.png",
+						]}
+						deploy="https://bconnect-ec.com/home"
+						git="https://github.com/kevinvillajim/bConnect2.0"
+						translations={translations}
+					/>
+					<ProjectCard
 						img="https://raw.githubusercontent.com/kevinvillajim/Portfolio/main/src/assets/portfolio/lagasca-platform.png"
 						title={translations.projectTitle18}
 						text={translations.projectContent18}
@@ -226,7 +242,7 @@ function App() {
 							"https://raw.githubusercontent.com/kevinvillajim/Portfolio/main/src/assets/icons/JS.png",
 							"https://raw.githubusercontent.com/kevinvillajim/Portfolio/main/src/assets/icons/GH.png",
 						]}
-						deploy="https://bconnect-ec.com/"
+						deploy="https://bconnect-ec-com.onrender.com/"
 						git="https://github.com/kevinvillajim/bconnect-ec.com"
 						translations={translations}
 					/>
