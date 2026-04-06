@@ -1,12 +1,26 @@
 import PropTypes from "prop-types";
-export function Button({link, text, onClick, className}) {
+
+export function Button({link, text, onClick, className = ""}) {
+	if (link) {
+		return (
+			<a
+				href={link}
+				onClick={onClick}
+				className={`button ${className}`.trim()}
+				target="_blank"
+				rel="noreferrer"
+			>
+				<span className="button-highlight" aria-hidden="true"></span>
+				<span className="button-label">{text}</span>
+			</a>
+		);
+	}
+
 	return (
-		<a href={link} onClick={onClick} className={`button ${className}`}>
-			<svg>
-				<rect x="0" y="0" fill="none" width="100%" height="100%" />
-			</svg>
-			{text}
-		</a>
+		<button type="button" onClick={onClick} className={`button ${className}`.trim()}>
+			<span className="button-highlight" aria-hidden="true"></span>
+			<span className="button-label">{text}</span>
+		</button>
 	);
 }
 

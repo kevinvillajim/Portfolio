@@ -1,5 +1,6 @@
 import {useState, useEffect} from "react";
 import PropTypes from "prop-types";
+import {createPortal} from "react-dom";
 
 const ModalImg = ({
 	photos,
@@ -28,6 +29,15 @@ const ModalImg = ({
 			window.removeEventListener("keydown", handleKeyDown);
 		};
 	}, [currentIndex]);
+
+	useEffect(() => {
+		const originalOverflow = document.body.style.overflow;
+		document.body.style.overflow = "hidden";
+
+		return () => {
+			document.body.style.overflow = originalOverflow;
+		};
+	}, []);
 
 	const goToNextPhoto = () => {
 		if (!isAnimating) {
@@ -68,7 +78,7 @@ const ModalImg = ({
 	};
 
 
-	return (
+	return createPortal(
 		<div className="fixed inset-0 bg-black/80 z-50 flex items-center justify-center backdrop-blur-sm">
 			<div className="w-full max-w-6xl bg-white rounded-lg shadow-2xl overflow-hidden relative max-h-[90vh]">
 				{/* Cabecera */}
@@ -178,7 +188,8 @@ const ModalImg = ({
 					</div>
 				</div>
 			</div>
-		</div>
+		</div>,
+		document.body
 	);
 };
 

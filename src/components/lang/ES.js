@@ -4,28 +4,38 @@ const translationES = {
 	headerDesignPortfolio: "Portafolio de Diseño",
 	headerContact: "Contacto",
 
+	heroEyebrow: "Interface Systems / Visual Identity",
+	heroTitle: "Desarrollo y diseño con una estética cuidada y criterio visual.",
+	heroText:
+		"Construyo interfaces, marcas y experiencias digitales con equilibrio entre claridad, detalle y personalidad.",
+	heroNoteLabel: "Enfoque",
+	heroNoteText:
+		"Elegancia visual, estructura limpia y detalles que elevan la percepción de la marca.",
+
 	coderTitle: "&lt;CODER&gt;",
 	designerTitle: "Designer",
 	coderText:
 		"Desarrollador Full Stack con sólidos conocimientos y 2 años de experiencia como freelance.",
 	designerText:
 		"Diseñador gráfico versátil con 11 años de experiencia, creando marcas visuales y experiencias digitales.",
+	coderSideLabel: "Lado desarrollo",
+	designerSideLabel: "Lado diseño",
 
 	aboutTitle: "Acerca de",
 	aboutContent:
-		"¡Hola! :D, mi nombre es Kevin Villacreses, vivo en Ecuador y tengo 27 años. Desde hace 1 año descubrí para qué fui hecho, el Desarrollo, y cambió mi enfoque.",
+		"¡Hola! :D, mi nombre es Kevin Villacreses, vivo en Ecuador y tengo 30 años. Desde hace 4 años descubrí que el Desarrollo es lo que amo, y al juntarlo con el Diseño, he encontrado mi verdadera pasión.",
 	aboutContentU: "Hay 3 palabras que me describen:",
 
 	aboutCardTitle1: "1. Curioso",
 	aboutCardTitle2: "2. Solucionador de problemas",
-	aboutCardTitle3: "3. Tranquilo",
+	aboutCardTitle3: "3. Apasionado por la estética",
 
 	aboutCardText1:
 		"Me encanta aprender, la mayor parte de mi tiempo la paso aprendiendo nuevas habilidades y ejercitando la mente; creo que la asociación de lógica y creatividad trae los mejores resultados.",
 	aboutCardText2:
-		"A veces disfruto de los problemas, ¿por qué no? es una oportunidad para crecer; me centro en encontrar la raíz del problema y luego en la solución. A veces, conocer más profundamente sobre el problema marca la diferencia. Dentro de la simplicidad están las cosas maravillosas",
+		"A veces disfruto de los problemas, ¿por qué no? es una oportunidad para crecer; me centro en encontrar la raíz del problema y luego en la solución. A veces, conocer más profundamente sobre el problema marca la diferencia. Dentro de la simplicidad, a menudo se encuentran las mejores soluciones.",
 	aboutCardText3:
-		"Una de las cosas que aprecio es la calma y la paz; todos los días hago introspección para mejorarme y dar lo mejor de mí.",
+		"Soy un apasionado de la estética, el equilibrio visual y la atención al detalle. Creo que el diseño es una forma de comunicación que puede transmitir emociones, valores y personalidad. Me esfuerzo por crear diseños que sean no solo funcionales, sino también hermosos y memorables.",
 
 	codePortfolioTitle: "Portafolio",
 	codePortfolioSkills: "Habilidades:",
@@ -138,6 +148,14 @@ const translationES = {
 	footerCodePortfolio: "Portafolio de Código",
 	footerDesignPortfolio: "Portafolio de Diseño",
 	footerContact: "Contacto",
+	footerContactEyebrow: "Contacto",
+	footerTitle: "Construyamos algo con personalidad.",
+	footerText:
+		"Frontend, branding, sitios web y experiencias digitales con claridad, orden y una presentación sólida.",
+
+	projectFeaturedLabel: "Proyecto destacado",
+	projectPrivateLabel: "Caso privado",
+	creativeDirectionLabel: "Dirección creativa",
 
 	codeButton: "Desplegar",
 	designButton: "Mostrar",

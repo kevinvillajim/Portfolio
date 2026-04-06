@@ -4,28 +4,38 @@ const translationEN = {
 	headerDesignPortfolio: "Design Portfolio",
 	headerContact: "Contact",
 
+	heroEyebrow: "Interface Systems / Visual Identity",
+	heroTitle: "Development and design with a refined visual standard.",
+	heroText:
+		"I build interfaces, brands and digital experiences with clarity, detail and a more intentional aesthetic.",
+	heroNoteLabel: "Approach",
+	heroNoteText:
+		"Visual elegance, clean structure and details that elevate brand perception.",
+
 	coderTitle: "&lt;CODER&gt;",
 	designerTitle: "Designer",
 	coderText:
 		"Full Stack developer with solid knowledge and 2 years of freelance exprience",
 	designerText:
 		"Versatile graphic designer with 11 years of experience, crafting visual brands and digital experiences",
+	coderSideLabel: "Developer side",
+	designerSideLabel: "Design side",
 
 	aboutTitle: "About",
 	aboutContent:
-		"Hi there! :D, my name is Kevin Villacreses, I live in Ecuador and I am 27. Since 1 year ago have discover what I was made for, The Develop, and it changes my focus.",
+		"Hi there! :D, my name is Kevin Villacreses, I live in Ecuador and I am 30. Four years ago I discovered that Development is what I truly love, and by combining it with Design, I found my real passion.",
 	aboutContentU: "There are 3 words that describes me:",
 
 	aboutCardTitle1: "1. Curious",
 	aboutCardTitle2: "2. Issues-solver",
-	aboutCardTitle3: "3. Peacefull",
+	aboutCardTitle3: "3. Passionate about aesthetics",
 
 	aboutCardText1:
 		"I love to learn, most of my time I spend learning new skills and exercising the mind, I think the association of logic and creativity brings bigest results.",
 	aboutCardText2:
-		"Sometimes I enjoy the problems, why not? it is an oportunity to grow up, I focus on find the root of the problem an then in solution. Sometimes knowing deeper about the problem makes the difference. Inside the simplicity are the marvelous things",
+		"Sometimes I enjoy problems, why not? They are an opportunity to grow. I focus on finding the root of the problem and then the solution. Sometimes understanding the problem more deeply makes all the difference. Within simplicity, the best solutions are often found.",
 	aboutCardText3:
-		"One of the things I appreciate is the calm and peace, every day I do introspection to improve my self and do my best.",
+		"I am passionate about aesthetics, visual balance and attention to detail. I believe design is a form of communication capable of conveying emotions, values and personality. I strive to create work that is not only functional, but also beautiful and memorable.",
 
 	codePortfolioTitle: " Portfolio ",
 	codePortfolioSkills: "Skills:",
@@ -130,6 +140,14 @@ const translationEN = {
 	footerCodePortfolio: "Code Portfolio",
 	footerDesignPortfolio: "Design Portfolio",
 	footerContact: "Contact",
+	footerContactEyebrow: "Contact",
+	footerTitle: "Let's build something with personality.",
+	footerText:
+		"Frontend, branding, websites and digital experiences with clarity, order and stronger presentation.",
+
+	projectFeaturedLabel: "Featured project",
+	projectPrivateLabel: "Private case",
+	creativeDirectionLabel: "Creative direction",
 
 	codeButton: "Deploy",
 	designButton: "Show",

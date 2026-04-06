@@ -12,55 +12,61 @@ const CreativeCard = ({
 	translations,
 }) => {
 	return (
-		<div className="w-full rounded-lg shadow-lg overflow-hidden bg-white flex flex-col justify-between transform transition-all duration-300 hover:shadow-2xl hover:-translate-y-1">
-			<div className="relative overflow-hidden group h-[18rem] md:h-[30rem]">
+		<article className="group relative flex h-full flex-col overflow-hidden rounded-[1.8rem] border border-black/6 bg-[rgba(255,252,247,0.84)] shadow-[0_22px_55px_rgba(29,27,21,0.09)] transition duration-500 hover:-translate-y-2 hover:shadow-[0_30px_85px_rgba(29,27,21,0.16)]">
+			<div className="pointer-events-none absolute inset-x-0 top-0 h-24 bg-gradient-to-r from-[#d2b36f]/25 via-transparent to-[#8ca39d]/20 opacity-0 blur-2xl transition duration-500 group-hover:opacity-100"></div>
+			<div className="relative h-[280px] overflow-hidden bg-[#e7dccb] md:h-[320px]">
 				<img
 					src={img}
-					className="w-full md:h-full lg:h-full object-cover p-2 transform transition-transform duration-500 group-hover:scale-105"
+					className="h-full w-full object-cover transition duration-700 group-hover:scale-[1.05]"
 					alt={title}
 				/>
-				<div className="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end justify-center">
-					<div className="p-4 text-white text-center w-full transform translate-y-full group-hover:translate-y-0 transition-transform duration-300">
-						<h4 className="text-lg font-bold mb-2">{title}</h4>
+				<div className="absolute inset-x-0 bottom-0 bg-gradient-to-t from-black/75 to-transparent p-5 text-left text-white">
+					<p className="text-[0.72rem] uppercase tracking-[0.24em] text-white/70">
+						{translations.creativeDirectionLabel}
+					</p>
+					<h3 className="mt-1 font-['Cormorant_Garamond'] text-3xl leading-none">
+						{title}
+					</h3>
+				</div>
+			</div>
+
+			<div className="flex flex-1 flex-col space-y-5 p-6 text-left">
+				<p className="min-h-[120px] text-[0.98rem] leading-7 text-[#4b4538]">
+					{text}
+				</p>
+
+				<div className="rounded-[1.25rem] border border-black/5 bg-white/70 p-4">
+					<p className="mb-3 text-[0.72rem] font-semibold uppercase tracking-[0.24em] text-[#8a7150]">
+						{translations.designSkills}
+					</p>
+					<div className="flex flex-wrap gap-3">
+						{skills.map((item, index) => (
+							<div
+								key={index}
+								className="flex h-12 w-12 items-center justify-center rounded-2xl border border-black/5 bg-[#faf6ef] shadow-sm transition duration-200 hover:-translate-y-1"
+							>
+								<img
+									src={item}
+									className="max-h-7 w-auto object-contain"
+									alt={`Skill ${index + 1}`}
+								/>
+							</div>
+						))}
 					</div>
 				</div>
-			</div>
 
-			<div className="p-5">
-				<h3 className="text-xl font-bold mb-2">{title}</h3>
-				<p className="text-gray-700 mb-4 text-sm">{text}</p>
-			</div>
-
-			<div className="skills-container p-4 bg-gray-50">
-				<h4 className="text-sm font-semibold text-gray-500 mb-2">
-					{translations.designSkills}
-				</h4>
-				<div className="flex flex-wrap gap-4 justify-center">
-					{skills.map((item, index) => (
-						<div
-							key={index}
-							className="transform transition hover:-translate-y-1 tooltip-container"
-						>
-							<img
-								src={item}
-								className="h-8 w-auto object-contain"
-								alt={`Skill ${index + 1}`}
-							/>
-						</div>
-					))}
+				<div className="mt-auto pt-2">
+					<Button
+						text={translations.designButton}
+						className="button-primary"
+						onClick={() => {
+							setModalVisible(true);
+							setCurrentArray(arrayNum);
+						}}
+					/>
 				</div>
 			</div>
-
-			<div className="p-4 border-t border-gray-100">
-				<Button
-					text={translations.designButton}
-					onClick={() => {
-						setModalVisible(true);
-						setCurrentArray(arrayNum);
-					}}
-				/>
-			</div>
-		</div>
+		</article>
 	);
 };
 

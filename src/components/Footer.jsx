@@ -2,72 +2,76 @@ import PropTypes from "prop-types";
 import {Social} from "./Social";
 
 export function Footer({scrollToReference, translations}) {
+	const navItems = [
+		{id: "top", label: translations.footerHome},
+		{id: "about", label: translations.footerAbout},
+		{id: "code", label: translations.footerCodePortfolio},
+		{id: "design", label: translations.footerDesignPortfolio},
+		{id: "contact", label: translations.footerContact},
+	];
+
 	return (
-		<>
-			<div className="bg-[#242423] w-[100%] h-[250px] flex flex-col justify-center items-center p-[1rem] gap-5">
+		<footer className="overflow-hidden rounded-[2rem] border border-black/6 bg-[linear-gradient(160deg,#201e19,#383227)] px-6 py-10 text-white shadow-[0_30px_80px_rgba(25,24,21,0.22)] md:px-10">
+			<div className="flex flex-col gap-8 lg:flex-row lg:items-end lg:justify-between">
+				<div className="max-w-xl text-left">
+					<p className="text-[0.74rem] uppercase tracking-[0.26em] text-white/50">
+						{translations.footerContactEyebrow}
+					</p>
+					<h2 className="mt-3 font-['Cormorant_Garamond'] text-5xl leading-none text-[#f7ecda]">
+						{translations.footerTitle}
+					</h2>
+					<p className="mt-4 max-w-[42ch] text-sm leading-7 text-white/68">
+						{translations.footerText}
+					</p>
+				</div>
+
 				<div className="flex gap-3">
 					<Social
 						link="https://api.whatsapp.com/send?phone=593963368896&text=Buenas%20tardes,%20me%20contacto%20desde%20tu%20portfolio."
-						img="https://raw.githubusercontent.com/kevinvillajim/Portfolio/main/src/assets/icons/whatsapp.png"
+						img="src/assets/icons/whatsapp.png"
 					/>
 					<Social
 						link="https://www.instagram.com/villacreseskevin/"
-						img="https://raw.githubusercontent.com/kevinvillajim/Portfolio/main/src/assets/icons/instagram.png"
+						img="src/assets/icons/instagram.png"
 					/>
 					<Social
 						link="https://www.facebook.com/kevin.villacreses.5."
-						img="https://raw.githubusercontent.com/kevinvillajim/Portfolio/main/src/assets/icons/facebook.png"
+						img="src/assets/icons/facebook.png"
 					/>
 					<Social
 						link="https://github.com/kevinvillajim/"
-						img="https://raw.githubusercontent.com/kevinvillajim/Portfolio/main/src/assets/icons/GH.svg"
+						img="src/assets/icons/GH.svg"
 					/>
 					<Social
 						link="mailto:kevinvillajim@hotmail.com"
-						img="https://raw.githubusercontent.com/kevinvillajim/Portfolio/main/src/assets/icons/email.png"
+						img="src/assets/icons/email.png"
 					/>
 				</div>
-				<div className="flex justify-center" id="footer-nav">
-					<ul className="text-[white] text-[18px] flex direction-row space-x-10">
-						<li
-							onClick={() => scrollToReference("top")}
-							className="cursor-pointer transition-transform hover:transform hover:translate-y-[-1px] shaddow-glow"
-						>
-							{translations.footerHome}
-						</li>
-						<li
-							onClick={() => scrollToReference("about")}
-							className="cursor-pointer transition-transform hover:transform hover:translate-y-[-1px] shaddow-glow object-foot"
-						>
-							{translations.footerAbout}
-						</li>
-						{/* Agrega otras secciones según sea necesario */}
-						<li
-							onClick={() => scrollToReference("code")}
-							className="cursor-pointer transition-transform hover:transform hover:translate-y-[-1px] shaddow-glow object-foot"
-						>
-							{translations.footerCodePortfolio}
-						</li>
-						<li
-							onClick={() => scrollToReference("design")}
-							className="cursor-pointer transition-transform hover:transform hover:translate-y-[-1px] shaddow-glow object-foot"
-						>
-							{translations.footerDesignPortfolio}
-						</li>
-						<li
-							onClick={() => scrollToReference("contact")}
-							className="cursor-pointer transition-transform hover:transform hover:translate-y-[-1px] shaddow-glow object-foot"
-						>
-							{translations.footerContact}
-						</li>
-					</ul>
-				</div>
-				<div className="text-[#d3d3d3] text-[15px] flex gap-3">
-					<p>kevinvillajim ©</p>
-					<p>2024</p>
+			</div>
+
+			<div className="mt-8 border-t border-white/10 pt-6">
+				<div className="flex flex-col gap-6 md:flex-row md:items-center md:justify-between">
+					<div className="flex justify-center md:justify-start" id="footer-nav">
+						<ul className="flex flex-wrap justify-center gap-3 text-sm text-white/70 md:justify-start">
+							{navItems.map((item) => (
+								<li key={item.id}>
+									<button
+										onClick={() => scrollToReference(item.id)}
+										className="rounded-full border border-white/10 px-4 py-2 transition duration-200 hover:bg-white/10 hover:text-white"
+									>
+										{item.label}
+									</button>
+								</li>
+							))}
+						</ul>
+					</div>
+					<div className="flex justify-center gap-3 text-sm text-white/45 md:justify-end">
+						<p>kevinvillajim</p>
+						<p>2026</p>
+					</div>
 				</div>
 			</div>
-		</>
+		</footer>
 	);
 }
 

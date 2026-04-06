@@ -1,204 +1,163 @@
-import {useState, useEffect, useRef} from "react";
+import {useEffect, useRef, useState} from "react";
 import PropTypes from "prop-types";
 
-const textCoder = "text-white"
-const textDesigner = "text-black";
-
 function Slider({
-	img1 = "https://raw.githubusercontent.com/kevinvillajim/Portfolio/refs/heads/main/src/assets/Coder.png",
-	img2 = "https://raw.githubusercontent.com/kevinvillajim/Portfolio/refs/heads/main/src/assets/Designer.png",
+	img1 = "src/assets/Coder.png",
+	img2 = "src/assets/Designer.png",
 	coderTitle = "&lt;CODER&gt;",
 	designerTitle = "Designer",
 	coderText = "Full Stack developer with solid knowledge and 2 years of freelance exprience",
 	designerText = "Versatile graphic designer with 11 years of experience, crafting visual brands and digital experiences",
-	bgColorLeft = "#333533", // Color de fondo para el lado izquierdo (coder)
-	bgColorRight = "#f5cb5c", // Color de fondo para el lado derecho (designer)
+	bgColorLeft = "#1f1d18",
+	bgColorRight = "#d8ba82",
 }) {
-	const [slideValue, setSlideValue] = useState(50);
-	const [animating, setAnimating] = useState(false);
-	const wrapperRef = useRef(null);
-	const animationRef = useRef(null);
+	const [activeView, setActiveView] = useState("code");
+	const timeoutRef = useRef(null);
 
-	const animateSlider = (start, end, duration, onComplete) => {
-		setAnimating(true);
+	const scheduleNextSwitch = () => {
+		if (timeoutRef.current) {
+			clearTimeout(timeoutRef.current);
+		}
 
-		const startTime = performance.now();
+		timeoutRef.current = setTimeout(() => {
+			setActiveView((current) => (current === "code" ? "design" : "code"));
+		}, 6000);
+	};
 
-		const animate = (currentTime) => {
-			const elapsedTime = currentTime - startTime;
-			const progress = Math.min(elapsedTime / duration, 1);
-
-			const easeInOut = (progress) => {
-				return progress < 0.5
-					? 4 * progress ** 3
-					: 1 - (-2 * progress + 2) ** 3 / 2;
-			};
-
-			const easedProgress = easeInOut(progress);
-			const currentValue = start + (end - start) * easedProgress;
-
-			setSlideValue(currentValue);
-
-			if (progress < 1) {
-				animationRef.current = requestAnimationFrame(animate);
-			} else {
-				if (onComplete) onComplete();
-			}
-		};
-
-		animationRef.current = requestAnimationFrame(animate);
+	const handleViewChange = (view) => {
+		setActiveView(view);
 	};
 
 	useEffect(() => {
-		// Pequeño retraso antes de iniciar la animación
-		const initialDelay = setTimeout(() => {
-			// Animar de 50% a 15%
-			animateSlider(50, 15, 800, () => {
-				// Pequeña pausa en el lado izquierdo
-				setTimeout(() => {
-					// Animar de 15% a 85%
-					animateSlider(15, 85, 1200, () => {
-						// Pequeña pausa en el lado derecho
-						setTimeout(() => {
-							// Animar de vuelta al 50%
-							animateSlider(85, 50, 800, () => {
-								setAnimating(false);
-							});
-						}, 200);
-					});
-				}, 200);
-			});
-		}, 500);
+		scheduleNextSwitch();
 
 		return () => {
-			clearTimeout(initialDelay);
-			if (animationRef.current) {
-				cancelAnimationFrame(animationRef.current);
+			if (timeoutRef.current) {
+				clearTimeout(timeoutRef.current);
 			}
 		};
-	}, []);
+	}, [activeView]);
 
-	const handleSlideChange = (event) => {
-		if (!animating) {
-			const newValue = parseInt(event.target.value, 10);
-			setSlideValue(newValue);
-		}
-	};
-
-	const clipPathValue = `polygon(0 0, ${slideValue}% 0, ${slideValue}% 100%, 0 100%)`;
+	const isCode = activeView === "code";
 
 	return (
 		<div className="wrapper-container">
-			<span className="material-symbols-outlined arrowLeft left-arrow">
-				arrow_back_ios
-			</span>
-			<div className="wrapper" ref={wrapperRef}>
-				{/* Fondo izquierdo (coder) */}
+			<div className="wrapper hero-transform overflow-hidden rounded-[1.35rem]">
 				<div
-					className="absolute inset-0"
-					style={{backgroundColor: bgColorLeft, zIndex: 0}}
+					className="absolute inset-0 transition-all duration-700"
+					style={{
+						background: isCode
+							? `linear-gradient(135deg, ${bgColorLeft} 0%, #2b281f 56%, #5a4f3d 100%)`
+							: `linear-gradient(135deg, #3b3328 0%, ${bgColorRight} 58%, #f4dfb2 100%)`,
+						zIndex: 0,
+					}}
 				></div>
 
-				{/* IMAGEN 1 (Coder) - Capa base */}
-				<div className="absolute inset-0">
+				<div className="hero-transform-toggle absolute left-1/2 top-5 z-20 flex -translate-x-1/2 gap-2 rounded-full border border-white/12 bg-black/24 p-2 backdrop-blur-md">
+					<button
+						type="button"
+						onClick={() => handleViewChange("code")}
+						className={`rounded-full px-4 py-2 text-[0.72rem] font-semibold uppercase tracking-[0.2em] transition-all duration-300 ${
+							isCode
+								? "bg-white text-[#1f1d18] shadow-lg"
+								: "text-white/72 hover:bg-white/10 hover:text-white"
+						}`}
+					>
+						Code
+					</button>
+					<button
+						type="button"
+						onClick={() => handleViewChange("design")}
+						className={`rounded-full px-4 py-2 text-[0.72rem] font-semibold uppercase tracking-[0.2em] transition-all duration-300 ${
+							!isCode
+								? "bg-[#1f1d18] text-[#f7efd9] shadow-lg"
+								: "text-white/72 hover:bg-white/10 hover:text-white"
+						}`}
+					>
+						Design
+					</button>
+				</div>
+
+				<div className="pointer-events-none absolute inset-0 z-[1] bg-[radial-gradient(circle_at_top_right,rgba(255,255,255,0.18),transparent_28%),radial-gradient(circle_at_bottom_left,rgba(255,255,255,0.12),transparent_24%)]"></div>
+				<div className="pointer-events-none absolute inset-x-0 bottom-0 z-[2] h-[42%] bg-gradient-to-t from-black/26 via-black/6 to-transparent"></div>
+
+				<div
+					className={`hero-transform-card hero-transform-card-code absolute left-[4%] top-[10%] z-[3] flex h-[78%] w-[43%] items-end justify-center rounded-[1.8rem] bg-white/5 transition-all duration-700 ${
+						isCode
+							? "translate-x-0 scale-100 opacity-100 shadow-[0_30px_80px_rgba(0,0,0,0.34)]"
+							: "translate-x-[-3%] scale-[0.9] opacity-34 shadow-none"
+					}`}
+				>
 					<img
 						src={img1}
-						alt="Image 1"
-						className="img1 w-full h-full object-cover absolute inset-0"
-						style={{zIndex: 1}}
+						alt="Coder"
+						className={`h-full w-full rounded-[1.8rem] object-cover object-[72%_center] transition-all duration-700 ${
+							isCode ? "blur-0 saturate-100" : "blur-[3px] saturate-[0.72]"
+						}`}
 					/>
-
-					{/* TEXTO CODER - Siempre visible, encima de la imagen base */}
-					<div
-						className={`max-w-[43%] lg:top-[44%] lg:left-10 absolute left-5 bottom-5 ${textCoder} text-left`}
-						style={{
-							zIndex: 2,
-						}}
-					>
-						<h2
-							className="text-xl lg:text-8xl font-bold mb-2"
-							dangerouslySetInnerHTML={{__html: coderTitle}}
-						></h2>
-						<p className="text-xs lg:text-xl">{coderText}</p>
-					</div>
 				</div>
 
-				{/* Fondo derecho (designer) con clip-path */}
 				<div
-					className="absolute inset-0"
-					style={{
-						backgroundColor: bgColorRight,
-						zIndex: 2,
-						clipPath: clipPathValue,
-					}}
-				></div>
-
-				{/* IMAGEN 2 (Designer) con clip-path - Se muestra por encima del contenido Coder */}
-				<div className="absolute inset-0" style={{zIndex: 3}}>
+					className={`hero-transform-card hero-transform-card-design absolute right-[4%] top-[10%] z-[4] flex h-[78%] w-[43%] items-end justify-center rounded-[1.8rem] bg-white/5 transition-all duration-700 ${
+						isCode
+							? "translate-x-[3%] scale-[0.9] opacity-34 shadow-none"
+							: "translate-x-0 scale-100 opacity-100 shadow-[0_30px_80px_rgba(0,0,0,0.3)]"
+					}`}
+				>
 					<img
 						src={img2}
-						alt="Image 2"
-						className="w-full h-full object-cover"
-						style={{clipPath: clipPathValue}}
+						alt="Designer"
+						className={`h-full w-full rounded-[1.8rem] object-cover object-[38%_center] transition-all duration-700 ${
+							!isCode ? "blur-0 saturate-100" : "blur-[3px] saturate-[0.72]"
+						}`}
 					/>
 				</div>
 
-				{/* TEXTO DESIGNER - Encima de la imagen 2, también con clip-path */}
 				<div
-					className="absolute inset-0 pointer-events-none"
+					className={`absolute inset-y-[14%] left-1/2 z-[5] w-[12%] -translate-x-1/2 rounded-[999px] border transition-all duration-700 ${
+						isCode
+							? "border-white/16 bg-[linear-gradient(180deg,rgba(255,255,255,0.18),rgba(255,255,255,0.02))]"
+							: "border-black/10 bg-[linear-gradient(180deg,rgba(31,29,24,0.18),rgba(255,255,255,0.04))]"
+					}`}
 					style={{
-						zIndex: 4,
-						clipPath: clipPathValue,
-					}}
-				>
-					<div
-						className={`max-w-[43%] absolute lg:top-[44%] lg:right-10 right-6 bottom-4 ${textDesigner} text-right`}
-					>
-						<h2 className="text-xl lg:text-8xl font-bold mb-4 fontDesign">
-							{designerTitle}
-						</h2>
-						<p className="text-[11px] lg:text-xl">{designerText}</p>
-					</div>
-				</div>
-
-				{/* LÍNEA DIVISORIA */}
-				<div
-					className="absolute inset-y-0 w-[1px] bg-white shadow-lg"
-					style={{
-						left: `${slideValue}%`,
-						zIndex: 5,
+						transform: `translateX(-50%) ${isCode ? "rotate(-12deg)" : "rotate(12deg)"}`,
 					}}
 				></div>
 
-				{/* CONTROL SLIDER */}
-				<input
-					type="range"
-					min="0"
-					max="100"
-					value={slideValue}
-					className={`slider ${animating ? "animating" : ""}`}
-					onChange={handleSlideChange}
-					style={{
-						pointerEvents: animating ? "none" : "auto",
-						zIndex: 10,
-					}}
-				/>
-
-				{/* PUNTO SLIDER */}
 				<div
-					className="absolute w-6 h-6 bg-white rounded-full border-2 border-gray-800 shadow-lg transform -translate-x-1/2 -translate-y-1/2 flex items-center justify-center pointer-events-none"
-					style={{
-						left: `${slideValue}%`,
-						top: "50%",
-						zIndex: 11,
-					}}
+					className={`hero-transform-copy absolute bottom-7 left-1/2 z-[10] w-[min(92%,620px)] -translate-x-1/2 rounded-[1.6rem] border p-5 text-left backdrop-blur-md transition-all duration-700 ${
+						isCode
+							? "border-white/14 bg-[rgba(13,12,10,0.6)] text-white shadow-[0_18px_42px_rgba(0,0,0,0.22)]"
+							: "border-black/10 bg-[rgba(255,248,236,0.86)] text-[#17140f] shadow-[0_18px_42px_rgba(0,0,0,0.12)]"
+					}`}
 				>
-					<div className="w-2 h-2 bg-gray-800 rounded-full"></div>
+					<p
+						className={`mb-2 text-[0.72rem] uppercase tracking-[0.24em] ${
+							isCode ? "text-white/60" : "text-black/48"
+						}`}
+					>
+						{isCode ? "Development" : "Design"}
+					</p>
+					{isCode ? (
+						<h2
+							className="text-[1.5rem] font-bold leading-none md:text-[3.2rem] xl:text-[4rem]"
+							dangerouslySetInnerHTML={{__html: coderTitle}}
+						></h2>
+					) : (
+						<h2 className="fontDesign text-[1.55rem] font-semibold leading-none md:text-[3.3rem] xl:text-[4.1rem]">
+							{designerTitle}
+						</h2>
+					)}
+					<p
+						className={`mt-3 max-w-[44ch] text-[0.78rem] leading-5 md:text-[0.95rem] md:leading-6 ${
+							isCode ? "text-white/82" : "text-black/70"
+						}`}
+					>
+						{isCode ? coderText : designerText}
+					</p>
 				</div>
+
 			</div>
-			<span className="material-symbols-outlined arrowRigth right-arrow">
-				arrow_forward_ios
-			</span>
 		</div>
 	);
 }
@@ -210,8 +169,8 @@ Slider.propTypes = {
 	designerTitle: PropTypes.string,
 	coderText: PropTypes.string,
 	designerText: PropTypes.string,
-	bgColorLeft: PropTypes.string, // Nuevo prop para el color de fondo izquierdo
-	bgColorRight: PropTypes.string, // Nuevo prop para el color de fondo derecho
+	bgColorLeft: PropTypes.string,
+	bgColorRight: PropTypes.string,
 };
 
 export default Slider;

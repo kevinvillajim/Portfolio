@@ -1,42 +1,37 @@
-import {useState, useEffect} from "react";
+import {useState} from "react";
 import PropTypes from "prop-types";
 
 export function WhyCard({img, title, text}) {
-	const [showDetails, setShowDetails] = useState(false);
 	const [flipped, setFlipped] = useState(false);
 
-	const handleClick = () => {
-		setFlipped(!flipped);
-
-		// Cambiamos el contenido a mitad de la animación
-		setTimeout(() => {
-			setShowDetails(!showDetails);
-		}, 150);
-	};
-
 	return (
-		<div className="flex flex-col md:flex.row w-full h-64 perspective">
-			<div
-				className={`relative w-full h-full transition-transform duration-500 preserve-3d cursor-pointer ${
+		<div className="perspective h-[320px]">
+			<button
+				type="button"
+				className={`preserve-3d relative h-full w-full cursor-pointer rounded-[1.7rem] text-left transition-transform duration-500 ${
 					flipped ? "rotate-y-180" : ""
 				}`}
-				onClick={handleClick}
+				onClick={() => setFlipped((value) => !value)}
 			>
-				{/* Cara frontal */}
-				<div className="absolute w-full h-full backface-hidden bg-white rounded-xl shadow-lg border border-gray-200 flex items-center justify-center p-6">
-					<div className="transition-transform duration-300 hover:scale-110">
-						{img}
-					</div>
+				<div className="backface-hidden absolute inset-0 flex h-full w-full flex-col justify-between rounded-[1.7rem] border border-black/6 bg-[linear-gradient(180deg,rgba(255,252,247,0.92),rgba(247,241,232,0.84))] p-7 shadow-[0_20px_50px_rgba(29,27,21,0.08)]">
+					<p className="text-[0.74rem] uppercase tracking-[0.24em] text-[#8d6730]">
+						Tap to reveal
+					</p>
+					<div className="flex flex-1 items-center justify-center">{img}</div>
+					<h3 className="font-['Cormorant_Garamond'] text-4xl leading-none text-[#2a241c]">
+						{title}
+					</h3>
 				</div>
 
-				{/* Cara trasera */}
-				<div className="absolute w-full h-full backface-hidden bg-gradient-to-br from-white to-gray-50 rounded-xl shadow-lg border border-gray-200 rotate-y-180 p-6 flex flex-col">
-					<h4 className="text-2xl font-bold mb-4 text-rose-600 pb-2 border-b border-rose-200">
+				<div className="backface-hidden rotate-y-180 absolute inset-0 flex h-full w-full flex-col rounded-[1.7rem] border border-black/6 bg-[linear-gradient(155deg,#29261f,#574b37)] p-7 text-[#f8f2e7] shadow-[0_20px_50px_rgba(29,27,21,0.14)]">
+					<p className="text-[0.74rem] uppercase tracking-[0.24em] text-[#d6bd8d]">
 						{title}
-					</h4>
-					<div className="text-gray-700 overflow-auto text-sm">{text}</div>
+					</p>
+					<p className="mt-5 overflow-auto text-[0.98rem] leading-7 text-white/80">
+						{text}
+					</p>
 				</div>
-			</div>
+			</button>
 
 			<style>{`
 				.perspective {
