@@ -117,6 +117,30 @@ export const translationPR = {
 		"Redesign de Site - Bconnect - React JS e Tailwind, Empresa de Tecnologia - Design Responsivo.",
 	projectContent19:
 		"Site com roteador - React JS, React Router DOM e Tailwind para empresa de tecnologia - Design Responsivo.",
+	projectTitle20: "Sitio + Blog - MundoCifras",
+	projectContent20:
+		"Plataforma corporativa para una empresa de cifras, encuestas y analisis de datos. Desarrolle el frontend en React con TypeScript y el backend con Express, TypeScript y Node.js, incluyendo un blog administrable desde dashboard con autenticacion JWT. La interfaz busca transmitir confianza tecnica, claridad y enfoque estrategico desde la primera vista.",
+	projectTitle21: "Marketplace Web y App - Comersia.app",
+	projectContent21:
+		"Marketplace web tipo Amazon o Mercado Libre desarrollado con React, Laravel, Tailwind y MySQL. Incluye administracion total de la operacion, sellers, usuarios, pagos externos y configuraciones de negocio con integraciones reales a Datafast, Deuna y SRI, ademas de reglas heuristicas para moderar conversaciones dentro de la plataforma.",
+	projectTitle22: "App Movil Ecommerce - Comersia.app",
+	projectContent22:
+		"Aplicacion movil para usuarios finales desarrollada en React Native, pensada para comprar de forma rapida, intuitiva y comoda desde Android e iOS. Conserva el ecosistema comercial de Comersia, incluyendo carrito, perfil, direccion, facturacion y pagos, pero con una experiencia mucho mas directa y optimizada para mobile.",
+	projectTitle23: "Sistema de Gestion - EcoPlagas",
+	projectContent23:
+		"Sistema web de gestion construido con React TS, Laravel, Tailwind y MySQL para coordinar clientes, servicios, calendario, certificados PDF y comunicacion directa. Esta pensado para ordenar la operacion diaria hoy y dejar lista la base para escalar manana con nuevos roles tecnicos y una automatizacion mas profunda.",
+	projectTitle24: "Sitio + Dashboard Comercial - Esparta",
+	projectContent24:
+		"Web corporativa de mi agencia, desarrollada con React, TypeScript, Laravel, Tailwind y MySQL. Combina una estetica premium con un panel interno para crear presupuestos y proformas en PDF, buscando que la parte comercial sea tan elegante y agil como la presentacion visual.",
+	projectTitle25: "Sistema Operativo - GGBet",
+	projectContent25:
+		"Sistema integral para un club de poker con multiples roles, reglas de negocio muy especificas y una operacion distribuida entre superadmin, caja, dealer, cocina, promotor y mesas. Construido con React, TypeScript, Laravel, Tailwind y MySQL, centraliza locales, reportes, prestamos, aperturas, inventario, promociones y movimientos en tiempo real dentro de una sola plataforma.",
+	projectTitle26: "Plataforma SaaS Educativa - Vanty",
+	projectContent26:
+		"Plataforma multitenant orientada a crear academias online completas. Desarrollada con React, TypeScript, Laravel, Tailwind y MySQL, permite vender tenants con Stripe, personalizar cada instancia, integrar Zoom, Meet y webhooks, y administrar cursos, profesores, estudiantes, certificados con QR y seguimiento inteligente del aprendizaje desde un constructor modular.",
+	projectTitle27: "Sitio Administrable - Mas Projects",
+	projectContent27:
+		"Mi primer trabajo en Espana: una web con identidad visual intensa, animaciones modernas, recursos 3D y video, desarrollada con React, TypeScript, Laravel, Tailwind y MySQL para destacar una marca con mucho caracter. Ademas del frontend, incluye un backoffice para que el equipo suba proyectos, servicios y destacados sin depender de conocimientos tecnicos.",
 	designPortfolioTitle: "Portfólio de Design",
 	designSkills: "Habilidades:",
 	designProjects: "Projetos:",

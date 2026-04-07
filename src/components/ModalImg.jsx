@@ -13,7 +13,6 @@ const ModalImg = ({
 	const [direction, setDirection] = useState(0); // -1 para previo, 1 para siguiente
 
 	useEffect(() => {
-		// Activar teclas de dirección para navegar
 		const handleKeyDown = (e) => {
 			if (e.key === "ArrowRight") {
 				goToNextPhoto();
@@ -77,11 +76,9 @@ const ModalImg = ({
 		}
 	};
 
-
 	return createPortal(
 		<div className="fixed inset-0 bg-black/80 z-50 flex items-center justify-center backdrop-blur-sm">
 			<div className="w-full max-w-6xl bg-white rounded-lg shadow-2xl overflow-hidden relative max-h-[90vh]">
-				{/* Cabecera */}
 				<div className="px-6 py-4 border-b border-gray-200 flex justify-between items-center bg-gradient-to-r from-[#242423] to-[#f5cb5c] text-white">
 					<h2 className="md:text-2xl font-bold font-design">
 						{photos[currentIndex].title}
@@ -95,25 +92,24 @@ const ModalImg = ({
 							className="hover:bg-gray-700 p-2 rounded-full transition-colors flex items-center"
 							onClick={() => setModalVisible(false)}
 							aria-label="Close"
+							type="button"
 						>
 							<span className="material-symbols-outlined">close</span>
 						</button>
 					</div>
 				</div>
 
-				{/* Contenido principal */}
 				<div className="flex flex-col md:flex-row h-[70vh]">
-					{/* Imagen principal */}
 					<div className="flex-grow flex items-center justify-center bg-gray-100 p-4 relative overflow-hidden">
 						<div
 							className={`transition-all duration-100 w-full h-full flex items-center justify-center 
                 ${
-									isAnimating
-										? direction > 0
-											? "-translate-x-full opacity-0"
-											: "translate-x-full opacity-0"
-										: "translate-x-0 opacity-100"
-								}`}
+								isAnimating
+									? direction > 0
+										? "-translate-x-full opacity-0"
+										: "translate-x-full opacity-0"
+									: "translate-x-0 opacity-100"
+							}`}
 						>
 							<img
 								src={photos[currentIndex].img}
@@ -122,12 +118,12 @@ const ModalImg = ({
 							/>
 						</div>
 
-						{/* Botones de navegación */}
 						<button
 							className="absolute left-4 top-1/2 transform -translate-y-1/2 bg-black/50 hover:bg-black/80 text-white p-2 rounded-full transition-colors flex items-center"
 							onClick={goToPrevPhoto}
 							disabled={isAnimating}
 							aria-label="Previous image"
+							type="button"
 						>
 							<span className="material-symbols-outlined">arrow_back</span>
 						</button>
@@ -137,14 +133,13 @@ const ModalImg = ({
 							onClick={goToNextPhoto}
 							disabled={isAnimating}
 							aria-label="Next image"
+							type="button"
 						>
 							<span className="material-symbols-outlined">arrow_forward</span>
 						</button>
 					</div>
 
-					{/* Panel lateral con información */}
 					<div className="w-full md:w-72 border-l border-gray-200 flex flex-col bg-white">
-						{/* Descripción */}
 						<div className="p-4 flex-grow overflow-auto">
 							<h3 className="text-lg font-semibold mb-2">
 								{photos[currentIndex].title}
@@ -152,7 +147,6 @@ const ModalImg = ({
 							<p className="text-gray-700 text-sm">{getDescription()}</p>
 						</div>
 
-						{/* Miniaturas */}
 						<div className="border-t border-gray-200 p-2">
 							<div className="flex gap-2 overflow-x-auto p-2 snap-x">
 								{photos.map((photo, idx) => (

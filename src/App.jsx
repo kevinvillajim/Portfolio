@@ -9,10 +9,8 @@ import CreativeCard from "./components/CreativeCard";
 import ModalImg from "./components/ModalImg";
 import {Footer} from "./components/Footer";
 import {
-	skills,
-	nameSkills,
+	skillsCode,
 	skillsDesign,
-	nameSkillsDesign,
 	otherPhotos,
 	ecoPlagasPhotos,
 	queHechoBurguerPhotos,
@@ -22,6 +20,14 @@ import {
 	vinculoLicoresPhotos,
 	cooprogresoPhotos,
 	lagascaPhotos,
+	mundocifrasPhotos,
+	comersiaWebPhotos,
+	comersiaMobilePhotos,
+	ecoPlagasSystemPhotos,
+	espartaPhotos,
+	ggBetSystemPhotos,
+	vantyPhotos,
+	masProjectsPhotos,
 } from "./components/designInformation.js";
 import {
 	translationEN,
@@ -40,6 +46,8 @@ function App() {
 			: language === "ES"
 			? translationES
 			: translationPR;
+	const codeSkillsList = Object.values(skillsCode);
+	const designSkillsList = Object.values(skillsDesign);
 
 	const scrollToReference = (referenceId) => {
 		const element = document.getElementById(referenceId);
@@ -59,6 +67,14 @@ function App() {
 		6: otherPhotos,
 		7: cooprogresoPhotos,
 		8: lagascaPhotos,
+		9: mundocifrasPhotos,
+		10: comersiaWebPhotos,
+		11: comersiaMobilePhotos,
+		12: ecoPlagasSystemPhotos,
+		13: espartaPhotos,
+		14: ggBetSystemPhotos,
+		15: vantyPhotos,
+		16: masProjectsPhotos,
 	};
 
 	const selectedModalPhotos = modalPhotosMap[currentArray] ?? null;
@@ -197,12 +213,12 @@ function App() {
 							</h3>
 						</div>
 						<div className="skills-board" id="code-skills">
-							{skills.map((item, index) => (
+							{codeSkillsList.map((skill, index) => (
 								<Skills
-									title={nameSkills[index]}
+									title={skill.name}
 									key={index}
 									alt={`skill-${index}`}
-									img={item}
+									img={skill.img}
 								/>
 							))}
 						</div>
@@ -218,16 +234,175 @@ function App() {
 							id="project-container"
 						>
 							<ProjectCard
+								img="src/assets/portfolio/Code/masProjects/home.png"
+								title={translations.projectTitle27}
+								text={translations.projectContent27}
+								skills={[
+									skillsCode.TypeScript.img,
+									skillsCode.React.img,
+									skillsCode.Tailwind.img,
+									skillsCode.PHP.img,
+									skillsCode.Laravel.img,
+									skillsCode.MySQL.img,
+									skillsCode.GitHub.img,
+									skillsCode.Figma.img,
+								]}
+								deploy="https://masproject.es/"
+								translations={translations}
+								isPrivate={true}
+								setModalVisible={setModalVisible}
+								setCurrentArray={setCurrentArray}
+								arrayNum={16}
+							/>
+							<ProjectCard
+								img="src/assets/portfolio/Code/vanty/home.png"
+								title={translations.projectTitle26}
+								text={translations.projectContent26}
+								skills={[
+									skillsCode.TypeScript.img,
+									skillsCode.React.img,
+									skillsCode.Tailwind.img,
+									skillsCode.PHP.img,
+									skillsCode.Laravel.img,
+									skillsCode.MySQL.img,
+									skillsCode.GitHub.img,
+								]}
+								deploy="https://vanguardia-edu.com/"
+								translations={translations}
+								isPrivate={true}
+								setModalVisible={setModalVisible}
+								setCurrentArray={setCurrentArray}
+								arrayNum={15}
+							/>
+							<ProjectCard
+								img="src/assets/portfolio/Code/ggbet/superAdminDashboard.png"
+								title={translations.projectTitle25}
+								text={translations.projectContent25}
+								skills={[
+									skillsCode.TypeScript.img,
+									skillsCode.React.img,
+									skillsCode.Tailwind.img,
+									skillsCode.PHP.img,
+									skillsCode.Laravel.img,
+									skillsCode.MySQL.img,
+									skillsCode.GitHub.img,
+								]}
+								deploy="https://ggbetpokerclub.com/"
+								translations={translations}
+								isPrivate={true}
+								setModalVisible={setModalVisible}
+								setCurrentArray={setCurrentArray}
+								arrayNum={14}
+							/>
+							<ProjectCard
+								img="src/assets/portfolio/Code/Esparta/home.png"
+								title={translations.projectTitle24}
+								text={translations.projectContent24}
+								skills={[
+									skillsCode.TypeScript.img,
+									skillsCode.React.img,
+									skillsCode.Tailwind.img,
+									skillsCode.PHP.img,
+									skillsCode.Laravel.img,
+									skillsCode.MySQL.img,
+									skillsCode.GitHub.img,
+									skillsCode.Figma.img,
+								]}
+								deploy="https://esparta-ec.com/"
+								translations={translations}
+								isPrivate={true}
+								setModalVisible={setModalVisible}
+								setCurrentArray={setCurrentArray}
+								arrayNum={13}
+							/>
+							<ProjectCard
+								img="src/assets/portfolio/Code/ecoPlagas/dashboard1.png"
+								title={translations.projectTitle23}
+								text={translations.projectContent23}
+								skills={[
+									skillsCode.TypeScript.img,
+									skillsCode.React.img,
+									skillsCode.Tailwind.img,
+									skillsCode.PHP.img,
+									skillsCode.Laravel.img,
+									skillsCode.MySQL.img,
+									skillsCode.GitHub.img,
+								]}
+								deploy="https://ecoplagasecuador.com/"
+								translations={translations}
+								isPrivate={true}
+								setModalVisible={setModalVisible}
+								setCurrentArray={setCurrentArray}
+								arrayNum={12}
+							/>
+							<ProjectCard
+								img="src/assets/portfolio/Code/comersia.app/movil/home.jpeg"
+								title={translations.projectTitle22}
+								text={translations.projectContent22}
+								skills={[
+									skillsCode.JavaScript.img,
+									skillsCode.ReactNative.img,
+									skillsCode.Tailwind.img,
+									skillsCode.MySQL.img,
+									skillsCode.GitHub.img,
+								]}
+								deploy="https://comersia.app/"
+								translations={translations}
+								isPrivate={true}
+								setModalVisible={setModalVisible}
+								setCurrentArray={setCurrentArray}
+								arrayNum={11}
+							/>
+							<ProjectCard
+								img="src/assets/portfolio/Code/comersia.app/web/home.png"
+								title={translations.projectTitle21}
+								text={translations.projectContent21}
+								skills={[
+									skillsCode.JavaScript.img,
+									skillsCode.React.img,
+									skillsCode.Tailwind.img,
+									skillsCode.Laravel.img,
+									skillsCode.MySQL.img,
+									skillsCode.GitHub.img,
+								]}
+								deploy="https://comersia.app/"
+								translations={translations}
+								isPrivate={true}
+								setModalVisible={setModalVisible}
+								setCurrentArray={setCurrentArray}
+								arrayNum={10}
+							/>
+							<ProjectCard
+								img="src/assets/portfolio/Code/mundocifras/home.png"
+								title={translations.projectTitle20}
+								text={translations.projectContent20}
+								skills={[
+									skillsCode.JavaScript.img,
+									skillsCode.React.img,
+									skillsCode.Tailwind.img,
+									skillsCode.Express.img,
+									skillsCode.NodeJS.img,
+									skillsCode.GitHub.img,
+								]}
+								deploy="https://mundocifras.com/"
+								git="https://github.com/kevinvillajim/mundocifras.com"
+								translations={translations}
+								isPrivate={true}
+								setModalVisible={setModalVisible}
+								setCurrentArray={setCurrentArray}
+								arrayNum={9}
+							/>
+							<ProjectCard
 								img="src/assets/portfolio/b-connect2.0-site.png"
 								title={translations.projectTitle19}
 								text={translations.projectContent19}
 								skills={[
-									"src/assets/icons/REACT.png",
-									"src/assets/icons/TW.svg",
-									"src/assets/icons/HTML5.png",
-									"src/assets/icons/CSS.png",
-									"src/assets/icons/JS.png",
-									"src/assets/icons/GH.png",
+									skillsCode.JavaScript.img,
+									skillsCode.React.img,
+									skillsCode.Tailwind.img,
+									skillsCode.HTML.img,
+									skillsCode.CSS.img,
+									skillsCode.GitHub.img,
 								]}
 								deploy="https://bconnect-ec.com/home"
 								git="https://github.com/kevinvillajim/bConnect2.0"
@@ -238,15 +413,15 @@ function App() {
 								title={translations.projectTitle18}
 								text={translations.projectContent18}
 								skills={[
-									"src/assets/icons/REACT.png",
-									"src/assets/icons/TW.svg",
-									"src/assets/icons/PHP.png",
-									"src/assets/icons/LV.png",
-									"src/assets/icons/MYSQL.png",
-									"src/assets/icons/HTML5.png",
-									"src/assets/icons/CSS.png",
-									"src/assets/icons/JS.png",
-									"src/assets/icons/GH.png",
+									skillsCode.JavaScript.img,
+									skillsCode.React.img,
+									skillsCode.PHP.img,
+									skillsCode.Laravel.img,
+									skillsCode.MySQL.img,
+									skillsCode.Bootstrap.img,
+									skillsCode.HTML.img,
+									skillsCode.CSS.img,
+									skillsCode.GitHub.img,
 								]}
 								deploy="https://lista-lagasca.capacitacion-cooprogreso.com/"
 								translations={translations}
@@ -260,15 +435,15 @@ function App() {
 								title={translations.projectTitle17}
 								text={translations.projectContent17}
 								skills={[
-									"src/assets/icons/REACT.png",
-									"src/assets/icons/TW.svg",
-									"src/assets/icons/PHP.png",
-									"src/assets/icons/LV.png",
-									"src/assets/icons/MYSQL.png",
-									"src/assets/icons/HTML5.png",
-									"src/assets/icons/CSS.png",
-									"src/assets/icons/JS.png",
-									"src/assets/icons/GH.png",
+									skillsCode.React.img,
+									skillsCode.Tailwind.img,
+									skillsCode.PHP.img,
+									skillsCode.Laravel.img,
+									skillsCode.MySQL.img,
+									skillsCode.HTML.img,
+									skillsCode.CSS.img,
+									skillsCode.JavaScript.img,
+									skillsCode.GitHub.img,
 								]}
 								deploy="https://capacitacion-cooprogreso.com/"
 								translations={translations}
@@ -282,12 +457,12 @@ function App() {
 								title={translations.projectTitle16}
 								text={translations.projectContent16}
 								skills={[
-									"src/assets/icons/REACT.png",
-									"src/assets/icons/TW.svg",
-									"src/assets/icons/HTML5.png",
-									"src/assets/icons/CSS.png",
-									"src/assets/icons/JS.png",
-									"src/assets/icons/GH.png",
+									skillsCode.React.img,
+									skillsCode.Tailwind.img,
+									skillsCode.HTML.img,
+									skillsCode.CSS.img,
+									skillsCode.JavaScript.img,
+									skillsCode.GitHub.img,
 								]}
 								deploy="https://bitsofteam.com/"
 								git="https://github.com/kevinvillajim/BitsoftTeam"
@@ -298,70 +473,70 @@ function App() {
 								title={translations.projectTitle15}
 								text={translations.projectContent15}
 								skills={[
-									"src/assets/icons/REACT.png",
-									"src/assets/icons/TW.svg",
-									"src/assets/icons/HTML5.png",
-									"src/assets/icons/CSS.png",
-									"src/assets/icons/JS.png",
-									"src/assets/icons/GH.png",
+									skillsCode.React.img,
+									skillsCode.Tailwind.img,
+									skillsCode.HTML.img,
+									skillsCode.CSS.img,
+									skillsCode.JavaScript.img,
+									skillsCode.GitHub.img,
 								]}
 								deploy="https://bconnect-ec-com.onrender.com/"
 								git="https://github.com/kevinvillajim/bconnect-ec.com"
 								translations={translations}
 							/>
-							<ProjectCard
+							{/* <ProjectCard
 								img="src/assets/portfolio/blaget-site.png"
 								title={translations.projectTitle14}
 								text={translations.projectContent14}
 								skills={[
-									"src/assets/icons/REACT.png",
-									"src/assets/icons/TW.svg",
-									"src/assets/icons/HTML5.png",
-									"src/assets/icons/CSS.png",
-									"src/assets/icons/JS.png",
-									"src/assets/icons/GH.png",
+									skillsCode.React.img,
+									skillsCode.Tailwind.img,
+									skillsCode.HTML.img,
+									skillsCode.CSS.img,
+									skillsCode.JavaScript.img,
+									skillsCode.GitHub.img,
 								]}
 								deploy="https://kevinvillajim.github.io/Blaget/"
 								git="https://github.com/kevinvillajim/Blaget"
 								translations={translations}
-							/>
+							/> */}
 							<ProjectCard
 								img="src/assets/portfolio/ecoplagas-site.png"
 								title={translations.projectTitle6}
 								text={translations.projectContent6}
 								skills={[
-									"src/assets/icons/REACT.png",
-									"src/assets/icons/BS.png",
-									"src/assets/icons/HTML5.png",
-									"src/assets/icons/CSS.png",
-									"src/assets/icons/JS.png",
-									"src/assets/icons/GH.png",
+									skillsCode.React.img,
+									skillsCode.Bootstrap.img,
+									skillsCode.HTML.img,
+									skillsCode.CSS.img,
+									skillsCode.JavaScript.img,
+									skillsCode.GitHub.img,
 								]}
 								deploy="https://kevinvillajim.github.io/EcoPlagas/"
 								git="https://github.com/kevinvillajim/EcoPlagas"
 								translations={translations}
 							/>
-							<ProjectCard
+							{/* <ProjectCard
 								img="src/assets/portfolio/weather-project.png"
 								title={translations.projectTitle2}
 								text={translations.projectContent2}
 								skills={[
-									"src/assets/icons/REACT.png",
-									"src/assets/icons/HTML5.png",
-									"src/assets/icons/CSS.png",
-									"src/assets/icons/JS.png",
-									"src/assets/icons/GH.png",
+									skillsCode.React.img,
+									skillsCode.HTML.img,
+									skillsCode.CSS.img,
+									skillsCode.JavaScript.img,
+									skillsCode.GitHub.img,
 								]}
 								deploy="https://kevinvillajim.github.io/weatherProyectoFinalN2/"
 								git="https://github.com/kevinvillajim/weatherProyectoFinalN2"
 								translations={translations}
-							/>
+							/> */}
 							<ProjectCard
 								img="src/assets/portfolio/multiserviciostec-site.png"
 								title={translations.projectTitle12}
 								text={translations.projectContent12}
 								skills={[
-									"src/assets/icons/WP.png",
+									skillsCode.Wordpress.img,
 								]}
 								deploy="https://kevinvillajim.github.io/multiserviciosTEC/"
 								git="https://github.com/kevinvillajim/multiserviciosTEC"
@@ -372,57 +547,57 @@ function App() {
 								title={translations.projectTitle13}
 								text={translations.projectContent13}
 								skills={[
-									"src/assets/icons/WP.png",
+									skillsCode.Wordpress.img,
 								]}
 								deploy="https://kevinvillajim.github.io/ecoDomoticHome/"
 								git="https://github.com/kevinvillajim/ecoDomoticHome"
 								translations={translations}
 							/>
-							<ProjectCard
+							{/* <ProjectCard
 								img="src/assets/portfolio/login-project.png"
 								title={translations.projectTitle4}
 								text={translations.projectContent4}
 								skills={[
-									"src/assets/icons/PHP.png",
-									"src/assets/icons/MYSQL.png",
-									"src/assets/icons/HTML5.png",
-									"src/assets/icons/CSS.png",
-									"src/assets/icons/JS.png",
-									"src/assets/icons/GH.png",
+									skillsCode.PHP.img,
+									skillsCode.MySQL.img,
+									skillsCode.HTML.img,
+									skillsCode.CSS.img,
+									skillsCode.JavaScript.img,
+									skillsCode.GitHub.img,
 								]}
 								deploy="https://miniproyecton3kevinvillajim.000webhostapp.com/"
 								git="https://github.com/kevinvillajim/miniproyectoN3_Login"
 								translations={translations}
-							/>
-							<ProjectCard
+							/> */}
+							{/* <ProjectCard
 								img="src/assets/portfolio/bitacora-project.png"
 								title={translations.projectTitle1}
 								text={translations.projectContent1}
 								skills={[
-									"src/assets/icons/REACT.png",
-									"src/assets/icons/TW.svg",
-									"src/assets/icons/LV.png",
-									"src/assets/icons/PHP.png",
-									"src/assets/icons/HTML5.png",
-									"src/assets/icons/CSS.png",
-									"src/assets/icons/JS.png",
-									"src/assets/icons/GH.png",
+									skillsCode.React.img,
+									skillsCode.Tailwind.img,
+									skillsCode.Laravel.img,
+									skillsCode.PHP.img,
+									skillsCode.HTML.img,
+									skillsCode.CSS.img,
+									skillsCode.JavaScript.img,
+									skillsCode.GitHub.img,
 								]}
 								deploy="https://kevinvillajim.github.io/bitacoraPFN4/#/login"
 								git="https://github.com/kevinvillajim/bitacoraPFN4"
 								translations={translations}
-							/>
+							/> */}
 							<ProjectCard
 								img="src/assets/portfolio/university-project.png"
 								title={translations.projectTitle3}
 								text={translations.projectContent3}
 								skills={[
-									"src/assets/icons/PHP.png",
-									"src/assets/icons/MYSQL.png",
-									"src/assets/icons/HTML5.png",
-									"src/assets/icons/CSS.png",
-									"src/assets/icons/JS.png",
-									"src/assets/icons/GH.png",
+									skillsCode.PHP.img,
+									skillsCode.MySQL.img,
+									skillsCode.HTML.img,
+									skillsCode.CSS.img,
+									skillsCode.JavaScript.img,
+									skillsCode.GitHub.img,
 								]}
 								deploy="https://github.com/kevinvillajim/ProyectoFinalN3"
 								git="https://github.com/kevinvillajim/ProyectoFinalN3"
@@ -433,56 +608,57 @@ function App() {
 								title={translations.projectTitle5}
 								text={translations.projectContent5}
 								skills={[
-									"src/assets/icons/LV.png",
-									"src/assets/icons/PHP.png",
-									"src/assets/icons/HTML5.png",
-									"src/assets/icons/MYSQL.png",
-									"src/assets/icons/GH.png",
+									skillsCode.Laravel.img,
+									skillsCode.PHP.img,
+									skillsCode.HTML.img,
+									skillsCode.MySQL.img,
+									skillsCode.GitHub.img,
 								]}
 								deploy="https://github.com/kevinvillajim/miniProyecto4_API/tree/main/Capturas%20documentacion%20API%20Postman"
 								git="https://github.com/kevinvillajim/miniProyecto4_API"
 								translations={translations}
 							/>
-							<ProjectCard
+							{/* <ProjectCard
 								img="src/assets/portfolio/windbnb-practice.png"
 								title={translations.projectTitle7}
 								text={translations.projectContent7}
 								skills={[
-									"src/assets/icons/REACT.png",
-									"src/assets/icons/BS.png",
-									"src/assets/icons/HTML5.png",
-									"src/assets/icons/CSS.png",
-									"src/assets/icons/JS.png",
-									"src/assets/icons/GH.png",
+
+									skillsCode.React.img,
+									skillsCode.Bootstrap.img,
+									skillsCode.HTML.img,
+									skillsCode.CSS.img,
+									skillsCode.JavaScript.img,
+									skillsCode.GitHub.img,
 								]}
 								deploy="https://kevinvillajim.github.io/windbnb2/"
 								git="https://github.com/kevinvillajim/windbnb2"
 								translations={translations}
-							/>
+							/> */}
 							<ProjectCard
 								img="src/assets/portfolio/tiktaktoe-game.png"
 								title={translations.projectTitle8}
 								text={translations.projectContent8}
 								skills={[
-									"src/assets/icons/REACT.png",
-									"src/assets/icons/HTML5.png",
-									"src/assets/icons/CSS.png",
-									"src/assets/icons/JS.png",
-									"src/assets/icons/GH.png",
+									skillsCode.React.img,
+									skillsCode.HTML.img,
+									skillsCode.CSS.img,
+									skillsCode.JavaScript.img,
+									skillsCode.GitHub.img,
 								]}
 								deploy="https://kevinvillajim.github.io/tikTakToe/"
 								git="https://github.com/kevinvillajim/tikTakToe"
 								translations={translations}
 							/>
-							<ProjectCard
+							{/* <ProjectCard
 								img="src/assets/portfolio/eddiewebsite-practice.png"
 								title={translations.projectTitle9}
 								text={translations.projectContent9}
 								skills={[
-									"src/assets/icons/REACT.png",
-									"src/assets/icons/HTML5.png",
-									"src/assets/icons/CSS.png",
-									"src/assets/icons/GH.png",
+									skillsCode.React.img,
+									skillsCode.HTML.img,
+									skillsCode.CSS.img,
+									skillsCode.GitHub.img,
 								]}
 								deploy="https://kevinvillajim.github.io/edieSite/"
 								git="https://github.com/kevinvillajim/edieSite"
@@ -493,25 +669,25 @@ function App() {
 								title={translations.projectTitle10}
 								text={translations.projectContent10}
 								skills={[
-									"src/assets/icons/REACT.png",
-									"src/assets/icons/HTML5.png",
-									"src/assets/icons/CSS.png",
-									"src/assets/icons/JS.png",
-									"src/assets/icons/GH.png",
+									skillsCode.React.img,
+									skillsCode.HTML.img,
+									skillsCode.CSS.img,
+									skillsCode.JavaScript.img,
+									skillsCode.GitHub.img,
 								]}
 								deploy="https://kevinvillajim.github.io/pokeDex/"
 								git="https://github.com/kevinvillajim/pokeDex"
 								translations={translations}
-							/>
+							/> */}
 							<ProjectCard
 								img="src/assets/portfolio/tipcalculator.png"
 								title={translations.projectTitle11}
 								text={translations.projectContent11}
 								skills={[
-									"src/assets/icons/HTML5.png",
-									"src/assets/icons/CSS.png",
-									"src/assets/icons/JS.png",
-									"src/assets/icons/GH.png",
+									skillsCode.HTML.img,
+									skillsCode.CSS.img,
+									skillsCode.JavaScript.img,
+									skillsCode.GitHub.img,
 								]}
 								deploy="https://kevinvillajim.github.io/tipCalculator/"
 								git="https://github.com/kevinvillajim/tipCalculator"
@@ -534,12 +710,12 @@ function App() {
 							<h3 className="subsection-title">{translations.designSkills}</h3>
 						</div>
 						<div className="skills-board" id="design-skills">
-							{skillsDesign.map((item, index) => (
+							{designSkillsList.map((skill, index) => (
 								<Skills
-									title={nameSkillsDesign[index]}
+									title={skill.name}
 									key={index}
 									alt={`skillDesign-${index}`}
-									img={item}
+									img={skill.img}
 								/>
 							))}
 						</div>
@@ -559,8 +735,8 @@ function App() {
 								title="Eco Plagas"
 								text={translations.designText1}
 								skills={[
-									"src/assets/icons/ILL.png",
-									"src/assets/icons/PS.png",
+									skillsDesign.Illustrator.img,
+									skillsDesign.Photoshop.img,
 								]}
 								setCurrentArray={setCurrentArray}
 								arrayNum={0}
@@ -572,8 +748,8 @@ function App() {
 								title="Que Hecho Burguer"
 								text={translations.designText2}
 								skills={[
-									"src/assets/icons/ILL.png",
-									"src/assets/icons/PS.png",
+									skillsDesign.Illustrator.img,
+									skillsDesign.Photoshop.img,
 								]}
 								setCurrentArray={setCurrentArray}
 								arrayNum={1}
@@ -585,8 +761,8 @@ function App() {
 								title="GGBet"
 								text={translations.designText3}
 								skills={[
-									"src/assets/icons/ILL.png",
-									"src/assets/icons/PS.png",
+									skillsDesign.Illustrator.img,
+									skillsDesign.Photoshop.img,
 								]}
 								setCurrentArray={setCurrentArray}
 								arrayNum={2}
@@ -598,8 +774,8 @@ function App() {
 								title="Eco Domotic Home"
 								text={translations.designText4}
 								skills={[
-									"src/assets/icons/ILL.png",
-									"src/assets/icons/PS.png",
+									skillsDesign.Illustrator.img,
+									skillsDesign.Photoshop.img,
 								]}
 								setCurrentArray={setCurrentArray}
 								arrayNum={3}
@@ -611,8 +787,8 @@ function App() {
 								title="Multiservicios TEC"
 								text={translations.designText5}
 								skills={[
-									"src/assets/icons/ILL.png",
-									"src/assets/icons/PS.png",
+									skillsDesign.Illustrator.img,
+									skillsDesign.Photoshop.img,
 								]}
 								setCurrentArray={setCurrentArray}
 								arrayNum={4}
@@ -624,8 +800,8 @@ function App() {
 								title="Vínculo Distribuidora"
 								text={translations.designText6}
 								skills={[
-									"src/assets/icons/ILL.png",
-									"src/assets/icons/PS.png",
+									skillsDesign.Illustrator.img,
+									skillsDesign.Photoshop.img,
 								]}
 								setCurrentArray={setCurrentArray}
 								arrayNum={5}
@@ -638,8 +814,8 @@ function App() {
 									title={translations.designTitle7}
 									text={translations.designText7}
 									skills={[
-										"src/assets/icons/ILL.png",
-										"src/assets/icons/PS.png",
+										skillsDesign.Illustrator.img,
+										skillsDesign.Photoshop.img,
 									]}
 									setCurrentArray={setCurrentArray}
 									arrayNum={6}

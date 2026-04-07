@@ -14,10 +14,17 @@ const ProjectCard = ({
 	setCurrentArray,
 	arrayNum,
 }) => {
+	const hasGallery = isPrivate && setModalVisible && setCurrentArray;
+
+	const openGallery = () => {
+		if (!hasGallery) return;
+		setModalVisible(true);
+		setCurrentArray(arrayNum);
+	};
+
 	const handleActionClick = () => {
-		if (isPrivate) {
-			setModalVisible(true);
-			setCurrentArray(arrayNum);
+		if (hasGallery) {
+			openGallery();
 			return;
 		}
 
@@ -27,7 +34,12 @@ const ProjectCard = ({
 	};
 
 	return (
-		<article className="group relative flex h-full flex-col overflow-hidden rounded-[1.8rem] border border-black/6 bg-[rgba(255,252,247,0.84)] shadow-[0_22px_55px_rgba(29,27,21,0.09)] transition duration-500 hover:-translate-y-2 hover:shadow-[0_30px_85px_rgba(29,27,21,0.16)]">
+		<article
+			className={`group relative flex h-full flex-col overflow-hidden rounded-[1.8rem] border border-black/6 bg-[rgba(255,252,247,0.84)] shadow-[0_22px_55px_rgba(29,27,21,0.09)] transition duration-500 hover:-translate-y-2 hover:shadow-[0_30px_85px_rgba(29,27,21,0.16)] ${
+				hasGallery ? "cursor-pointer" : ""
+			}`}
+			onClick={hasGallery ? openGallery : undefined}
+		>
 			<div className="pointer-events-none absolute inset-x-0 top-0 h-24 bg-gradient-to-r from-[#d2b36f]/30 via-transparent to-[#8ca39d]/20 opacity-0 blur-2xl transition duration-500 group-hover:opacity-100"></div>
 			<div className="relative overflow-hidden border-b border-black/5 bg-[#efe6d7]">
 					<img
@@ -85,29 +97,30 @@ const ProjectCard = ({
 								</span>
 							}
 							link={deploy}
+							onClick={!deploy ? handleActionClick : undefined}
 							className="button-primary"
 						/>
 					</div>
 					<div className="w-[68px]">
 						<Button
-							className="button-icon group px-0"
+							className="button-icon px-0"
 							text={
 								isPrivate ? (
-									<div className="w-6 h-6">
+									<div className="flex h-7 w-7 items-center justify-center">
 										<svg
 											xmlns="http://www.w3.org/2000/svg"
 											viewBox="0 -960 960 960"
-											className="icon-svg w-6 h-6 fill-white transition-colors group-hover:fill-[#f3d39a]"
+											className="icon-svg h-[23px] w-[23px]"
 										>
 											<path d="M360-400h400L622-580l-92 120-62-80-108 140Zm-40 160q-33 0-56.5-23.5T240-320v-480q0-33 23.5-56.5T320-880h480q33 0 56.5 23.5T880-800v480q0 33-23.5 56.5T800-240H320Zm0-80h480v-480H320v480ZM160-80q-33 0-56.5-23.5T80-160v-560h80v560h560v80H160Zm160-720v480-480Z" />
 										</svg>
 									</div>
 								) : (
-									<div className="w-6 h-6">
+									<div className="flex h-7 w-7 items-center justify-center">
 										<svg
 											xmlns="http://www.w3.org/2000/svg"
 											viewBox="0 0 98 98"
-											className="icon-svg w-6 h-6 fill-white transition-colors group-hover:fill-[#f3d39a]"
+											className="icon-svg h-[23px] w-[23px]"
 										>
 											<path
 												fillRule="evenodd"
@@ -118,7 +131,10 @@ const ProjectCard = ({
 									</div>
 								)
 							}
-							onClick={handleActionClick}
+							onClick={(event) => {
+								event.stopPropagation();
+								handleActionClick();
+							}}
 						/>
 					</div>
 				</div>
@@ -132,7 +148,7 @@ ProjectCard.propTypes = {
 	title: PropTypes.string.isRequired,
 	text: PropTypes.string.isRequired,
 	skills: PropTypes.array,
-	deploy: PropTypes.string.isRequired,
+	deploy: PropTypes.string,
 	git: PropTypes.string,
 	isPrivate: PropTypes.bool,
 	translations: PropTypes.object.isRequired,
